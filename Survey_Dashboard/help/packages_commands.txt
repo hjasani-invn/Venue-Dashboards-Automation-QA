@@ -1,0 +1,4 @@
+# pip install webdriver-manager
+# pip install selenium -U
+
+# https://www.lambdatest.com/blog/pytest-tutorial-parallel-testing-with-selenium-grid/

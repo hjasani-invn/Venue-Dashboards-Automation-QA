@@ -21,7 +21,8 @@ class UserHomePage(SeleniumDriver):
     _download_bulk_csv = "//button[normalize-space()='Download csv']"
 
     _groups_field = "//input[@placeholder='Group']"
-    _edit_english_user_btn = "//tbody/tr[2]/td[6]/button[1]"
+    # _edit_english_user_btn = "//tbody/tr[2]/td[6]/button[1]"
+    _edit_any_one_user_btn = "//button[@class='btn btn-primary btn-sm btn-icon']"
     #_edit_box_first_name_field = "//input[@id='mat-input-8']"
     #_edit_box_first_name_field = "//input[@id='mat-input-0']" # xpath
     #_edit_box_first_name_field = "mat-input-0"  # id
@@ -55,7 +56,8 @@ class UserHomePage(SeleniumDriver):
         self.hold_wait()
 
     def edit_user_btn(self):
-        self.elementClick(self._edit_english_user_btn, locatorType="xpath")
+        # self.elementClick(self._edit_english_user_btn, locatorType="xpath")
+        self.elementClick(self._edit_any_one_user_btn, locatorType="xpath")
 
     def clear_fileds(self):
         first_name = self.getElement(locator=self._edit_box_first_name_field, locatorType="xpath")
@@ -63,6 +65,7 @@ class UserHomePage(SeleniumDriver):
         self.hold_wait()
 
     def first_name_new_data(self, first_name_new):
+        self.backspace_clear(self._edit_box_first_name_field, locatorType="xpath")
         self.sendKeys(first_name_new, self._edit_box_first_name_field, locatorType="xpath")
         self.hold_wait()
 

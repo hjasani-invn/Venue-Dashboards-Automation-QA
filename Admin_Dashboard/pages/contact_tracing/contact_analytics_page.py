@@ -21,7 +21,7 @@ class ContactAnalyticsPage(SeleniumDriver):
     # _select_venue = "//mat-select[@id='mat-select-0']"
     # _select_venue = "//span[@class='mat-option-text' and contains(text(), 'ICA Calgary')]"
     # _select_venue = "//div[@id='mat-select-value-9']"
-    _select_venue = "//mat-select[@role='combobox']"
+    # _select_venue = "//mat-select[@role='combobox']"
     _choose_venue = "//input[@placeholder='Search']"
     #_select_venue_it = "//span[@class='mat-option-text'][normalize-space()='ICA Calgary']"
     _select_venue_it = "//span[@class='mat-option-text'][normalize-space()='ICA_2021']"
@@ -39,17 +39,28 @@ class ContactAnalyticsPage(SeleniumDriver):
         self.elementClick(self._click_contact_analytics, locatorType="xpath")
         self.hold_wait()
 
+    # def enter_venue(self, v_n):
+    #     self.hold_wait()
+    #     self.elementClick(self._select_venue, locatorType="xpath")
+    #     self.hold_wait()
+    #     # self.backspace_clear(self._select_venue, locatorType="xpath")
+    #     self.hold_wait()
+    #     self.sendKeys(v_n, self._choose_venue, locatorType="xpath")
+    #     self.hold_wait()
+    #     self.elementClick(self._select_venue_it, locatorType="xpath")
+    #     self.click_out()
+    #     self.hold_wait()
+
+    _select_venue = "(//mat-select[@role='combobox'])[1]"
     def enter_venue(self, v_n):
         self.hold_wait()
         self.elementClick(self._select_venue, locatorType="xpath")
         self.hold_wait()
-        # self.backspace_clear(self._select_venue, locatorType="xpath")
-        self.hold_wait()
-        self.sendKeys(v_n, self._choose_venue, locatorType="xpath")
-        self.hold_wait()
-        self.elementClick(self._select_venue_it, locatorType="xpath")
+        # self.elementClick(self._select_venue_it, locatorType="xpath")
+        self.sendKeys(v_n, self._select_venue, locatorType="xpath")
         self.click_out()
         self.hold_wait()
+
 
     def chose_start_date(self, s_date):
         self.backspace_clear(self._start_date, locatorType="xpath")
@@ -162,6 +173,7 @@ class ContactAnalyticsPage(SeleniumDriver):
             self.hold_wait()
             self.hold_wait()
             # self.update_query_name(query="overwrite")
+            self.backspace_clear(self._update_query, locatorType="xpath")
             self.sendKeys(query_name, self._update_query, locatorType="xpath")
             self.hold_wait()
             self.click_out()
