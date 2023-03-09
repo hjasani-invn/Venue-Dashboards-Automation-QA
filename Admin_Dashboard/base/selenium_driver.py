@@ -74,7 +74,7 @@ class SeleniumDriver():
         except:
             # print("Cannot click on the element with locator: " + locator + " locatorType: " + locatorType)
             self.log.info("Cannot click on the element with locator: " + locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
 
     def double_clicks(self, locator, locatorType="id"):
         try:
@@ -85,7 +85,7 @@ class SeleniumDriver():
         except:
             self.log.info(
                 "Cannot double click on the element with locator: " + locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
 
     def sendKeys(self, data, locator, locatorType="id"):
         try:
@@ -96,7 +96,7 @@ class SeleniumDriver():
         except:
             # print("Cannot send data on the element with locator: " + locator + " locatorType: " + locatorType)
             self.log.info("Cannot send data on the element with locator: " + locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
 
     def isElementPresent(self, locator, locatorType="id"):
         try:
@@ -142,7 +142,7 @@ class SeleniumDriver():
             self.log.info("Element appeared on the web page")
         except:
             self.log.info("Element not appeared on the web page")
-            print_stack()
+            # print_stack()
         return element
 
     def hold_wait(self):
@@ -172,7 +172,7 @@ class SeleniumDriver():
         except:
             self.log.info(
                 "Check box is not selected on element with locator: " + locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
             return False
 
     def is_select(self, locator, locatorType="id"):
@@ -205,7 +205,7 @@ class SeleniumDriver():
         except:
             self.log.info(
                 "Cannot moved to the element with locator: " + locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
 
     def backspace_clear(self, locator, locatorType="id"):
         try:
@@ -214,7 +214,7 @@ class SeleniumDriver():
             self.log.info("data clear with locator: " + locator + " locatorType: " + locatorType)
         except:
             self.log.info("data cannot be wiped with locator: " + locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
 
     # def switch_browser_tab(self, locator, locatorType="id"):
     #     parent_window = self.driver.current_window_handle
