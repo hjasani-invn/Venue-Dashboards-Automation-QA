@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from base.selenium_driver import SeleniumDriver
 import utilities.custom_logger as cl
@@ -38,6 +40,16 @@ class LoginPage(SeleniumDriver):
     def clickForgotPasswordButton(self):
         self.elementClick(self._forgot_pass_button, locatorType="xpath")
 
+    _forgot_password_page_xpath = "//h1[contains(text(),'Enter User Id / Email to continue')]"
+    def verify_if_on_reset_password_page(self):
+        page_text_element = self.getElement(self._forgot_password_page_xpath, locatorType="xpath")
+        time.sleep(1)
+        if page_text_element.text == "Enter User Id / Email to continue":
+            assert True
+            time.sleep(1)
+        else:
+            assert False
+
     def login(self, email, password):
         # self.clearFields()
         self.enterEmail(email)
@@ -47,10 +59,13 @@ class LoginPage(SeleniumDriver):
         self.hold_wait()
 
     def sign_out(self):
-        self.hold_wait()
-        self.elementClick(self._user_button, locatorType="xpath")
-        self.elementClick(self._signout_button, locatorType="xpath")
-        self.hold_wait()
+        try:
+            self.waitForElement(self._user_button, locatorType="xpath")
+            self.elementClick(self._user_button, locatorType="xpath")
+            self.elementClick(self._signout_button, locatorType="xpath")
+            self.hold_wait()
+        except:
+            print("User Profile is not clickable")
 
     def clearFields(self):
         self.backspace_clear(self._email_field, locatorType="xpath")

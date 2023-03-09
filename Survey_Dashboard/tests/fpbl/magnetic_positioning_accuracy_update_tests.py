@@ -3,7 +3,7 @@ import time
 import pytest
 
 from pages.fpbl.magnetic_positioning_accuracy_update_page import MagneticPositioningAccuracyUpdatePage
-from pages.login_page import LoginPage
+from pages.home.login_page import LoginPage
 import unittest
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")

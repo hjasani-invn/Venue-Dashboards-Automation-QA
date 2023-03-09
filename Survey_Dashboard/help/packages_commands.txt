@@ -2,3 +2,6 @@
 # pip install selenium -U
 
 # https://www.lambdatest.com/blog/pytest-tutorial-parallel-testing-with-selenium-grid/
+
+# single test execution from suite/class
+# pytest -s -v .\tests\login_tests.py -k test_3_1_4_forgot_pwrd --browser chrome

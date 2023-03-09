@@ -79,6 +79,7 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
         # _new = "(//p-tabpanel[@header='Wifi']//div[@role='tabpanel']//div[@class='wifi-list-container']//three-pick-list//div)[1]"
     _source_list_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
     def get_source_list_mac_addresses(self):
+        time.sleep(1)
         source_list_mac_addresses_elements = self.getElements(self._source_list_xpath, locatorType="xpath")
         for mac_address in source_list_mac_addresses_elements:
             mac_address_text = mac_address.text
@@ -95,10 +96,17 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
 
 
         list_clicks = self.getElements(self._source_list_xpath, locatorType="xpath")
+        # if not list_clicks:
+        #     print(f"-x-x-x-x-x-x-x-x--x-:{list_clicks}")
+        #     self.cancel_btn()
+        # else:
+        #     print(f"-x-x-x-x-x-x-x-x--x-:{list_clicks}")
         for click in list_clicks:
+            time.sleep(0.5)
         # while len(list_clicks) >= 0:
             self.elementClick(self._source_list_xpath, locatorType="xpath")
             self.elementClick(self._source_list_delete_btn, locatorType="xpath")
+                # self.click_save_btn()
 
             # source_list_mac_addresses_elements = self.getElements(self._source_list_xpath, locatorType="xpath")
             # for mac_address in source_list_mac_addresses_elements:
@@ -111,12 +119,19 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
 
     _white_list_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//li"
     _white_list_delete_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//button"
+
+    _click_cancel_button = "//span[contains(@class, 'p-dialog-header-close-icon')]"
+    def cancel_btn(self):
+        self.elementClick(self._click_cancel_button, locatorType="xpath")
+
+
     def delete_white_mac_addresses(self):
         list_clicks = self.getElements(self._white_list_xpath, locatorType="xpath")
         for click in list_clicks:
             self.elementClick(self._white_list_xpath, locatorType="xpath")
             time.sleep(1)
             self.elementClick(self._white_list_delete_btn, locatorType="xpath")
+
 
     _ignore_list_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//li"
     _ignore_list_delete_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//button"
@@ -126,6 +141,7 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
             self.elementClick(self._ignore_list_xpath, locatorType="xpath")
             time.sleep(1)
             self.elementClick(self._ignore_list_delete_btn, locatorType="xpath")
+
 
 
     _white_list_mac_address_textbox_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//input[@placeholder='Enter ID']"

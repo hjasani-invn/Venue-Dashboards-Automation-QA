@@ -1,0 +1,2 @@
+# FPBL test cases removed from updated Test Plan.
+# Keeping the work created for future use.

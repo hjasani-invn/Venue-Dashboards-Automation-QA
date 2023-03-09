@@ -2,9 +2,14 @@ import os
 import random
 import time
 import pyautogui
+from selenium.webdriver import ActionChains
 
 from selenium.webdriver.common.by import By
+from webdriver_manager.core import driver
+
 from base.selenium_driver import SeleniumDriver
+from selenium.webdriver.common.by import By
+
 import utilities.custom_logger as cl
 import logging
 from screeninfo import get_monitors
@@ -83,6 +88,12 @@ class MoveEntriesPage(SeleniumDriver):
         print(txt)
         self.elementClick(self._click_wifi_in_header, locatorType="xpath")
 
+
+    _click_cancel_button = "//span[contains(@class, 'p-dialog-header-close-icon')]"
+    def cancel_btn(self):
+        self.elementClick(self._click_cancel_button, locatorType="xpath")
+
+
     _source_list_mac_xpath_1 = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
     # _white_list_space = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul"
     _white_list_space = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]"
@@ -90,6 +101,8 @@ class MoveEntriesPage(SeleniumDriver):
     # _temp_white_list_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//li[1]"
     _temp_white_list_xpath = "(//ul[@class='pick-list'])[1]"
 
+    _source_mac_1 = "//div[contains(text(),'34:A8:4E:E6:51:12')]"
+    _white_destination = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul"
     def without_arrow_source_to_white(self):
         # sl_elements = self.getElements(self._source_list_mac_xpath_1, locatorType="xpath")
         # # for i in sl_elements:
@@ -135,11 +148,52 @@ class MoveEntriesPage(SeleniumDriver):
         #     time.sleep(1)
 
 
-        src = self.getElement(self._source_list_mac_xpath_1, locatorType="xpath")
-        trg = self.getElement(self._white_list_space, locatorType="xpath")
-        time.sleep(3)
-        self.drag_drop(src, trg)
-        time.sleep(5)
+
+
+        # src = self.getElement(self._source_list_mac_xpath_1, locatorType="xpath")
+        # trg = self.getElement(self._white_list_space, locatorType="xpath")
+        # time.sleep(3)
+        # self.drag_drop(src, trg)
+        # time.sleep(5)
+
+        print("drag and drop functionality")
+        # source1 = self.getElement(self._source_mac_1, locatorType="xpath")
+        source1 = self.driver.find_element(By.XPATH, "//div[contains(text(),'34:A8:4E:E6:51:12')]")
+        time.sleep(1)
+        # target1 = self.getElement(self._white_destination, locatorType="xpath")
+        target1 = self.driver.find_element(By.XPATH, "(//three-pick-list//div[@class='pick-list-wrapper'])[1]")
+        # action = ActionChains(self.driver)
+        # action.drag_and_drop(source1, target1)
+        # time.sleep(2)
+        try:
+            print("-------------inside try-------------")
+            action = ActionChains(self.driver)
+            action.drag_and_drop(source1, target1).perform()
+            time.sleep(7)
+            self.driver.close()
+        except:
+            print("-------------NOT WORKING-------------")
+
+
+        # print("drag and drop functionality")
+        # target1 = self.getElement(self._white_destination, locatorType="xpath")
+        # time.sleep(1)
+        # source1 = self.getElement(self._source_mac_1, locatorType="xpath")
+        # action = ActionChains(self.driver)
+        # time.sleep(2)
+        # action.drag_and_drop(source1, target1).perform()
+        # time.sleep(7)
+
+    _ignore_destination = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul"
+    def without_arrow_source_to_ignore(self):
+        print("drag and drop functionality")
+        target1 = self.getElement(self._ignore_destination, locatorType="xpath")
+        # time.sleep(1)
+        source1 = self.getElement(self._source_mac_1, locatorType="xpath")
+        action = ActionChains(self.driver)
+        # time.sleep(2)
+        action.drag_and_drop(source1, target1).perform()
+        # time.sleep(7)
 
 
     _from_source_to_white = "(//div[@class='pick-list-buttons'])[1]//i[@class='fa fa-angle-left']"

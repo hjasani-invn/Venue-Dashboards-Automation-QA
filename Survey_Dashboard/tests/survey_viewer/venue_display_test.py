@@ -1,8 +1,8 @@
 import time
 
 import pytest
-from pages.login_page import LoginPage
-from pages.venue_display import DisplayVenuePage
+from pages.home.login_page import LoginPage
+from pages.survey_viewer.venue_display_page import DisplayVenuePage
 import unittest
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
@@ -14,7 +14,7 @@ class VenueDisplayTest(unittest.TestCase):
         self.display_page = DisplayVenuePage(self.driver)
         self.login_page.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         
-    @pytest.mark.skip
+    @pytest.mark.run(5)
     def test_3_2_1_venue_display(self):
         self.display_page.click_dashboard()
         self.display_page.click_survey_viewer()
@@ -46,6 +46,7 @@ class VenueDisplayTest(unittest.TestCase):
         
         self.login_page.sign_out()
     
+    # @pytest.mark.run(6)
     @pytest.mark.skip
     def test_3_2_2_map_scrolling_venue_refresh(self):
         self.display_page.click_dashboard()
@@ -58,8 +59,10 @@ class VenueDisplayTest(unittest.TestCase):
         self.display_page.pan_left()
         self.display_page.pan_right()
         self.login_page.sign_out()
+        time.sleep(5)
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
+    @pytest.mark.run(7)
     def test_3_2_3_map_views(self):
         self.display_page.click_dashboard()
         self.display_page.click_survey_viewer()
@@ -72,7 +75,8 @@ class VenueDisplayTest(unittest.TestCase):
         self.display_page.select_none()
         self.login_page.sign_out()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
+    @pytest.mark.run(8)
     def test_3_2_4_map_overlays(self):
         self.display_page.click_dashboard()
         self.display_page.click_survey_viewer()
@@ -87,7 +91,8 @@ class VenueDisplayTest(unittest.TestCase):
         self.display_page.select_coverage()
         self.login_page.sign_out()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
+    @pytest.mark.run(9)
     def test_3_3_1_zoom_levels(self):
         self.display_page.click_admin()
         self.display_page.click_survey_editor()
@@ -118,11 +123,13 @@ class VenueDisplayTest(unittest.TestCase):
         self.login_page.sign_out()
 
     @pytest.mark.skip
+    # @pytest.mark.run(6)
     def test_3_3_2_map_scrolling(self):
         pass
 
     
-    @pytest.mark.skip
+    # @pytest.mark.skip
+    @pytest.mark.run(10)
     def test_3_3_3_map_views(self):
         self.display_page.click_admin()
         self.display_page.click_survey_editor()
@@ -136,7 +143,7 @@ class VenueDisplayTest(unittest.TestCase):
         self.login_page.sign_out()
 
     
-    @pytest.mark.skip
+    @pytest.mark.run(11)
     def test_3_3_4_map_overlays(self):
         self.display_page.click_admin()
         self.display_page.click_survey_editor()
@@ -152,7 +159,9 @@ class VenueDisplayTest(unittest.TestCase):
         self.login_page.sign_out()
     
     # NOTE: tests 3.5 and 3.6 are route drawing and require manual intervention
-    
+
+    # @pytest.mark.skip
+    @pytest.mark.run(12)
     def test_3_6_1_normal_route_length(self):
         self.display_page.click_admin()
         self.display_page.click_survey_editor()
@@ -161,6 +170,7 @@ class VenueDisplayTest(unittest.TestCase):
         self.display_page.click_search_result("ICA")
         self.display_page.select_access_point_list()
         self.display_page.delete_all_sources()
+        self.display_page.cancel_btn()
         self.login_page.sign_out()
 
     

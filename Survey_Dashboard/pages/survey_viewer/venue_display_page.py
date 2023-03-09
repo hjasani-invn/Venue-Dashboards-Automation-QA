@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from base.selenium_driver import SeleniumDriver
 import utilities.custom_logger as cl
@@ -41,18 +43,27 @@ class DisplayVenuePage(SeleniumDriver):
         
         # Access
         self._access_point_list = "//button[contains(text(),'Access points lists')]"
-        self._source_list = "//ul[@class='pick-list']"
+        # self._source_list = "//ul[@class='pick-list']"
+        self._source_list_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
+        self._source_list_delete_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//button"
 
     def enter_venue_search(self, search_term):
         self.sendKeys(search_term, self._venue_search_field, locatorType="xpath")
 
     def delete_all_sources(self):
-        src_list = self.getElement(self._source_list, locatorType="xpath")
-        sources = src_list.find_elements_by_tag_name("li")
-        for source in sources:
-            print(source.text)
+        # src_list = self.getElement(self._source_list, locatorType="xpath")
+        # sources = src_list.find_elements_by_tag_name("li")
+        # for source in sources:
+        #     print(source.text)
+        time.sleep(1)
+        src_list_elements = self.getElements(self._source_list_xpath, locatorType="xpath")
+        for click in src_list_elements:
+            self.elementClick(self._source_list_xpath, locatorType="xpath")
+            self.elementClick(self._source_list_delete_btn, locatorType="xpath")
+
 
     def select_access_point_list(self):
+        time.sleep(1)
         self.elementClick(locator=self._access_point_list, locatorType="xpath")
 
     def create_route(self):
@@ -110,24 +121,39 @@ class DisplayVenuePage(SeleniumDriver):
         self.elementClick(locator=self._options_cog, locatorType="xpath")
         self.elementClick(locator=self._none_maps, locatorType="xpath")
 
+    _click_survey_editor = "//div[@id='surveyEditorMap']"
+    _dir = "//img[@id='northArrow']"
     def pan_up(self):
+        (x_center, y_center) = self.get_screen_center()
+        to_pos = (x_center+100, y_center)
+        self.click_and_drag(to_pos)
+
+    # def pan_up(self):
+    #     time.sleep(1)
+    #     # middle_of_screen = self.driver.execute_script("return window.innerHeight/2")
+    #     # time.sleep(5)
+    #     # print(f"-----middle of the screen: ---- {middle_of_screen}")
+    #     # self.driver.execute_script("window.scrollBy(0, {});".format(middle_of_screen + 80))
+    #     # time.sleep(5)
+    #     window_width = self.driver.execute_script('return window.innerWidth')
+    #     scroll_x = window_width / 2 - 80
+    #     print(scroll_x)
+    #     self.driver.execute_script('window.scrollTo(arguments[0], 0);', scroll_x)
+    #     time.sleep(5)
+
+    def pan_down(self):
         (x_center, y_center) = self.get_screen_center()
         to_pos = (x_center, y_center-100)
         self.click_and_drag(to_pos)
 
-    def pan_down(self):
-        (x_center, y_center) = self.get_screen_center()
-        to_pos = (x_center, y_center+100)
-        self.click_and_drag(to_pos)
-
     def pan_left(self):
         (x_center, y_center) = self.get_screen_center()
-        to_pos = (x_center-100, y_center)
+        to_pos = (x_center, y_center-100)
         self.click_and_drag(to_pos)
 
     def pan_right(self):
         (x_center, y_center) = self.get_screen_center()
-        to_pos = (x_center+100, y_center)
+        to_pos = (x_center, y_center+100)
         self.click_and_drag(to_pos)
 
     def click_zoom_in(self):
@@ -168,12 +194,21 @@ class DisplayVenuePage(SeleniumDriver):
         self.elementClick(self._venue_select_button, locatorType="xpath")
 
     def clear_search_box(self):
-        self.getElement(locator=self._venue_search_field, locatorType="xpath").clear()
+        self.backspace_clear(locator=self._venue_search_field, locatorType="xpath")
+        # self.getElement(locator=self._venue_search_field, locatorType="xpath").clear()
 
+    _email_field = "//input[@type='email']"
+    _password_field = "//input[@id='inputPassword3']"
     def clear_fields(self):
-        self.getElement(locator=self._email_field).clear()
-        self.getElement(locator=self._password_field).clear()
+        # self.getElement(locator=self._email_field).clear()
+        # self.getElement(locator=self._password_field).clear()
+        self.backspace_clear(self._email_field, locatorType="xpath")
+        self.backspace_clear(self._password_field, locatorType="xpath")
 
+
+    _click_cancel_button = "//span[contains(@class, 'p-dialog-header-close-icon')]"
+    def cancel_btn(self):
+        self.elementClick(self._click_cancel_button, locatorType="xpath")
  
     def get_screen_center(self):
         x_offset = None

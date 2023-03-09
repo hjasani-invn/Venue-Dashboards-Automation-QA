@@ -59,6 +59,7 @@ class WebDriverFactory():
         driver.implicitly_wait(5)
         # Maximize the window
         driver.maximize_window()
+        # print(f" windiow size: {driver.get_window_size()}")
         # Loading browser with App URL
         driver.get(baseURL)
         return driver

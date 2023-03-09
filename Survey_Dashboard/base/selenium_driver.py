@@ -2,6 +2,7 @@ import logging
 import time
 
 from selenium.webdriver import ActionChains, Keys
+# from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from traceback import print_stack
 from selenium.webdriver.support.ui import WebDriverWait
@@ -208,6 +209,19 @@ class SeleniumDriver():
         action = ActionChains(self.driver)
         action.move_by_offset(to_pos[0], to_pos[1]).perform()
 
+    # def drag_and_drop_offset(self,locator, locatorType="id"):
+    #     element = self.elementClick(locator, locatorType)
+    #     action = ActionChains(self.driver)
+    #     action.drag_and_drop_by_offset(element, 100, 200)
+    #     action.perform()
+
+
+    # def click_and_drag(self):
+    #     action = ActionChains(self.driver)
+    #     time.sleep(4)
+    #     action.move_by_offset(300, 500).perform()
+    #     time.sleep(3)
+
     def refresh_page(self):
         self.driver.refresh()
 
@@ -240,3 +254,21 @@ class SeleniumDriver():
         action.drag_and_drop(element, element).perform()
         time.sleep(2)
         return element
+
+    def drag(self, locator, locatorType="xpath"):
+        source1 = None
+        target1 = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            source1 = self.driver.find_element(byType, locator)
+            target1 = self.driver.find_element(byType, locator)
+            action = ActionChains(self.driver)
+            time.sleep(2)
+            action.drag_and_drop(source1, target1).perform()
+            time.sleep(2)
+        except:
+            self.log.info("Drag and Drop Element not found with locator: " + locator + " and locatorType: " + locatorType)
+        return source1, target1
+
+
