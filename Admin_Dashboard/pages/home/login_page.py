@@ -19,14 +19,6 @@ class LoginPage(SeleniumDriver):
     _click_user_button = "//div[@class='avatar-container']" #xpath
     _sign_out_button = "//a[contains(text(), 'Log out')]"  # xpath
 
-    # def getEmailField(self):
-    #     return self.driver.find_element(By.ID, self._email_filed)
-    #
-    # def getPasswordField(self):
-    #     return self.driver.find_element(By.ID, self._password_filed)
-    #
-    # def getClickLoginButton(self):
-    #     return self.driver.find_element(By.XPATH, self._click_login_button)
 
     def enterEmail(self, email):
         # self.getEmailField().send_keys(email)

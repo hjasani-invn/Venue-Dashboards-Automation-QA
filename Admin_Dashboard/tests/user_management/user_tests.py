@@ -123,6 +123,7 @@ class UserTests(unittest.TestCase):
         # self.userpage.upload_csv()
         # self.userpage.sendcsv(os.getcwd()+"/users_template_final.csv")
         self.userpage.send_data()
+        # self.userpage.send_data_1(CONFIG_PATH="pages/user_management/users_template.csv")
         # self.userpage.over_py()
 
     # @pytest.mark.order(9)

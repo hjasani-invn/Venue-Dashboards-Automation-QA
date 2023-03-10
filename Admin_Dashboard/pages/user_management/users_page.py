@@ -487,6 +487,21 @@ class UserPage(SeleniumDriver):
         except:
             print("nothing")
 
+    def send_data_1(self, CONFIG_PATH):
+        self.elementClick(self._upload_csv_btn, locatorType="xpath")
+        self.hold_wait()
+        self.sendKeys(CONFIG_PATH, self._upload_csv_btn, locatorType="xpath")
+        self.hold_wait()
+
+        # ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
+        # print(ROOT_DIR)
+        # CONFIG_PATH = os.path.join(ROOT_DIR, 'users_template.csv')
+        # print(CONFIG_PATH)
+        self.hold_wait()
+        self.hold_wait()
+        self.final_click_to_add_users()
+        self.hold_wait()
+
     # def over_py(self):
     #     autoit.win_active("Open")
     #     autoit.control_send("Open", "C:\\Users\\hjasani\\PycharmProjects\work\\Admin_Dashboard\\tests\\user_management\\users_template_final.csv")
