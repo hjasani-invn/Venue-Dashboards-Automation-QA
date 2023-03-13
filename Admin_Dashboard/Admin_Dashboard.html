@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Admin_Dashboard.html</h1>
-    <p>Report generated on 01-Mar-2023 at 10:31:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 10-Mar-2023 at 11:28:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -259,7 +259,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.11.1</td></tr></table>
     <h2>Summary</h2>
-    <p>29 tests ran in 782.10 seconds. </p>
+    <p>29 tests ran in 781.76 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">29 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,260 +275,1314 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::LoginTests::test_3_1_1_login_nominal</td>
-          <td class="col-duration">16.71</td>
+          <td class="col-duration">13.47</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //div[@class=&#x27;avatar-container&#x27;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //div[@class=&#x27;avatar-container&#x27;] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //a[contains(text(), &#x27;Log out&#x27;)] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //a[contains(text(), &#x27;Log out&#x27;)] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::LoginTests::test_3_1_2_login_bad_password</td>
-          <td class="col-duration">4.14</td>
+          <td class="col-duration">4.16</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::LoginTests::test_3_1_3_login_bad_user</td>
-          <td class="col-duration">6.25</td>
+          <td class="col-duration">6.26</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_7_delete_users_if_available</td>
-          <td class="col-duration">11.04</td>
+          <td class="col-duration">11.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> ------------------------------Captured stdout call------------------------------ <br/>----number_of_users: 0 of 0
+----str_number_of_users: 0
+----int_number_of_users: 0
+&lt;class &#x27;int&#x27;&gt;
+No existing users are available
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //div[@class=&#x27;paginator-range-label&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //div[@class=&#x27;paginator-range-label&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //div[@class=&#x27;paginator-range-label&#x27;] and locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_1_click_new_user</td>
-          <td class="col-duration">2.04</td>
+          <td class="col-duration">2.05</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_1_1_add_user_english</td>
-          <td class="col-duration">12.56</td>
+          <td class="col-duration">12.60</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_1_2_add_user_japanese</td>
-          <td class="col-duration">12.56</td>
+          <td class="col-duration">12.55</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_1_3_add_user_korean</td>
-          <td class="col-duration">12.57</td>
+          <td class="col-duration">12.55</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_1_4_add_user_chinese</td>
-          <td class="col-duration">12.50</td>
+          <td class="col-duration">12.57</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_2_manually_add_user_error_checks</td>
-          <td class="col-duration">70.90</td>
+          <td class="col-duration">71.24</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //ns-filter-select[@label=&#x27;Groups&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;First Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;First Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Last Name&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Last Name&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Password&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Password&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&quot;Email&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&quot;Email&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&quot;combobox&quot;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&quot;combobox&quot;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Users&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@routerlink=&#x27;/home/users/create&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_3_manually_add_user_bulk_addition</td>
-          <td class="col-duration">136.07</td>
+          <td class="col-duration">136.41</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[2]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[2]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[3]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[3]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[4]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[4]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[5]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[5]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[6]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[6]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[1] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[1] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[11]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[11]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[12]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[12]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[13]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[13]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[14]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[14]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[15]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[15]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[3] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[3] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[2] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[2] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[20]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[20]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[21]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[21]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[22]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[22]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[23]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[23]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[24]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[24]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[5] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[5] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[3] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[3] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[29]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[29]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[30]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[30]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[31]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[31]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[32]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[32]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[33]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[33]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[7] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[7] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[4] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[4] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[38]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[38]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[39]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[39]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[40]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[40]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[41]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[41]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[42]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[42]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[9] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[9] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[5] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[5] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[47]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[47]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[48]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[48]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[49]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[49]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[50]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[50]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[51]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[51]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[11] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[11] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[6] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[6] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[56]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[56]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[57]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[57]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[58]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[58]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[59]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[59]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[60]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[60]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[13] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[13] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[7] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[7] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-success btn-sm btn-icon ng-star-inserted&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserPage:selenium_driver.py:144 Element not appeared on the web page
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[65]//input[@placeholder=&#x27;User Id&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[65]//input[@placeholder=&#x27;User Id&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[66]//input[@placeholder=&#x27;First Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[66]//input[@placeholder=&#x27;First Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[67]//input[@placeholder=&#x27;Last Name&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[67]//input[@placeholder=&#x27;Last Name&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[68]//input[@placeholder=&#x27;Password&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[68]//input[@placeholder=&#x27;Password&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[69]//input[@placeholder=&#x27;Email&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:95 Sent data on element with locator: (//table[@aria-describedby=&#x27;createNewUsersTable&#x27;]//tbody//tr//th)[69]//input[@placeholder=&#x27;Email&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[15] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[15] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27; and contains(text(), &#x27;test&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[8] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: (//ns-filter-select[@label=&#x27;Groups&#x27;])[8] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&quot;mat-option-text&quot; and contains(text(), &quot;Automation_Test_Group&quot;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[contains(text(),&#x27;Create Users&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:204 moved to element with locator: //button[contains(text(),&#x27;Create Users&#x27;)] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[contains(text(),&#x27;Create Users&#x27;)] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[contains(text(),&#x27;Create Users&#x27;)] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserTests::test_3_2_5_bulk_user_csv_upload</td>
-          <td class="col-duration">24.28</td>
+          <td class="col-duration">24.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> ------------------------------Captured stdout call------------------------------ <br/>C:\Users\hjasani\OneDrive - tdkgroup\Desktop\work_automation\Admin_Dashboard\pages\user_management
+C:\Users\hjasani\OneDrive - tdkgroup\Desktop\work_automation\Admin_Dashboard\pages\user_management\users_template.csv
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserPage:selenium_driver.py:126 Element not present
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Upload .csv&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Upload .csv&#x27;] locatorType: xpath
+INFO     UserPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create Users&#x27;] and locatorType: xpath
+INFO     UserPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create Users&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserHomeTests::test_3_2_4_bulk_user_csv_download</td>
-          <td class="col-duration">19.73</td>
+          <td class="col-duration">20.07</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Download csv&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Download csv&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:134 Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO     UserHomePage:selenium_driver.py:144 Element not appeared on the web page<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserHomeTests::test_3_2_6_edit_user</td>
-          <td class="col-duration">6.23</td>
+          <td class="col-duration">6.25</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-primary btn-sm btn-icon&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-primary btn-sm btn-icon&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@name=&quot;first-name&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@name=&quot;first-name&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@name=&quot;first-name&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@name=&quot;first-name&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Save&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Save&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::UserHomeTests::test_3_2_7_delete_user</td>
-          <td class="col-duration">123.00</td>
+          <td class="col-duration">123.26</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> ------------------------------Captured stdout call------------------------------ <br/>----number_of_users: 1 – 10 of 16
+----str_number_of_users: 16
+----int_number_of_users: 16
+&lt;class &#x27;int&#x27;&gt;
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //div[@class=&#x27;paginator-range-label&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //div[@class=&#x27;paginator-range-label&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //div[@class=&#x27;paginator-range-label&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:204 moved to element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:214 data clear with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group&#x27;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:52 Element not found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:76 Cannot click on the element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:52 Element not found with locator: //button[normalize-space()=&#x27;Delete user&#x27;] and locatorType: xpath
+INFO     UserHomePage:selenium_driver.py:76 Cannot click on the element with locator: //button[normalize-space()=&#x27;Delete user&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GroupsTests::test_3_3_4_delete_group_if_available</td>
-          <td class="col-duration">28.65</td>
+          <td class="col-duration">28.86</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Groups&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group Name&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group Name&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:52 Element not found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:76 Cannot click on the element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:52 Element not found with locator: //button[@class=&quot;btn btn-sm btn-danger&quot;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:76 Cannot click on the element with locator: //button[@class=&quot;btn btn-sm btn-danger&quot;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GroupsTests::test_3_3_1_adding_groups</td>
-          <td class="col-duration">27.10</td>
+          <td class="col-duration">27.19</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Groups&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Create group&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Create group&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //mat-select[@role=&#x27;combobox&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //mat-select[@role=&#x27;combobox&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Search&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //input[@placeholder=&#x27;Search&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Search&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Search&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[2] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[2] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Search&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //input[@placeholder=&#x27;Search&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Search&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Search&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-option-text&#x27;][normalize-space()=&#x27;Admin-InvenSense-PowerUserGroup&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-option-text&#x27;][normalize-space()=&#x27;Admin-InvenSense-PowerUserGroup&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Venue List&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Venue List&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Venue List&#x27;)] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Survey App&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Survey App&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Survey App&#x27;)] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Venue App&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Venue App&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Venue App&#x27;)] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Venue Dashboard&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Venue Dashboard&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Coursa Venue Dashboard&#x27;)] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Positioning/Analytics Dashboard&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Positioning/Analytics Dashboard&#x27;)] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[@class=&#x27;mat-checkbox-label&#x27;]/div[@class=&#x27;checkbox-label&#x27; and contains(text(), &#x27;Positioning/Analytics Dashboard&#x27;)] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Save&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Save&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GroupsTests::test_3_3_3_edit_group</td>
-          <td class="col-duration">12.14</td>
+          <td class="col-duration">12.15</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group Name&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group Name&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-primary btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-primary btn-sm btn-icon&quot;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Save&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Save&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GroupsTests::test_3_3_4_delete_group</td>
-          <td class="col-duration">10.13</td>
+          <td class="col-duration">10.15</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Groups&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //input[@placeholder=&#x27;Group Name&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:95 Sent data on element with locator: //input[@placeholder=&#x27;Group Name&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-danger btn-sm btn-icon&quot;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;btn btn-sm btn-danger&quot;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;btn btn-sm btn-danger&quot;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GroupsTests::test_3_3_5_download_all_groups_csv</td>
-          <td class="col-duration">8.18</td>
+          <td class="col-duration">8.15</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Groups&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Groups&#x27;] locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Download csv&#x27;] and locatorType: xpath
+INFO     GroupsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Download csv&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::VenueListTests::test_3_4_1_open_venue_list</td>
-          <td class="col-duration">14.71</td>
+          <td class="col-duration">14.86</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     VenueListPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Venue List&#x27;] and locatorType: xpath
+INFO     VenueListPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Venue List&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::KeyListTests::test_3_4_2_open_key_list</td>
-          <td class="col-duration">14.55</td>
+          <td class="col-duration">14.70</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     KeyListPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Key List&#x27;] and locatorType: xpath
+INFO     KeyListPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Key List&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GuideListTests::test_3_4_3_download_user_guides</td>
-          <td class="col-duration">49.35</td>
+          <td class="col-duration">49.83</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> ------------------------------Captured stdout call------------------------------ <br/>Open All Guides
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Guides&#x27;] and locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Guides&#x27;] locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:62 Elements Found with locator: //button[@class=&quot;btn btn-primary btn-sm btn-icon&quot;] and locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::GuideListTests::test_3_4_3_1_open_guides_in_toggle_view_mode</td>
-          <td class="col-duration">11.44</td>
+          <td class="col-duration">11.49</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     GuidesPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Guides&#x27;] and locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Guides&#x27;] locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:49 Element Found with locator: //button[@class=&#x27;btn btn-sm btn-primary view-control&#x27;] and locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&#x27;btn btn-sm btn-primary view-control&#x27;] locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:49 Element Found with locator: //div[@class=&quot;file-container ng-star-inserted&quot;] and locatorType: xpath
+INFO     GuidesPage:selenium_driver.py:84 double Clicked on element with locator: //div[@class=&quot;file-container ng-star-inserted&quot;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::ContactAnalyticsTests::test_3_5_1_1_contact_tracing_queries</td>
-          <td class="col-duration">37.03</td>
+          <td class="col-duration">37.37</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running one time setUp
+Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-0 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-0 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: mat-input-1 and locatorType: id
+INFO     LoginPage:selenium_driver.py:95 Sent data on element with locator: mat-input-1 locatorType: id
+INFO     LoginPage:selenium_driver.py:49 Element Found with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] and locatorType: xpath
+INFO     LoginPage:selenium_driver.py:73 Clicked on element with locator: //button[@class=&quot;mat-focus-indicator login-submit mat-raised-button mat-button-base mat-primary&quot;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Search&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Search&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::ContactAnalyticsTests::test_3_5_1_2_contact_tracing_queries</td>
-          <td class="col-duration">22.38</td>
+          <td class="col-duration">22.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Search&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Search&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::ContactAnalyticsTests::test_3_5_1_3_contact_tracing_queries</td>
-          <td class="col-duration">22.35</td>
+          <td class="col-duration">22.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Search&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Search&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::ContactAnalyticsTests::test_3_5_1_4_contact_tracing_queries</td>
-          <td class="col-duration">22.35</td>
+          <td class="col-duration">22.38</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Search&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Search&#x27;] locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/run_test_suite_1.py::ContactAnalyticsTests::test_3_5_1_5_contact_tracing_queries</td>
-          <td class="col-duration">30.60</td>
+          <td class="col-duration">30.63</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Running method level setUp
+<br/> ------------------------------Captured stdout call------------------------------ <br/>No Contact Data found for the given Search condition.
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //span[normalize-space()=&#x27;Contact Analytics&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: (//mat-select[@role=&#x27;combobox&#x27;])[1] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-2&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-2&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //input[@id=&#x27;mat-input-3&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: //input[@id=&#x27;mat-input-3&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:214 data clear with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: // input[ @ type = &#x27;number&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:95 Sent data on element with locator: // input[ @ type = &#x27;number&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //body and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //body locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //button[normalize-space()=&#x27;Search&#x27;] and locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:73 Clicked on element with locator: //button[normalize-space()=&#x27;Search&#x27;] locatorType: xpath
+INFO     ContactAnalyticsPage:selenium_driver.py:49 Element Found with locator: //span[contains(text(),&#x27;No Contact Data found for the given Search conditi&#x27;)] and locatorType: xpath<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Running method level tearDown
+Running one time tearDown
+<br/></div></td></tr></tbody></table></body></html>

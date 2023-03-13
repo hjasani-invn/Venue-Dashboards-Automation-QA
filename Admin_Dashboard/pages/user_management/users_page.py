@@ -140,6 +140,7 @@ class UserPage(SeleniumDriver):
     _check_checkbox_2 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
     def add_bulk_user_english_1(self, user_id, first_name, last_name, password, email):
+        time.sleep(1)
         self.sendKeys(user_id, self._user_id_1, locatorType="xpath")
         self.sendKeys(first_name, self._first_name_1, locatorType="xpath")
         self.sendKeys(last_name, self._last_name_1, locatorType="xpath")
@@ -156,6 +157,7 @@ class UserPage(SeleniumDriver):
         self.elementClick(self._check_checkbox_1, locatorType="xpath")
         self.click_out()
         self.click_add_bulk_user_btn()
+        time.sleep(1)
 
     def add_bulk_user_english_2(self, user_id, first_name, last_name, password, email):
         self.sendKeys(user_id, self._user_id_2, locatorType="xpath")
@@ -174,6 +176,8 @@ class UserPage(SeleniumDriver):
         self.elementClick(self._check_checkbox_2, locatorType="xpath")
         self.click_out()
         self.click_add_bulk_user_btn()
+        time.sleep(1)
+
 
     _user_id_3 = "(//table[@aria-describedby='createNewUsersTable']//tbody//tr//th)[20]//input[@placeholder='User Id']"
     _first_name_3 = "(//table[@aria-describedby='createNewUsersTable']//tbody//tr//th)[21]//input[@placeholder='First Name']"
@@ -212,6 +216,8 @@ class UserPage(SeleniumDriver):
         self.elementClick(self._check_checkbox_3, locatorType="xpath")
         self.click_out()
         self.click_add_bulk_user_btn()
+        time.sleep(1)
+
 
     def add_bulk_user_japanese_2(self, user_id, first_name, last_name, password, email):
         self.sendKeys(user_id, self._user_id_4, locatorType="xpath")
@@ -270,6 +276,8 @@ class UserPage(SeleniumDriver):
         self.elementClick(self._check_checkbox_5, locatorType="xpath")
         self.click_out()
         self.click_add_bulk_user_btn()
+        time.sleep(1)
+
 
     def add_bulk_user_korean_2(self, user_id, first_name, last_name, password, email):
         self.sendKeys(user_id, self._user_id_6, locatorType="xpath")
@@ -288,6 +296,8 @@ class UserPage(SeleniumDriver):
         self.elementClick(self._check_checkbox_6, locatorType="xpath")
         self.click_out()
         self.click_add_bulk_user_btn()
+        time.sleep(1)
+
 
     _user_id_7 = "(//table[@aria-describedby='createNewUsersTable']//tbody//tr//th)[56]//input[@placeholder='User Id']"
     _first_name_7 = "(//table[@aria-describedby='createNewUsersTable']//tbody//tr//th)[57]//input[@placeholder='First Name']"
@@ -329,6 +339,8 @@ class UserPage(SeleniumDriver):
         self.elementClick(self._check_checkbox_7, locatorType="xpath")
         self.click_out()
         self.click_add_bulk_user_btn()
+        time.sleep(1)
+
 
     def add_bulk_user_chinese_2(self, user_id, first_name, last_name, password, email):
         self.sendKeys(user_id, self._user_id_8, locatorType="xpath")
@@ -350,6 +362,8 @@ class UserPage(SeleniumDriver):
         self.hold_wait()
         self.elementClick(self._create_click_user_btn, locatorType="xpath")
         self.hold_wait()
+        time.sleep(1)
+
 
     # def upload_csv(self, csv_file):
     #     # self.click_create_user_button()
