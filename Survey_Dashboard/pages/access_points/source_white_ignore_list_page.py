@@ -186,6 +186,7 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
 
     _white_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//div/button[contains(text(),' Upload ')]"
     def upload_white_list_csv(self):
+        time.sleep(2)
         self.elementClick(self._white_list_upload_btn, locatorType="xpath")
         time.sleep(0.10)
 
@@ -212,6 +213,7 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
 
     _ignore_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//div/button[contains(text(),' Upload ')]"
     def upload_ignore_list_csv(self):
+        time.sleep(2)
         self.elementClick(self._ignore_list_upload_btn, locatorType="xpath")
         time.sleep(0.10)
 
