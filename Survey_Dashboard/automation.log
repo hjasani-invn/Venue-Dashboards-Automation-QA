@@ -19638,3 +19638,37 @@
 03/08/2023 12:08:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Beacon Recommendation')] locatorType: xpath
 03/08/2023 12:08:55 PM - SeleniumDriver - INFO: Element Found with locator: //div//button[@class='btn btn-success'] and locatorType: xpath
 03/08/2023 12:08:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //div//button[@class='btn btn-success'] locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+03/15/2023 10:48:53 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Admin')] and locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Admin')] locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Survey - Editor')] and locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Survey - Editor')] locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Select Venue')] and locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Select Venue')] locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Element Found with locator: //input[starts-with(@class, 'p-dropdown-filter p-inputtext p-component')] and locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: data clear with locator: //input[starts-with(@class, 'p-dropdown-filter p-inputtext p-component')] locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Element Found with locator: //input[starts-with(@class, 'p-dropdown-filter p-inputtext p-component')] and locatorType: xpath
+03/15/2023 10:48:57 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[starts-with(@class, 'p-dropdown-filter p-inputtext p-component')] locatorType: xpath
+03/15/2023 10:48:58 AM - SeleniumDriver - INFO: Element Found with locator: //p-dropdownitem//li[@aria-label='ICA Calgary '] and locatorType: xpath
+03/15/2023 10:48:58 AM - SeleniumDriver - INFO: Clicked on element with locator: //p-dropdownitem//li[@aria-label='ICA Calgary '] locatorType: xpath
+03/15/2023 10:49:00 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Fourth Floor')] and locatorType: xpath
+03/15/2023 10:49:00 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Fourth Floor')] locatorType: xpath
+03/15/2023 10:49:02 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Access points lists')] and locatorType: xpath
+03/15/2023 10:49:02 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Access points lists')] locatorType: xpath
+03/15/2023 10:49:02 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Wifi')] and locatorType: xpath
+03/15/2023 10:49:02 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Wifi')] and locatorType: xpath
+03/15/2023 10:49:02 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Wifi')] locatorType: xpath
+03/15/2023 10:49:07 AM - SeleniumDriver - INFO: Elements Found with locator: (//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//li and locatorType: xpath
+03/15/2023 10:49:09 AM - SeleniumDriver - INFO: Element Found with locator: (//three-pick-list//div[@class='pick-list-wrapper'])[1]//div/button[contains(text(),' Upload ')] and locatorType: xpath
+03/15/2023 10:49:09 AM - SeleniumDriver - INFO: Clicked on element with locator: (//three-pick-list//div[@class='pick-list-wrapper'])[1]//div/button[contains(text(),' Upload ')] locatorType: xpath
+03/15/2023 10:49:24 AM - SeleniumDriver - INFO: Element Found with locator: //button[normalize-space()='Save'] and locatorType: xpath
+03/15/2023 10:49:24 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[normalize-space()='Save'] locatorType: xpath

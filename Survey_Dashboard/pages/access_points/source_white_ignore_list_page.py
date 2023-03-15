@@ -188,14 +188,16 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
     def upload_white_list_csv(self):
         time.sleep(2)
         self.elementClick(self._white_list_upload_btn, locatorType="xpath")
-        time.sleep(0.10)
+        time.sleep(1)
 
         ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
         print(ROOT_DIR)
+        time.sleep(1)
         CONFIG_PATH = os.path.join(ROOT_DIR, 'ICA_MultiFloor_WL_2023-02-22T19_46_13.724Z.csv')
         print(CONFIG_PATH)
+        time.sleep(1)
         pyautogui.typewrite(CONFIG_PATH, interval=0.10)
-
+        time.sleep(1)
         pyautogui.press('return')
 
 
@@ -215,12 +217,15 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
     def upload_ignore_list_csv(self):
         time.sleep(2)
         self.elementClick(self._ignore_list_upload_btn, locatorType="xpath")
-        time.sleep(0.10)
+        time.sleep(1)
 
         ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
         print(ROOT_DIR)
+        time.sleep(1)
         CONFIG_PATH = os.path.join(ROOT_DIR, 'ICA_MultiFloor_IL_2023-02-22T19_46_15.475Z.csv')
         print(CONFIG_PATH)
+        time.sleep(1)
         pyautogui.typewrite(CONFIG_PATH, interval=0.10)
+        time.sleep(1)
 
         pyautogui.press('return')
