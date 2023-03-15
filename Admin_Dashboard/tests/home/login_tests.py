@@ -37,12 +37,16 @@ class LoginTests(unittest.TestCase):
         self.loginpage.login("AutomationTestUser001", "justWrongPassword")
         # result = self.loginpage.verifyTitle()
         # assert result == True
+        self.loginpage.verifyLoginFailed()
+
 
     # @pytest.mark.login
     # @pytest.mark.run(3)
     @pytest.mark.order(3)
     def test_3_1_3_login_bad_user(self):
         self.loginpage.login("BadUser", "BadPassword")
+        self.loginpage.verifyLoginFailed()
+
         # result = self.loginpage.verifyTitle()
         # assert result == True
         # result = self.loginpage.verifyLoginFailed()
