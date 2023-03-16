@@ -27,6 +27,7 @@ def pytest_addoption(parser):
     parser.addoption("--browser")
     parser.addoption("--product")
     parser.addoption("--osType", help="Type of operating system")
+    # parser.addoption("--headless")
 
 @pytest.fixture(scope="session")
 def browser(request):
@@ -39,3 +40,7 @@ def product(request):
 @pytest.fixture(scope="session")
 def osType(request):
     return request.config.getoption("--osType")
+
+# @pytest.fixture(scope="session")
+# def osType(request):
+#     return request.config.getoption("--headless")

@@ -160,17 +160,17 @@ class VenueDisplayTest(unittest.TestCase):
     
     # NOTE: tests 3.5 and 3.6 are route drawing and require manual intervention
 
-    # @pytest.mark.skip
-    @pytest.mark.run(12)
-    def test_3_6_1_normal_route_length(self):
-        self.display_page.click_admin()
-        self.display_page.click_survey_editor()
-        self.display_page.click_select_venue()
-        self.display_page.enter_venue_search("ICA")
-        self.display_page.click_search_result("ICA")
-        self.display_page.select_access_point_list()
-        self.display_page.delete_all_sources()
-        self.display_page.cancel_btn()
-        self.login_page.sign_out()
+    # # @pytest.mark.skip
+    # @pytest.mark.run(12)
+    # def test_3_6_1_normal_route_length(self):
+    #     self.display_page.click_admin()
+    #     self.display_page.click_survey_editor()
+    #     self.display_page.click_select_venue()
+    #     self.display_page.enter_venue_search("ICA")
+    #     self.display_page.click_search_result("ICA")
+    #     self.display_page.select_access_point_list()
+    #     self.display_page.delete_all_sources()
+    #     self.display_page.cancel_btn()
+    #     self.login_page.sign_out()
 
     
