@@ -10,8 +10,8 @@ Example:
 """
 import traceback
 from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
-# from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 class WebDriverFactory():
 
@@ -48,10 +48,10 @@ class WebDriverFactory():
         elif self.browser == "firefox":
             driver = webdriver.Firefox()
         elif self.browser == "chrome":
-            # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
             # Set chrome driver
-            driver = webdriver.Chrome(
-                  "C:\\Users\\hjasani\\PycharmProjects\\work\\Venue_LiveFeed_Analytic_Dashboard\\drivers\\chrome_32_107\\chromedriver.exe")
+            # driver = webdriver.Chrome(
+            #       "C:\\Users\\hjasani\\PycharmProjects\\work\\Venue_LiveFeed_Analytic_Dashboard\\drivers\\chrome_32_107\\chromedriver.exe")
                 # "C:\\Users\\hjasani\\PycharmProjects\\Personal_Projects\\Python_Selenium\\SeleniumSessions\\chromedriver_win32_107\\chromedriver.exe")
             # driver = webdriver.Chrome()
         else:

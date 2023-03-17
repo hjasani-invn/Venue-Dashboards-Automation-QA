@@ -119,7 +119,8 @@ class PlaybackTabPage(SeleniumDriver):
 
 
     # _select_all_users = "//label[@for='mat-checkbox-5-input']//div[@class='mat-checkbox-inner-container']"
-    _select_all_users = "//div[@class='map-all-tree-users-select']//div[@class='mat-checkbox-inner-container']"
+    # _select_all_users = "//div[@class='map-all-tree-users-select']//div[@class='mat-checkbox-inner-container']"
+    _select_all_users = "//div[@class='map-all-tree-users-select']"
 
     def select_all_users(self):
         # self.waitForElement(self._select_all_users, locatorType="xpath", timeout=10, pollFrequency=0.5)

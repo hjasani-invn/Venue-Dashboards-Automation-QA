@@ -80,7 +80,8 @@ class HeatmapTabPage(SeleniumDriver):
         self.hold_wait()
 
 
-    _select_all_users = "//div[@class='map-all-tree-users-select']//div[@class='mat-checkbox-inner-container']"
+    # _select_all_users = "//div[@class='map-all-tree-users-select']//div[@class='mat-checkbox-inner-container']"
+    _select_all_users = "//div[@class='map-all-tree-users-select']"
 
     def select_all_users(self):
         self.hold_wait()

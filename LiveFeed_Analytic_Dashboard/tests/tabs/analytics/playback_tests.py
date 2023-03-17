@@ -28,7 +28,7 @@ class PlaybackTabTests(unittest.TestCase):
         self.playbacktabtabpage.enter_venue_name(v_n="ICA_2021")
         self.playbacktabtabpage.select_floor()
         # self.playbacktabtabpage.set_duration()
-        self.playbacktabtabpage.choose_date_and_time("09/10/2022", "0121", "01/01/2023", "2330")
+        self.playbacktabtabpage.choose_date_and_time("12/10/2022", "0121", "03/01/2023", "2330") #M/D/Y
         self.playbacktabtabpage.select_timezone("America/Denver")
         self.playbacktabtabpage.select_draw_style()
         self.playbacktabtabpage.click_search()
