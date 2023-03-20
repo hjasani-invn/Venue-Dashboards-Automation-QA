@@ -48,7 +48,7 @@ class WebDriverFactory():
             driver = webdriver.Ie()
         elif self.browser == "firefox":
             # driver = webdriver.Firefox()
-            driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+            driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         elif self.browser == "chrome":
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
             # Set chrome driver

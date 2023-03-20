@@ -27,7 +27,6 @@ class MovementAnalyticsTabTests(unittest.TestCase):
         self.movementanalyticstabpage.select_analytic_movement_analytic_tab()
         time.sleep(2)
         self.movementanalyticstabpage.enter_venue_name(v_n="ICA_2021")
-        # self.movementanalyticstabpage.select_floor(f_n='Fourth Floor')
         self.movementanalyticstabpage.select_floor(f_n='F4')
         self.movementanalyticstabpage.add_time_range()
         self.movementanalyticstabpage.select_year_month(desired_start_year=2022, desired_start_month="December",
@@ -49,8 +48,7 @@ class MovementAnalyticsTabTests(unittest.TestCase):
     def test_3_6_2_movement_analytics_by_date(self):
         self.movementanalyticstabpage.select_analytic_movement_analytic_tab()
         time.sleep(2)
-        self.movementanalyticstabpage.enter_venue_name(v_n="ICA Calgary")
-        # self.movementanalyticstabpage.select_floor(f_n='Fourth Floor')
+        self.movementanalyticstabpage.enter_venue_name(v_n="ICA_2021")
         self.movementanalyticstabpage.select_floor(f_n='F4')
         self.movementanalyticstabpage.select_user_drop_down_for_users()
         self.movementanalyticstabpage.add_time_range()
