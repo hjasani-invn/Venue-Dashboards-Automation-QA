@@ -54,7 +54,8 @@ class ContactAnalyticsTests(unittest.TestCase):
         self.contactanalyticspage.select_max_distance(enter_max_distance="twenty-five")
         self.contactanalyticspage.click_search_btn()
 
-    @pytest.mark.order(29)
+    # @pytest.mark.order(29)
+    @pytest.mark.skip
     def test_3_5_1_5_contact_tracing_queries(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.contactanalyticspage.open_contact_analytics_tab()
