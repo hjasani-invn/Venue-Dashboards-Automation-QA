@@ -16,7 +16,7 @@ def setUp():
 
 @pytest.fixture(scope="class")
 def oneTimeSetUp(request, browser):
-    print("Running one time setUp")
+    print("\nRunning one time setUp")
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
     # if browser == 'chrome':
@@ -38,7 +38,7 @@ def oneTimeSetUp(request, browser):
 
     yield driver
     driver.quit()
-    print("Running one time tearDown")
+    print("\nRunning one time tearDown")
 
 
 def pytest_addoption(parser):

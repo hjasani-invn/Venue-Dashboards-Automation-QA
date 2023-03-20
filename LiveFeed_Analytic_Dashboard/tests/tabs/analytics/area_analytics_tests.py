@@ -17,11 +17,12 @@ class AreaAnalyticsTabTests(unittest.TestCase):
         self.areaanalyticstabpage = AreaAnalyticsTabPage(self.driver)
         self.loginpage = LoginPage(self.driver)
 
-    @pytest.mark.run(1)
-    def test_3_1_1_login_nominal(self):
-        self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
+    # @pytest.mark.run(1)
+    # def test_3_1_1_login_nominal(self):
+    #     self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
 
     def test_3_5_1_populate_area_analytic(self):
+        self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.areaanalyticstabpage.select_analytic_area_analytic_tab()
         self.areaanalyticstabpage.enter_venue_name()
         self.areaanalyticstabpage.select_floor()

@@ -14,7 +14,7 @@ class MovementAnalyticsTabPage(SeleniumDriver):
     _select_analytics_tab = "//span[contains(text(),'Analytics')]"
     _select_movement_analytic_tab = "//a[contains(text(),'Movement Analytics')]"
 
-    def select_analytic_area_analytic_tab(self):
+    def select_analytic_movement_analytic_tab(self):
         self.elementClick(self._select_analytics_tab, locatorType="xpath")
         self.hold_wait()
         self.elementClick(self._select_movement_analytic_tab, locatorType="xpath")

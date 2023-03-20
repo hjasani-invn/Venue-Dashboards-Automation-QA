@@ -157,7 +157,7 @@ class PlaybackTabPage(SeleniumDriver):
 
     _sel_flr = "//label[@class='map-selected-floor']//span[contains(text(), '')]"
     # _set_floor = "//label[@class='map-selected-floor']//span[contains(text(), ' 26')]"
-    _set_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), ' 26')]"
+    _set_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), '28F')]"
     _toggle_show_zone = "//div[@class='mat-slide-toggle-bar']"
     def show_zones(self):
         self.select_analytic_playback_tab()

@@ -14,7 +14,7 @@ class DistanceAnalyticsTabPage(SeleniumDriver):
     _select_analytics_tab = "//span[contains(text(),'Analytics')]"
     _select_distance_analytics_tab = "//a[contains(text(),'Distance Analytics')]"
 
-    def select_analytic_distance_analytics_tab(self):
+    def select_analytics_distance_analytics_tab(self):
         self.elementClick(self._select_analytics_tab, locatorType="xpath")
         self.hold_wait()
         self.elementClick(self._select_distance_analytics_tab, locatorType="xpath")

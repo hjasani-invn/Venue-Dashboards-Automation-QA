@@ -32,6 +32,7 @@ class DownloadsTabTests(unittest.TestCase):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.downloadstabpage.select_analytic_downloads_tab()
         self.downloadstabpage.select_distance()
+        time.sleep(1)
         # self.downloadstabpage.select_venue(venue_name="6 floors venue")
         self.downloadstabpage.select_venue(venue_name="ICA_2021")
         # self.downloadstabpage.add_dates(dates="12/05/2022 - 01/26/2023") #MM/DD/YYYY - MM/DD/YYYY
@@ -51,6 +52,7 @@ class DownloadsTabTests(unittest.TestCase):
     def test_3_8_1_2_data_download_movement(self):
         self.downloadstabpage.select_analytic_downloads_tab()
         self.downloadstabpage.select_movement()
+        time.sleep(1)
         self.downloadstabpage.select_venue(venue_name="ICA_2021")
         # self.downloadstabpage.add_dates(dates="01/09/2022 - 01/01/2023")  # MM/DD/YYYY - MM/DD/YYYY
         self.downloadstabpage.click_dates()
@@ -70,6 +72,7 @@ class DownloadsTabTests(unittest.TestCase):
     def test_3_8_1_3_data_download_playback(self):
         self.downloadstabpage.select_analytic_downloads_tab()
         self.downloadstabpage.select_playback()
+        time.sleep(1)
         self.downloadstabpage.select_venue(venue_name="ICA_2021")
         # self.downloadstabpage.add_dates(dates="12/09/2022 - 01/14/2023")  # MM/DD/YYYY - MM/DD/YYYY
         self.downloadstabpage.click_dates()
@@ -90,6 +93,7 @@ class DownloadsTabTests(unittest.TestCase):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.downloadstabpage.select_analytic_downloads_tab()
         self.downloadstabpage.select_assets_playback()
+        time.sleep(1)
         self.downloadstabpage.select_venue(venue_name="ICA_2021")
         # self.downloadstabpage.add_dates(dates="01/09/2023 - 01/13/2023")  # MM/DD/YYYY - MM/DD/YYYY
         self.downloadstabpage.click_dates()

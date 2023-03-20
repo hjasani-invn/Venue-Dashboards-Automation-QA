@@ -1,1 +1,2 @@
-python -m pytest -s -v .\tests\run_test_suite_1.py --browser chrome --html=.\Livefeed_Dashboard.html
+REM python -m pytest -s -v .\tests\run_test_suite_1.py --browser firefox --html=.\Livefeed_Dashboard.html
+python -m pytest -s -v .\tests\run_test_suite_1.py --browser chrome --html=.\reports\Livefeed_Dashboard.html
