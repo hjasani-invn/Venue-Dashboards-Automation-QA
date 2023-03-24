@@ -24,3 +24,8 @@ class KeyListPage(SeleniumDriver):
         self.hold_wait()
         self.hold_wait()
 
+    _find_keys_name = "//h3[contains(text(),'Keys')]"
+    def verify_keys_opens(self):
+        get_keyss_name = self.getElement(self._find_keys_name, locatorType="xpath")
+        return get_keyss_name.text
+

@@ -18,3 +18,6 @@ class KeyListTests(unittest.TestCase):
     def test_3_4_2_open_key_list(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.keylistpage.open_key_list()
+
+        result_1 = self.keylistpage.verify_keys_opens()
+        assert result_1 == "Keys"

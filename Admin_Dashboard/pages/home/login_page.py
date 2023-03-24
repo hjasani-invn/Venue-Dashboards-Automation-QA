@@ -61,17 +61,20 @@ class LoginPage(SeleniumDriver):
         self.elementClick(self._sign_out_button, locatorType="xpath")
         self.hold_wait()
 
-    def verifyLoginSuccessful(self):
-        pass
+
+    _find_user_button = "//div[@class='avatar-container']" #xpath
+    def verify_login_succesful(self):
+        result = self.isElementPresent(self._find_user_button, locatorType="xpath")
+        return result
+
 
     _snackbar_xpath = "//span[contains(text(),'Authorization error. Incorrect credentials.')]"
-    def verifyLoginFailed(self):
-        snackbar_element = self.waitForElement(self._snackbar_xpath, locatorType="xpath")
+    def verify_login_failed(self):
+        snackbar_element = self.getElement(self._snackbar_xpath, locatorType="xpath")
         snackbar_text = snackbar_element.text
-        # self.assertEqual(snackbar_text, "Authorization error. Incorrect credentials.")
-        assert snackbar_text, "Authorization error. Incorrect credentials."
+
         print(snackbar_text)
-        # print("Authorization error. Incorrect credentials.")
+        return snackbar_text
 
     def clearFields(self):
         email_field = self.getElement(locator=self._email_filed)

@@ -523,3 +523,27 @@ class UserPage(SeleniumDriver):
     #     self.hold_wait()
     #     self.hold_wait()
     #     ele = self.elementClick(self._upload_csv_btn, locatorType="xpath")
+
+
+    _user_created_snackbar_xpath = "//span[contains(text(),'Users successfully created')]"
+    def verify_user_created(self):
+        user_snackbar_element = self.getElement(self._user_created_snackbar_xpath, locatorType="xpath")
+        user_snackbar_text = user_snackbar_element.text
+
+        print(user_snackbar_text)
+        return user_snackbar_text
+
+
+    # _user_not_created_snackbar_xpath = "//span[contains(text(),'Users successfully created')]"
+    # def verify_user_not_created(self):
+    #     user_snackbar_element = self.getElement(self._user_not_created_snackbar_xpath, locatorType="xpath")
+    #     user_snackbar_text = user_snackbar_element.text
+    #
+    #     print(user_snackbar_text)
+    #     return user_snackbar_text
+
+    _user_field_2 = "//input[@placeholder='Email']"
+    def verify_some_filds_empty(self):
+        ele = self.getElement(self._user_field_2, locatorType="xpath")
+        style_attibute = ele.get_attribute('style')
+        print(style_attibute)

@@ -19,21 +19,34 @@ class GroupsTests(unittest.TestCase):
     def test_3_3_4_delete_group_if_available(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.grouppage.delete_group("abc")
+        try:
+            result_1 = self.grouppage.verify_grp_deleted()
+            assert result_1 == "Group deleted"
+        except:
+            print("Group with name 'abc' is not available ")
 
     @pytest.mark.order(17)
     def test_3_3_1_adding_groups(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.grouppage.all_grp("abc", "automation test group - this group will be deleted upon complete suite execution", "InvenSense-PowerUserGroup","Admin-InvenSense-PowerUserGroup")
+        result_1 = self.grouppage.verify_grp_created()
+        assert result_1 == "Group created"
+
 
     @pytest.mark.order(18)
     def test_3_3_3_edit_group(self):
         self.grouppage.edit_group("abc")
+        result_1 = self.grouppage.verify_grp_updated()
+        assert result_1 == "Group updated"
 
     @pytest.mark.order(19)
     def test_3_3_4_delete_group(self):
         self.grouppage.delete_group("abc")
+        result_1 = self.grouppage.verify_grp_deleted()
+        assert result_1 == "Group deleted"
 
     @pytest.mark.order(20)
     def test_3_3_5_download_all_groups_csv(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.grouppage.download_grp_csv()
+        result_1 = self.grouppage.verify_grp_csv_download()

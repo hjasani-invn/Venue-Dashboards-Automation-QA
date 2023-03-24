@@ -1,4 +1,5 @@
 import time
+from pathlib import Path
 
 import selenium.common.exceptions
 
@@ -70,7 +71,12 @@ class GroupsPage(SeleniumDriver):
         self.elementClick(self._save_grp, locatorType="xpath")
         self.hold_wait()
 
-
+    _grp_create_snackbar_xpath = "//span[contains(text(),'Group created')]"
+    def verify_grp_created(self):
+        snackbar_element = self.getElement(self._grp_create_snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
 
     def click_left_panel_groups(self):
         self.elementClick(self._left_panel_click_groups, locatorType="xpath")
@@ -126,6 +132,24 @@ class GroupsPage(SeleniumDriver):
         self.elementClick(self._download_grp_csv_file, locatorType="xpath")
         self.hold_wait()
 
+    def verify_grp_csv_download(self):
+        # specify the directory path where the files are located
+        filepath = os.path.join(str(Path.home() / "Downloads"))
+        print(f"filepath-{filepath}")
+
+        # specify the starting words of the file name you want to select
+        starts_with = "groups_"
+        ends_with = ".csv"
+
+        # list all files in the directory
+        files = os.listdir(filepath)
+
+        # iterate over the files and select the ones that start with the specified words
+        selected_files = [file for file in files if (file.startswith(starts_with) and file.endswith(ends_with))]
+
+        # print the selected files
+        print(selected_files)
+
     def clear_field(self):
         search_box = self.getElement(locator=self._find_grp, locatorType="xpath")
         search_box.clear()
@@ -145,6 +169,14 @@ class GroupsPage(SeleniumDriver):
         self.elementClick(self._click_delete_pop_up, locatorType="xpath")
         self.hold_wait()
 
+
+    _grp_delete_snackbar_xpath = "//span[contains(text(),'Group deleted')]"
+    def verify_grp_deleted(self):
+        snackbar_element = self.getElement(self._grp_delete_snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
+
     _click_edit_grp = '//button[@class="btn btn-primary btn-sm btn-icon"]'
 
     def edit_group(self, grp_name):
@@ -156,9 +188,17 @@ class GroupsPage(SeleniumDriver):
         self.hold_wait()
         self.hold_wait()
         self.elementClick(self._save_grp, locatorType="xpath")
-        self.hold_wait()
-        self.hold_wait()
-        self.hold_wait()
+        # self.hold_wait()
+        # self.hold_wait()
+        # self.hold_wait()
+        time.sleep(1)
+
+    _grp_update_snackbar_xpath = "//span[contains(text(),'Group updated')]"
+    def verify_grp_updated(self):
+        snackbar_element = self.getElement(self._grp_update_snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
 
     # _checkbox_venue_list = "(//div[@class='mat-checkbox-inner-container'])[6]"
     # _checkbox_coursa_survey_app = "(//div[@class='mat-checkbox-inner-container'])[13]"

@@ -18,3 +18,6 @@ class VenueListTests(unittest.TestCase):
     def test_3_4_1_open_venue_list(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.venuelistpage.open_venue_list()
+
+        result_1 = self.venuelistpage.verify_list_opens()
+        assert result_1 == "Venues"

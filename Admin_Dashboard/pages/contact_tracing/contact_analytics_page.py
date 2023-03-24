@@ -108,6 +108,36 @@ class ContactAnalyticsPage(SeleniumDriver):
         self.click_out()
         self.hold_wait()
 
+    _reverse_time_range_snackbar_xpath = "//span[contains(text(),'Time Range is Incorrect!')]"
+    def verify_reverse_time_range_message(self):
+        snackbar_element = self.getElement(self._reverse_time_range_snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
+
+
+    _time_range_no_morethan_2_months_snackbar_xpath = "//span[contains(text(),'Timerange can not be more than 2 months')]"
+    def verify_time_range_no_morethan_2_months_message(self):
+        snackbar_element = self.getElement(self._time_range_no_morethan_2_months_snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
+
+    _verify_distance_error_message = "//mat-error[@role='alert']"
+    def verify_max_distance_message(self):
+        snackbar_element = self.getElement(self._verify_distance_error_message, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
+
+
+    _verify_distance_error_message_if_words = "//mat-error[@role='alert']"
+    def verify_max_distance_message_if_words(self):
+        snackbar_element = self.getElement(self._verify_distance_error_message_if_words, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text
+
 
     # _query_id_xpath = "//tbody/tr//td[1]"
     #
@@ -162,14 +192,23 @@ class ContactAnalyticsPage(SeleniumDriver):
 
 
     _pop_msg = "//span[contains(text(),'No Contact Data found for the given Search conditi')]"
+    _query_generated_xpath = "//span[contains(text(),'Query')]"
     _query_field = "//tbody/tr[1]//td[2]"
     def is_popup(self,query_name):
         try: # query not generated
             visible = self.getElement(self._pop_msg, locatorType="xpath")
             self.driver.execute_script('arguments[0].dispatchEvent(new Event("click"))', visible)
             print(visible.text)
+            return visible.text
         except: # Query Generated
-            print("Query Generated")
+            # snackbar_msg = self.getElement(self._query_generated_xpath, locatorType="xpath")
+            # snackbar_msg_txt = snackbar_msg.text
+            # starts_with = snackbar_msg_txt[:5]
+            # ends_with = snackbar_msg_txt[-9:]
+            # print(starts_with)
+            # print(ends_with)
+            #
+            # print(snackbar_msg_txt)
             self.hold_wait()
             self.hold_wait()
             # self.update_query_name(query="overwrite")
@@ -178,3 +217,45 @@ class ContactAnalyticsPage(SeleniumDriver):
             self.hold_wait()
             self.click_out()
             self.hold_wait()
+            # return starts_with
+
+    def snack_bar_message(self):
+        snackbar_msg = self.getElement(self._query_generated_xpath, locatorType="xpath")
+        print(snackbar_msg)
+        snackbar_msg_txt = snackbar_msg.text
+        print(snackbar_msg_txt)
+        if "Query" in snackbar_msg_txt:  #if query generated
+            starts_with = snackbar_msg_txt[:5]
+            ends_with = snackbar_msg_txt[-9:]
+            print(starts_with)
+            print(ends_with)
+            return starts_with
+        elif "No Contact Data found" in snackbar_msg_txt:  # if not generated
+            starts_with = snackbar_msg_txt[:21]
+            # ends_with = snackbar_msg_txt[-9:]
+            print(starts_with)
+            # print(ends_with)
+            return starts_with
+
+
+    def is_pop_up_2(self):
+        # snackbar_msg = self.getElement(self._query_generated_xpath, locatorType="xpath")
+        snackbar_msg = self.getElement(self._pop_msg, locatorType="xpath")
+        snackbar_msg_txt = snackbar_msg.text
+        # starts_with = snackbar_msg_txt[:5]
+        starts_with = snackbar_msg_txt[:21]
+
+        ends_with = snackbar_msg_txt[-9:]
+        print(starts_with)
+        print(ends_with)
+
+        print(snackbar_msg_txt)
+        # self.hold_wait()
+        # self.hold_wait()
+        # # self.update_query_name(query="overwrite")
+        # self.backspace_clear(self._update_query, locatorType="xpath")
+        # self.sendKeys(query_name, self._update_query, locatorType="xpath")
+        # self.hold_wait()
+        # self.click_out()
+        # self.hold_wait()
+        return starts_with

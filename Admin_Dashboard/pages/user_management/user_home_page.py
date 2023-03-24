@@ -1,4 +1,5 @@
 import time
+from pathlib import Path
 
 import selenium.common.exceptions
 
@@ -38,18 +39,22 @@ class UserHomePage(SeleniumDriver):
         self.waitForElement(locator=self._download_bulk_csv, locatorType="xpath")
 
     def verify_download(self):
-        # check if file downloaded file path exists
-        while not os.path.exists('C:\\Users\\hjasani\\Downloads'):
-            print("path is not valid")
-            time.sleep(2)
-        # check file
-        #file_name = "users_2022-10-14T16_51_42.266Z.csv"
-        file_name = "users_2022-10-14T16_51_42.266Z.csv"
-        if os.path.isfile(f'C:\\Users\\hjasani\\users_2022-10-14T16_51_42.266Z.csv'):
-            print("File download is completed")
-        else:
-            print("File download is not completed")
-        self.hold_wait()
+        # specify the directory path where the files are located
+        filepath = os.path.join(str(Path.home() / "Downloads"))
+        print(f"filepath-{filepath}")
+
+        # specify the starting words of the file name you want to select
+        starts_with = "users_"
+
+        # list all files in the directory
+        files = os.listdir(filepath)
+
+        # iterate over the files and select the ones that start with the specified words
+        selected_files = [file for file in files if file.startswith(starts_with)]
+
+        # print the selected files
+        print(selected_files)
+
 
     def filter_grp(self, grp_name):
         self.sendKeys(grp_name, self._groups_field, locatorType="xpath")
@@ -79,6 +84,13 @@ class UserHomePage(SeleniumDriver):
         self.first_name_new_data(first_name_new)
         self.save()
         self.hold_wait()
+
+    _first_name_first_occurance = "//table//tr[1]//td[2]"
+    def verify_rename(self):
+        time.sleep(1)
+        get_value = self.getElement(self._first_name_first_occurance, locatorType="xpath")
+        rename_value = get_value.text
+        return rename_value
 
     def click_bin_icon(self):
         self.elementClick(self._click_delete_icon, locatorType="xpath")
@@ -156,6 +168,24 @@ class UserHomePage(SeleniumDriver):
                 self.hold_wait()
                 self.click_bin_icon()
                 self.choose_delete_btn()
-                self.hold_wait()
+                # self.hold_wait()
+                # time.sleep(0.40)
+                # return self.verify_deletes()
+
+                # time.sleep(2)
         else:
             print("No existing users are available")
+
+
+    _snackbar_xpath = "//span[contains(text(),'deleted!')]"
+    def verify_deletes(self):
+        snackbar_element = self.getElement(self._snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        # print(f" this user is deleted: {snackbar_text}")
+        # cut string
+        # start = snackbar_text[:4]  # select the first 04 Char
+        end = snackbar_text[-8:]
+        # print(f"end is :{end}")
+
+        # return snackbar_text.find("deleted!")
+        return end

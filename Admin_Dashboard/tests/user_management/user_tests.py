@@ -37,21 +37,30 @@ class UserTests(unittest.TestCase):
     def test_3_2_1_1_add_user_english(self):
         self.userpage.add_user_information("new_englishTest", "new_Test", "new_Test", "new_tdka",
                                            "new_english01@tdk.com")
+        result_1 = self.userpage.verify_user_created()
+        assert result_1 == "Users successfully created"
+
 
     @pytest.mark.order(7)
     def test_3_2_1_2_add_user_japanese(self):
         self.userpage.add_user_information("new_JapaneseUser001", "new_日本語", "new_名前", "new_password123",
                                            "new_日本語.名前@tdk.com")
+        result_1 = self.userpage.verify_user_created()
+        assert result_1 == "Users successfully created"
 
     @pytest.mark.order(8)
     def test_3_2_1_3_add_user_korean(self):
         self.userpage.add_user_information("new_KoreanUser011", "new_한국", "new_이름", "new_password123",
                                            "new_한국.이름@tdk.com")
+        result_1 = self.userpage.verify_user_created()
+        assert result_1 == "Users successfully created"
 
     @pytest.mark.order(9)
     def test_3_2_1_4_add_user_chinese(self):
         self.userpage.add_user_information("new_ChineseUser001", "new_中文", "new_名", "new_password123",
                                            "new_中文.名@tdk.com")
+        result_1 = self.userpage.verify_user_created()
+        assert result_1 == "Users successfully created"
 
     @pytest.mark.order(10)
     def test_3_2_2_manually_add_user_error_checks(self):
@@ -60,6 +69,8 @@ class UserTests(unittest.TestCase):
         "missing user-id"
         self.userpage.add_user_information("", "new_Test", "new_Test", "new_tdka",
                                            "new_english01@tdk.com")
+        self.userpage.verify_some_filds_empty()
+
 
         "missing first-name"
         self.userpage.add_user_information("new_englishTest", "", "new_Test", "new_tdka",
@@ -118,6 +129,8 @@ class UserTests(unittest.TestCase):
                                          "bulk_中文.名1@tdk.com")
         self.userpage.add_bulk_user_chinese_2("bulk_ChineseUser0012", "bulk_中文_2", "bulk_名_2", "bulk_password123",
                                          "bulk_中文.名2@tdk.com")
+        result_1 = self.userpage.verify_user_created()
+        assert result_1 == "Users successfully created"
 
     @pytest.mark.order(12)
     def test_3_2_5_bulk_user_csv_upload(self):
@@ -126,6 +139,8 @@ class UserTests(unittest.TestCase):
         # self.userpage.upload_csv()
         # self.userpage.sendcsv(os.getcwd()+"/users_template_final.csv")
         self.userpage.send_data()
+        result_1 = self.userpage.verify_user_created()
+        assert result_1 == "Users successfully created"
         # self.userpage.send_data_1(CONFIG_PATH="pages/user_management/users_template.csv")
         # self.userpage.over_py()
 
