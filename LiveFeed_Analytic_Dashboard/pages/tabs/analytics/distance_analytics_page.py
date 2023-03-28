@@ -81,11 +81,23 @@ class DistanceAnalyticsTabPage(SeleniumDriver):
         self.click_out()
 
     _search_ = "//span[contains(text(),'Search')]"
+    # _search_btn_status_ = "//div[@class='map-input map-submit-wrapper']//button"
+    _search_btn_status_ = "//span[normalize-space()='Search']"
+
 
     def click_search(self):
-        self.elementClick(self._search_, locatorType="xpath")
-        self.hold_wait()
-        self.hold_wait()
+        # self.elementClick(self._search_, locatorType="xpath")
+        # self.hold_wait()
+        # self.hold_wait()
+
+        get_search_btn_attribute = self.getElement(self._search_btn_status_, locatorType="xpath")
+        get_search_btn_stats = get_search_btn_attribute.get_attribute("disabled")
+        print(get_search_btn_stats)
+
+        if get_search_btn_stats != 'true':
+            self.elementClick(self._search_, locatorType="xpath")
+            self.hold_wait()
+        return get_search_btn_stats
 
 
 

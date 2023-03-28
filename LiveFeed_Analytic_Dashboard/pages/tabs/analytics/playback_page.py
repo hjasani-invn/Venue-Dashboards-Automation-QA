@@ -22,7 +22,7 @@ class PlaybackTabPage(SeleniumDriver):
 
     # _select_floor = "//label[@class='map-selected-floor']//span[contains(text(), ' 4')]"
     # _select_floor = "//label[@class='map-selected-floor']//input[@type='radio']"
-    _select_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), ' 4')]"
+    _select_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), '4')]"
 
 
     def select_floor(self):
@@ -69,6 +69,7 @@ class PlaybackTabPage(SeleniumDriver):
     _end_date = "//input[@data-placeholder='End Date']"
     _end_time = "//input[@data-placeholder='End time']"
 
+    _start_date_error = "//mat-error[contains(text(),'Start date should be greater than ')]"
     def choose_date_and_time(self, s_date, s_time, e_date, e_time):
         # self.select_floor()
 
@@ -83,6 +84,14 @@ class PlaybackTabPage(SeleniumDriver):
         self.hold_wait()
         self.backspace_clear(self._end_time, locatorType="xpath")
         self.sendKeys(e_time, self._end_time, locatorType="xpath")
+
+        # start_date_error_msg_appear = self.isElementPresent(self._start_date_error, locatorType="xpath")
+        # txt = start_date_error_msg_appear.text
+        # print(txt)
+        # if start_date_error_msg_appear == True:
+        #     starting_with = txt[:34]
+        #     print(starting_with)
+        #     return starting_with
 
     _time_zone = "//input[@data-placeholder='Timezone']"
 
@@ -112,10 +121,25 @@ class PlaybackTabPage(SeleniumDriver):
 
 
     _search_ = "//span[contains(text(),'Search')]"
+    _search_btn_status_ = "//div[@class='map-input map-submit-wrapper']//button"
 
     def click_search(self):
-        self.elementClick(self._search_, locatorType="xpath")
-        self.hold_wait()
+        # self.elementClick(self._search_, locatorType="xpath")
+        # self.hold_wait()
+
+        get_search_btn_attribute = self.getElement(self._search_btn_status_, locatorType="xpath")
+        get_search_btn_stats = get_search_btn_attribute.get_attribute("disabled")
+        print(get_search_btn_stats)
+
+        if get_search_btn_stats != 'true':
+            self.elementClick(self._search_, locatorType="xpath")
+            self.hold_wait()
+        return get_search_btn_stats
+
+    # def click_search(self):
+    #     self.elementClick(self._search_, locatorType="xpath")
+    #     self.hold_wait()
+
 
 
     # _select_all_users = "//label[@for='mat-checkbox-5-input']//div[@class='mat-checkbox-inner-container']"
@@ -166,4 +190,8 @@ class PlaybackTabPage(SeleniumDriver):
         # self.elementClick(self._sel_flr, locatorType="xpath")
         self.elementClick(self._set_floor, locatorType="xpath")
         self.hold_wait()
+        get_floor_number_element = self.getElement(self._set_floor, locatorType="xpath")
+        get_floor_number_txt = get_floor_number_element.text
+        print(get_floor_number_txt)
         self.screen_shot(file="test_3_3_2_show_zones")
+        return get_floor_number_txt

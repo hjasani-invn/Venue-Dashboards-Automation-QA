@@ -28,6 +28,7 @@ class HeatmapTabTests(unittest.TestCase):
         self.heatmaptabpage.select_floor()
         self.heatmaptabpage.choose_date_and_time(s_date="11/03/2022", s_time="0000", e_date="11/06/2022", e_time="2359") # MM/DD/YYY, HHMM-':' not required in between HR:MM
         self.heatmaptabpage.select_timezone("America/Denver")
-        self.heatmaptabpage.click_search()
+        r_1 = self.heatmaptabpage.click_search()
+        assert r_1 != "true"
         self.heatmaptabpage.select_all_users()
 

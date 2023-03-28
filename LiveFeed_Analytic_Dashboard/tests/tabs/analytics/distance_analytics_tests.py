@@ -29,9 +29,12 @@ class DistanceAnalyticsTabTests(unittest.TestCase):
         self.distanceanalyticstabpage.enter_venue_name(v_n="ICA_2021")
         # self.distanceanalyticstabpage.select_floor(f_n="Fourth Floor")
         self.distanceanalyticstabpage.select_floor(f_n="F4")
-        self.distanceanalyticstabpage.choose_date_and_time(s_date="11/24/2022", s_time="0000", e_date="01/27/2023",
+        # self.distanceanalyticstabpage.choose_date_and_time(s_date="11/24/2022", s_time="0000", e_date="01/27/2023",
+        #                                                    e_time="2359")  # ':' not required in between HR:MM
+        self.distanceanalyticstabpage.choose_date_and_time(s_date="11/24/2021", s_time="0000", e_date="01/27/2022",
                                                            e_time="2359")  # ':' not required in between HR:MM
         self.distanceanalyticstabpage.select_timezone("America/Denver")
-        self.distanceanalyticstabpage.click_search()
+        r_1 = self.distanceanalyticstabpage.click_search()
+        assert r_1 != "true"
         time.sleep(2)
         self.distanceanalyticstabpage.take_screenshot_for_all()

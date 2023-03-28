@@ -30,4 +30,6 @@ class AreaAnalyticsTabTests(unittest.TestCase):
         self.areaanalyticstabpage.select_timezone("America/Denver")
         self.areaanalyticstabpage.click_search()
         self.areaanalyticstabpage.select_all_users()
+        r_1 = self.areaanalyticstabpage.verify_data_shown()
+        assert r_1 == "Reset Zoom"
 

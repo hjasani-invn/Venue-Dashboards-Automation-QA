@@ -62,8 +62,12 @@ class LoginPage(SeleniumDriver):
 
     def verify_signin(self):
         username_logo_present = self.isElementPresent(self._click_sign_out_btn, locatorType="xpath")
-        if username_logo_present:
-            print("sign in successful")
-        else:
-            print("user is not sign in")
         return username_logo_present
+
+    # _snackbar_xpath = "//span[contains(text(),'Authentication Failed')]"
+    _snackbar_xpath = "//mat-error[contains(text(),'Wrong username or password. Please try again.')]"
+    def verify_login_failed(self):
+        snackbar_element = self.getElement(self._snackbar_xpath, locatorType="xpath")
+        snackbar_text = snackbar_element.text
+        print(snackbar_text)
+        return snackbar_text

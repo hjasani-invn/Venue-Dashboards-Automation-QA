@@ -71,7 +71,7 @@ class DownloadsTabPage(SeleniumDriver):
 
     def click_out(self):
         self.elementClick(self._click_out, locatorType="xpath")
-        self.hold_wait()
+        # self.hold_wait()
 
     _date_text_box = "//span[contains(@class,'ui-calendar ui-calendar-w-btn')]//input[@type='text']"
 
@@ -348,3 +348,13 @@ class DownloadsTabPage(SeleniumDriver):
             print("The file has been deleted.")
         else:
             print("The file does not exist.")
+
+
+    # _snackbar_xpath = "//span[contains(text(),'No data')]"
+    _is_download_checkbox_visible = "(//label[@class='mat-checkbox-layout'])[1]"
+
+    def verify_data_shown(self):
+        download_checkbox_element = self.isElementPresent(self._is_download_checkbox_visible, locatorType="xpath")
+        print(download_checkbox_element)
+        # if download_checkbox_element == True:
+        return download_checkbox_element

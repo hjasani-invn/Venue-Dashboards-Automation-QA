@@ -48,6 +48,8 @@ class HeatmapTabPage(SeleniumDriver):
 
     _end_date = "//input[@data-placeholder='End Date']"
     _end_time = "//input[@data-placeholder='End time']"
+    _start_date_error = "//mat-error[contains(text(),'Start date should be greater than ')]"
+
 
     def choose_date_and_time(self, s_date, s_time, e_date, e_time):
         self.backspace_clear(self._start_date, locatorType="xpath")
@@ -62,6 +64,21 @@ class HeatmapTabPage(SeleniumDriver):
         self.backspace_clear(self._end_time, locatorType="xpath")
         self.sendKeys(e_time, self._end_time, locatorType="xpath")
 
+        # # start_date_error_msg_appear = self.getElement(self._start_date_error, locatorType="xpath")
+        # # txt = start_date_error_msg_appear.text
+        # # print(txt)
+        # # if txt != "":
+        # #     # get_txt = start_date_error_msg_appear.text()
+        # #     starting_with = txt[:34]
+        # #     print(starting_with)
+        # #     return starting_with
+        #
+        #
+        # start_date_error_msg_appear = self.isElementPresent(self._start_date_error, locatorType="xpath")
+        # if start_date_error_msg_appear == True:
+        #     print("if loop")
+        #     return None
+
 
     _time_zone = "//input[@data-placeholder='Timezone']"
 
@@ -74,10 +91,21 @@ class HeatmapTabPage(SeleniumDriver):
         self.click_out()
 
     _search_ = "//span[contains(text(),'Search')]"
+    _search_btn_status_ = "//div[@class='map-input map-submit-wrapper']//button"
+
 
     def click_search(self):
-        self.elementClick(self._search_, locatorType="xpath")
-        self.hold_wait()
+        # self.elementClick(self._search_, locatorType="xpath")
+        # self.hold_wait()
+
+        get_search_btn_attribute = self.getElement(self._search_btn_status_, locatorType="xpath")
+        get_search_btn_stats = get_search_btn_attribute.get_attribute("disabled")
+        print(get_search_btn_stats)
+
+        if get_search_btn_stats != 'true':
+            self.elementClick(self._search_, locatorType="xpath")
+            self.hold_wait()
+        return get_search_btn_stats
 
 
     # _select_all_users = "//div[@class='map-all-tree-users-select']//div[@class='mat-checkbox-inner-container']"
@@ -85,7 +113,13 @@ class HeatmapTabPage(SeleniumDriver):
 
     def select_all_users(self):
         self.hold_wait()
+        # check_box_visible = self.getElement(self._select_all_users, locatorType="xpath")
+        # check_box_visible_get_value = check_box_visible.get_attribute("aria-checked")
+        # if check_box_visible_get_value == "true":
         self.elementClick(self._select_all_users, locatorType="xpath")
         self.hold_wait()
         self.hold_wait()
+        # else:
+        #     print("users not selected")
+
         self.screen_shot(file="test_3_4_1_populate_heatmap")

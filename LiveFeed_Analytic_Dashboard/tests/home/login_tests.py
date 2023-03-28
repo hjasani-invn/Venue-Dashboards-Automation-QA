@@ -24,30 +24,26 @@ class LoginTests(unittest.TestCase):
     @pytest.mark.run(1)
     def test_3_1_1_login_nominal(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
-        # result = self.loginpage.verifyTitle()
-        # assert result == True
-        self.loginpage.verify_signin()
+        result_1 = self.loginpage.verify_signin()
+        assert result_1 == True
         self.seleniumdriver.screen_shot(file="test_3_1_1_login_nominal")
         self.loginpage.click_sign_out()
 
-    # @pytest.mark.order(order=2)
-    # def test_3_1_1_1sign_out(self):
-    #     self.loginpage.sign_out()
 
     @pytest.mark.run(2)
     def test_3_1_2_login_bad_password(self):
         self.loginpage.login("AutomationTestUser001", "justWrongPassword")
+        result_1 = self.loginpage.verify_login_failed()
+        assert result_1 == "Wrong username or password. Please try again."
         self.seleniumdriver.screen_shot(file="test_3_1_2_login_bad_password")
-        # result = self.loginpage.verify_login()
-        # assert result == True
-        self.loginpage.verify_signin()
 
 
     @pytest.mark.run(3)
     def test_3_1_3_login_bad_user(self):
         self.loginpage.login("BadUser@gmail.com", "BadPassword")
+        result_1 = self.loginpage.verify_login_failed()
+        assert result_1 == "Wrong username or password. Please try again."
         self.seleniumdriver.screen_shot(file="test_3_1_3_login_bad_user")
-        self.loginpage.verify_signin()
 
 
 # ff = LoginTests()

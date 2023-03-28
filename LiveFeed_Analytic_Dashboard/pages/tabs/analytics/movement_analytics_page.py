@@ -1,3 +1,5 @@
+import time
+
 from base.selenium_driver import SeleniumDriver
 
 import utilities.custom_logger as cl
@@ -283,6 +285,33 @@ class MovementAnalyticsTabPage(SeleniumDriver):
         self.hold_wait()
         self.hold_wait()
         self.hold_wait()
+
+    _table_data_verification = "//table//tr//th[contains(text(), 'Users summary by area:')]"
+    def verify_table_avialabe(self):
+        get_table_element = self.getElement(self._table_data_verification, locatorType="xpath")
+        get_table_element_txt = get_table_element.text
+        table_str = 'Users summary by area:'
+        if table_str in get_table_element_txt:
+            return table_str
+
+    # _move_icon_xpath = "//img[@alt='Move icon']"
+    # def move_icon(self):
+    #     move_to_move_icon_element = self.move_to_element(self._move_icon_xpath, locatorType="xpath")
+    #     move_icon_element = self.getElement(self._move_icon_xpath, locatorType="xpath")
+    #     move_icon_element_txt = move_icon_element.text
+    #     print(move_icon_element_txt)
+    #     if move_to_move_icon_element == True:
+    #         time.sleep(5)
+    #         print("element if")
+    #         assert move_to_move_icon_element == False
+
+    _canavas_xpath = "//canvas[@class='canvas-plot']"
+    def check_canvas(self):
+        canavas_element = self.isElementPresent(self._canavas_xpath, locatorType="xpath")
+        if canavas_element == True:
+            print("Canavas available")
+            # return canavas_element
+        return canavas_element
 
     def screen_shot_for_test_3_6_1_populate_movement_analytic_time_filter(self):
         self.screen_shot(file="test_3_6_1_populate_movement_analytic_time_filter")

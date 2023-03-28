@@ -35,6 +35,12 @@ class MovementAnalyticsTabTests(unittest.TestCase):
                                                         desired_end_date='1',
                                                         # desired_end_year=2023, desired_end_month="December", desired_end_date='1',
                                                         start_time="1212", end_time="2129")
+        # self.movementanalyticstabpage.select_year_month(desired_start_year=2019, desired_start_month="December",
+        #                                                 desired_start_date='14',
+        #                                                 desired_end_year=2020, desired_end_month="February",
+        #                                                 desired_end_date='1',
+        #                                                 # desired_end_year=2023, desired_end_month="December", desired_end_date='1',
+        #                                                 start_time="1212", end_time="2129")
         # self.movementanalyticstabpage.select_year_month(desired_start_year=2022, desired_start_month="November",
         #                                                 desired_start_date='10',
         #                                                 desired_end_year=2022, desired_end_month="December",
@@ -42,6 +48,8 @@ class MovementAnalyticsTabTests(unittest.TestCase):
         #                                                 # desired_end_year=2023, desired_end_month="December", desired_end_date='1',
         #                                                 start_time="1212", end_time="2129")
         time.sleep(5)
+        r_1 = self.movementanalyticstabpage.check_canvas()
+        assert r_1 == True
         self.movementanalyticstabpage.screen_shot_for_test_3_6_1_populate_movement_analytic_time_filter()
 
     @pytest.mark.run(3)
@@ -58,4 +66,6 @@ class MovementAnalyticsTabTests(unittest.TestCase):
                                                         desired_end_date='1',
                                                         start_time="1212", end_time="2129")
         time.sleep(5)
+        r_1 = self.movementanalyticstabpage.check_canvas()
+        assert r_1 == True
         self.movementanalyticstabpage.screen_shot_for_test_3_6_2_movement_analytics_by_date()

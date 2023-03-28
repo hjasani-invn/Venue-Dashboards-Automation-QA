@@ -37,11 +37,13 @@ class DownloadsTabTests(unittest.TestCase):
         self.downloadstabpage.select_venue(venue_name="ICA_2021")
         # self.downloadstabpage.add_dates(dates="12/05/2022 - 01/26/2023") #MM/DD/YYYY - MM/DD/YYYY
         self.downloadstabpage.click_dates()
-        self.downloadstabpage.select_start_year_month_date(desired_start_year=2022, desired_start_month="November",
-                                                           desired_start_date='10')
+        self.downloadstabpage.select_start_year_month_date(desired_start_year=2022, desired_start_month="December",
+                                                           desired_start_date='14')
         self.downloadstabpage.select_end_year_month_date(desired_end_year=2023, desired_end_month="January",
-                                                         desired_end_date='4')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
+                                                         desired_end_date='1')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
         self.downloadstabpage.click_out()
+        r_1 = self.downloadstabpage.verify_data_shown()
+        assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
         self.downloadstabpage.verify_file()
@@ -61,6 +63,8 @@ class DownloadsTabTests(unittest.TestCase):
         self.downloadstabpage.select_end_year_month_date(desired_end_year=2022, desired_end_month="December",
                                                          desired_end_date='20')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
         self.downloadstabpage.click_out()
+        r_1 = self.downloadstabpage.verify_data_shown()
+        assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
         self.downloadstabpage.verify_file()
@@ -81,6 +85,8 @@ class DownloadsTabTests(unittest.TestCase):
         self.downloadstabpage.select_end_year_month_date(desired_end_year=2022, desired_end_month="December",
                                                          desired_end_date='20')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
         self.downloadstabpage.click_out()
+        r_1 = self.downloadstabpage.verify_data_shown()
+        assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
         self.downloadstabpage.verify_file()
@@ -102,9 +108,10 @@ class DownloadsTabTests(unittest.TestCase):
         self.downloadstabpage.select_end_year_month_date(desired_end_year=2023, desired_end_month="January",
                                                          desired_end_date='20')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
         self.downloadstabpage.click_out()
+        r_1 = self.downloadstabpage.verify_data_shown()
+        assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
         self.downloadstabpage.verify_file()
         self.downloadstabpage.delete_downloaded_file()
         self.seleniumdriver.screen_shot(file="test_3_8_1_4_data_download_assets_playback")
-

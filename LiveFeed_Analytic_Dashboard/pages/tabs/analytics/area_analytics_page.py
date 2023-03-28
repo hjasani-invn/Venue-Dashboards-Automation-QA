@@ -95,3 +95,11 @@ class AreaAnalyticsTabPage(SeleniumDriver):
         else:
             print(self.log.info("______________________________________"))
         self.screen_shot(file="test_3_5_1_populate_area_analytic")
+
+    _reset_zoom_btn = "//*[name()='text' and contains(@class,'reset-zoom')]"
+    def verify_data_shown(self):
+        btn_element = self.getElement(self._reset_zoom_btn, locatorType="xpath")
+        btn_text = btn_element.text
+        print(btn_text)
+        return btn_text
+
