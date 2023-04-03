@@ -57,7 +57,38 @@ class FPBLSurveyPage(SeleniumDriver):
     def click_reprocess(self):
         self.elementClick(self._click_reprocess_btn, locatorType="xpath")
         time.sleep(900)
-        self.refresh_page()
+        # time.sleep(30)
+        # self.refresh_page()
+        # time.sleep(60)
+
+    # _verify_fingerprint_message = "//span[contains(text(),'Fingerprint generated on:')]"
+    # def verify_fingerprint_timestamp(self):
+    #     "before refresh page, get the fingerprint timestamp"
+    #     before_stamp_element = self.getElement(self._verify_fingerprint_message, locatorType="xpath")
+    #     before_stamp_text = before_stamp_element.text
+    #     print(before_stamp_text)
+    #
+    #     "refresh page to get new time stamp"
+    #     self.refresh_page()
+    #
+    #     "all values will be gone due to refresh, search for values again"
+    #     self.enter_venue()
+    #     self.select_floor()
+    #     time.sleep(5)
+    #
+    #     "after refresh page, get the fingerprint timestamp"
+    #     after_stamp_element = self.getElement(self._verify_fingerprint_message, locatorType="xpath")
+    #     after_stamp_text = after_stamp_element.text
+    #     print(after_stamp_text)
+    #     time.sleep(10)
+    #
+    #     "compare both stamps"
+    #     if before_stamp_text != after_stamp_text:
+    #         print(f"Finger Print Verified by Generated Time Stamp: before_reprocess:-{before_stamp_text}, after_reprocess:-{after_stamp_text} ")
+    #     #     return True
+    #     # else:
+    #     #     return False
+
 
     _verify_fingerprint_message = "//span[contains(text(),'Fingerprint generated on:')]"
     def verify_fingerprint_timestamp(self):
@@ -83,6 +114,9 @@ class FPBLSurveyPage(SeleniumDriver):
         "compare both stamps"
         if before_stamp_text != after_stamp_text:
             print(f"Finger Print Verified by Generated Time Stamp: before_reprocess:-{before_stamp_text}, after_reprocess:-{after_stamp_text} ")
+            return True
+        else:
+            return False
 
 
     def refresh(self):

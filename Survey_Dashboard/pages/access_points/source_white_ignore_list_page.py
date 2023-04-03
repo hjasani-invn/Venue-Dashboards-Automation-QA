@@ -113,6 +113,10 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
             #     mac_address_text = mac_address.text
             #     print(f"mac address deleted: {mac_address_text}")
 
+    def verify_source_macs_deleted(self):
+        source_mac_delete = self.isElementPresent(self._source_list_xpath, locatorType="xpath")
+        return source_mac_delete
+
     _save_btn = "//button[normalize-space()='Save']"
     def click_save_btn(self):
         self.elementClick(self._save_btn, locatorType="xpath")
@@ -132,15 +136,24 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
             time.sleep(1)
             self.elementClick(self._white_list_delete_btn, locatorType="xpath")
 
+        if list_clicks is None:
+            return None
+
 
     _ignore_list_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//li"
     _ignore_list_delete_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//button"
     def delete_ignore_mac_addresses(self):
         list_clicks = self.getElements(self._ignore_list_xpath, locatorType="xpath")
+        # if list_clicks is None:
+        #     return None
+        # else:
         for click in list_clicks:
             self.elementClick(self._ignore_list_xpath, locatorType="xpath")
             time.sleep(1)
             self.elementClick(self._ignore_list_delete_btn, locatorType="xpath")
+
+        if list_clicks is None:
+            return None
 
 
 
@@ -182,6 +195,9 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
         "compare both stamps"
         if before_stamp_text != after_stamp_text:
             print(f"Finger Print Verified by Generated Time Stamp: before_reprocess:-{before_stamp_text}, after_reprocess:-{after_stamp_text} ")
+            return True
+        else:
+            return False
 
 
     _white_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//div/button[contains(text(),' Upload ')]"

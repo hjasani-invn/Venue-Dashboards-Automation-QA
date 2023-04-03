@@ -72,3 +72,24 @@ class LoginPage(SeleniumDriver):
         self.backspace_clear(self._password_field, locatorType="xpath")
         # self.getElement(locator=self._email_field).clear()
         # self.getElement(locator=self._password_field).clear()
+
+
+    _user_visible = "//div[@class='user-profile']"
+    def verify_sign_in(self):
+        is_visible = self.isElementPresent(self._user_visible, locatorType="xpath")
+        return is_visible
+
+    _authetication_failed_bad_password = "//div[contains(text(),'AuthenticationError Invalid UserId or Password')]"
+    def verify_bad_password(self):
+        is_visible = self.isElementPresent(self._authetication_failed_bad_password, locatorType="xpath")
+        return is_visible
+
+    _authetication_failed_bad_usr = "//div[contains(text(),'Authentication Failed!!')]"
+    def verify_bad_user(self):
+        is_visible = self.isElementPresent(self._authetication_failed_bad_usr, locatorType="xpath")
+        return is_visible
+
+    _txt_available = "//h1[contains(text(),'Enter User Id / Email to continue')]"
+    def verify_forgot_password(self):
+        is_navigated_to_forget_password_page = self.isElementPresent(self._txt_available, locatorType="xpath")
+        return is_navigated_to_forget_password_page

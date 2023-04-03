@@ -37,8 +37,8 @@ class FPBLSurveyTests(unittest.TestCase):
         self.ffblsurveypage.click_fingerprint_btn()
         self.ffblsurveypage.select_fpbl_survey(processing_mode="Survey") # Survey, Beacon Recommendation
         self.ffblsurveypage.click_reprocess()
-
-        self.ffblsurveypage.verify_fingerprint_timestamp()
+        r_1 = self.ffblsurveypage.verify_fingerprint_timestamp()
+        assert r_1 == True
         time.sleep(10)
 
         time.sleep(1)
@@ -55,13 +55,18 @@ class FPBLSurveyTests(unittest.TestCase):
         "select 'Default max beacons config' checkbox"
         self.ffblsurveypage.click_fingerprint_btn()
         self.ffblsurveypage.select_fpbl_survey(processing_mode="Beacon Recommendation") # Survey, Beacon Recommendation
-        self.ffblsurveypage.click_reprocess()
-        self.ffblsurveypage.verify_fingerprint_timestamp()
+        # self.ffblsurveypage.click_reprocess()
+        # r_1 = self.ffblsurveypage.verify_fingerprint_timestamp()
+        # assert r_1 == True
         time.sleep(10)
 
         "select specific number of beacons"
         self.ffblsurveypage.checkbox(number_of_beacons_on_4th_floor=5, number_of_beacons_on_1st_floor=2)
         time.sleep(10)
+
+        self.ffblsurveypage.click_reprocess()
+        self.ffblsurveypage.verify_fingerprint_timestamp()
+        # assert r_1 == True
 
         time.sleep(1)
         self.loginpage.sign_out()

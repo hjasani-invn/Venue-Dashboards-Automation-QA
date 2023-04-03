@@ -231,6 +231,7 @@ class MoveEntriesPage(SeleniumDriver):
             time.sleep(3)
             count -= 1
 
+
     _from_source_to_ignore = "(//div[@class='pick-list-buttons'])[2]//i[@class='fa fa-angle-right']"
 
     def move_mac_from_source_to_ignore(self):
@@ -250,6 +251,9 @@ class MoveEntriesPage(SeleniumDriver):
     _white_to_source = "(//div[@class='pick-list-buttons'])[1]//i[@class='fa fa-angle-double-right']"
     _ignore_to_source = "(//div[@class='pick-list-buttons'])[2]//i[@class='fa fa-angle-double-left']"
 
+    _white_list_mac_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//li"
+    _ignore_list_mac_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//li"
+
     def all_mac_move_to_source(self):
         #   white to source
         time.sleep(2)
@@ -258,6 +262,12 @@ class MoveEntriesPage(SeleniumDriver):
         #     ignore to source
         self.elementClick(self._ignore_to_source, locatorType="xpath")
         time.sleep(2)
+
+        white_list_macs_moved = self.isElementPresent(self._white_list_mac_xpath, locatorType="xpath")
+        ignore_list_macs_moved = self.isElementPresent(self._ignore_list_mac_xpath, locatorType="xpath")
+        # if white_list_macs_moved and ignore_list_macs_moved is None:
+        #     return True
+        return white_list_macs_moved, ignore_list_macs_moved
 
 
     _save_btn = "//button[normalize-space()='Save']"

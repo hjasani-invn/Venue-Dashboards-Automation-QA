@@ -28,6 +28,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
         self.source_white_ignore_list_page.click_wifi_btn()
         self.source_white_ignore_list_page.get_source_list_mac_addresses()
         self.source_white_ignore_list_page.delete_source_mac_addresses()
+        r_1 = self.source_white_ignore_list_page.verify_source_macs_deleted()
+        assert r_1 == False
         self.source_white_ignore_list_page.click_save_btn()
         # self.source_white_ignore_list_page.cancel_btn()
         time.sleep(1)
@@ -49,8 +51,10 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
     def test_3_6_3_white_ignore_list_delete_macs(self):
         self.source_white_ignore_list_page.click_access_point_btn()
         self.source_white_ignore_list_page.click_wifi_btn()
-        self.source_white_ignore_list_page.delete_white_mac_addresses()
-        self.source_white_ignore_list_page.delete_ignore_mac_addresses()
+        r_1 = self.source_white_ignore_list_page.delete_white_mac_addresses()
+        assert r_1 is None
+        r_2 = self.source_white_ignore_list_page.delete_ignore_mac_addresses()
+        assert r_2 is None
         self.source_white_ignore_list_page.click_save_btn()
         time.sleep(1)
         self.loginpage.sign_out()
@@ -65,7 +69,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
                         "A1:B2:C3:XX:E5:XX", "C3:D4:E5:F6:A7:B8"])
         self.source_white_ignore_list_page.click_save_btn()
         time.sleep(900)  # wait 15 mins to build fingerprint
-        self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        r_1 = self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        assert r_1 == True
         time.sleep(1)
         self.loginpage.sign_out()
         time.sleep(1)
@@ -78,7 +83,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
         self.source_white_ignore_list_page.upload_white_list_csv()
         self.source_white_ignore_list_page.click_save_btn()
         time.sleep(900)  # wait 15 mins to build fingerprint
-        self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        r_1 = self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        assert r_1 == True
         time.sleep(1)
         self.loginpage.sign_out()
         time.sleep(1)
@@ -93,7 +99,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
                          "B1:B2:C3:XX:E5:XX", "B3:D4:E5:F6:A7:B8"])
         self.source_white_ignore_list_page.click_save_btn()
         time.sleep(900)  # wait 15 mins to build fingerprint
-        self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        r_1 = self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        assert r_1 == True
         time.sleep(1)
         self.loginpage.sign_out()
         time.sleep(1)
@@ -106,7 +113,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
         self.source_white_ignore_list_page.upload_ignore_list_csv()
         self.source_white_ignore_list_page.click_save_btn()
         time.sleep(900)  # wait 15 mins to build fingerprint
-        self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        r_1 = self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        assert r_1 == True
         time.sleep(1)
         self.loginpage.sign_out()
         time.sleep(1)
@@ -121,7 +129,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
         self.source_white_ignore_list_page.upload_ignore_list_csv()
         self.source_white_ignore_list_page.click_save_btn()
         time.sleep(900)  # wait 15 mins to build fingerprint
-        self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        r_1 = self.source_white_ignore_list_page.verify_fingerprint_timestamp()
+        assert r_1 == True
         time.sleep(1)
         self.loginpage.sign_out()
         time.sleep(1)

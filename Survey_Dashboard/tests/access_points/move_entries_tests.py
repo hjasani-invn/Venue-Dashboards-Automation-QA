@@ -50,7 +50,8 @@ class MoveEntriesTests(unittest.TestCase):
     def test_3_6_2_4_all_mac_move_to_source(self):
         self.move_entries_page.click_access_point_btn()
         self.move_entries_page.click_wifi_btn()
-        self.move_entries_page.all_mac_move_to_source()
+        r_1 = self.move_entries_page.all_mac_move_to_source()
+        assert r_1 == (False, False)
         self.move_entries_page.cancel_btn()
         time.sleep(1)
         self.loginpage.sign_out()
