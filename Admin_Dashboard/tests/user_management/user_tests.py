@@ -39,6 +39,7 @@ class UserTests(unittest.TestCase):
                                            "new_english01@tdk.com")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
+        self.seleniumdriverpage.screen_shot("test_3_2_1_1_add_user_english")
 
 
     @pytest.mark.order(7)
@@ -47,6 +48,8 @@ class UserTests(unittest.TestCase):
                                            "new_日本語.名前@tdk.com")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
+        self.seleniumdriverpage.screen_shot("test_3_2_1_2_add_user_japanese")
+
 
     @pytest.mark.order(8)
     def test_3_2_1_3_add_user_korean(self):
@@ -54,6 +57,8 @@ class UserTests(unittest.TestCase):
                                            "new_한국.이름@tdk.com")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
+        self.seleniumdriverpage.screen_shot("test_3_2_1_3_add_user_korean")
+
 
     @pytest.mark.order(9)
     def test_3_2_1_4_add_user_chinese(self):
@@ -61,6 +66,8 @@ class UserTests(unittest.TestCase):
                                            "new_中文.名@tdk.com")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
+        self.seleniumdriverpage.screen_shot("test_3_2_1_4_add_user_chinese")
+
 
     @pytest.mark.order(10)
     def test_3_2_2_manually_add_user_error_checks(self):

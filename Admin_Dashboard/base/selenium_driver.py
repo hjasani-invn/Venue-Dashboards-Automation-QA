@@ -255,9 +255,21 @@ class SeleniumDriver():
         print(self.driver.title)
 
 
-    def screen_shot(self):
-        file_name = time.strftime("%Y_%m_%d-%I_%M_%S_%p") + ".png"
-        #file_name = time.strftime("%Y%m%d-%H%M%S") + ".png"
+    # def screen_shot(self):
+    #     file_name = time.strftime("%Y_%m_%d-%I_%M_%S_%p") + ".png"
+    #     #file_name = time.strftime("%Y%m%d-%H%M%S") + ".png"
+    #     screenshot_directory = ".\\screenshots\\"
+    #     destination_file = screenshot_directory + file_name
+    #     try:
+    #         self.driver.save_screenshot(destination_file)
+    #         print("Screenshot saved to directory --> :: " + destination_file)
+    #     except NotADirectoryError:
+    #         print("Not a directory issue")
+
+
+    def screen_shot(self, file=""):
+        #file_name = time.strftime("%Y_%m_%d-%I_%M_%S_%p") + ".png"
+        file_name = file + "_" + time.strftime("%Y_%m_%d-%I_%M_%S_%p") + ".png"  #file_name = test_3_4_1_populate_heatmap_2023_02_13-10_38_05_AM.png
         screenshot_directory = ".\\screenshots\\"
         destination_file = screenshot_directory + file_name
         try:

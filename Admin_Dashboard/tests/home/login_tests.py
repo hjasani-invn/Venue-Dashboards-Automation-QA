@@ -3,6 +3,8 @@ import time
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+from base.selenium_driver import SeleniumDriver
 from pages.home.login_page import LoginPage
 import unittest
 from tests import conftest
@@ -14,6 +16,8 @@ class LoginTests(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
         self.loginpage = LoginPage(self.driver)
+        self.seleniumdriver = SeleniumDriver(self.driver)
+
 
     # @pytest.mark.login
     # @pytest.mark.run(1)
@@ -22,6 +26,7 @@ class LoginTests(unittest.TestCase):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         result_1 = self.loginpage.verify_login_succesful()
         assert result_1 == True
+        self.seleniumdriver.screen_shot(file="test_3_1_1_login_nominal")
         self.loginpage.sign_out()
 
     # @pytest.mark.order(order=2)
@@ -35,6 +40,8 @@ class LoginTests(unittest.TestCase):
         self.loginpage.login("AutomationTestUser001", "justWrongPassword")
         result1 = self.loginpage.verify_login_failed()
         assert result1 == "Authorization error. Incorrect credentials."
+        self.seleniumdriver.screen_shot(file="test_3_1_2_login_bad_password")
+
 
     # @pytest.mark.login
     # @pytest.mark.run(3)
@@ -43,6 +50,8 @@ class LoginTests(unittest.TestCase):
         self.loginpage.login("BadUser", "BadPassword")
         result1 = self.loginpage.verify_login_failed()
         assert result1 == "Authorization error. Incorrect credentials."
+        self.seleniumdriver.screen_shot(file="test_3_1_3_login_bad_user")
+
 
 # ff = LoginTests()
 # ff.test_valid_login()
