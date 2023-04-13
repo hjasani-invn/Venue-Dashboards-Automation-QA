@@ -7,6 +7,7 @@ import logging
 class LiveFeedTabPage(SeleniumDriver):
     log = cl.customLogger(logging.DEBUG)
 
+
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -50,6 +51,30 @@ class LiveFeedTabPage(SeleniumDriver):
         self.hold_wait()
         self.click_out()
         self.hold_wait()
+
+
+    _select_venue = "//mat-select[@placeholder='Venue']"
+
+    # _select_venue_it = "//span[@class='mat-option-text'][normalize-space()='ICA_2021']"
+
+    def enter_venue_name(self, v_n):
+        self.hold_wait()
+        self.elementClick(self._select_venue, locatorType="xpath")
+        self.hold_wait()
+        self.sendKeys(v_n, self._select_venue, locatorType="xpath")
+        # self.elementClick(self._select_venue_it, locatorType="xpath")
+        self.click_out()
+        self.hold_wait()
+
+
+    _select_floor = "//mat-select[@placeholder='Floor']"
+
+    # _select_floor_name = "//mat-select[@placeholder='Floor']/div//span[contains(text(),'Fourth Floor')]"
+    def select_floor(self, f_n):
+        # self.hold_wait()
+        self.sendKeys(f_n, self._select_floor, locatorType="xpath")
+        self.hold_wait()
+
 
     def toggle_online_user_btn(self):
         self.hold_wait()

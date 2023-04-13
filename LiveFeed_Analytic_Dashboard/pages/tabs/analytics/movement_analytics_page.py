@@ -48,11 +48,18 @@ class MovementAnalyticsTabPage(SeleniumDriver):
         self.sendKeys(f_n, self._select_floor, locatorType="xpath")
         self.hold_wait()
 
+
     _add_time_range = "//div[@class='mov-input']//span[contains(text(),'Add timerange')]"
 
     def add_time_range(self):
         self.elementClick(self._add_time_range, locatorType="xpath")
         self.hold_wait()
+
+    _delete_today_range_xpath = "(//mat-icon[@role='img'][normalize-space()='delete'])[1]"
+
+    def delete_today_range(self):
+        self.elementClick(self._delete_today_range_xpath, locatorType="xpath")
+        time.sleep(0.5)
 
     # _dates_xpath = "//table[starts-with(@class,'ui-datepicker-calendar')]//a"
     # def sel_dates(self):
@@ -83,7 +90,6 @@ class MovementAnalyticsTabPage(SeleniumDriver):
 
     _click_add_btn_xpath = "//div[@class='timerange-footer']//span[contains(text(),'Add')]"
 
-    _click_search_btn_xpath = "//div[@class='mov-input']//span[contains(text(),'Search')]"
 
     def select_start_date(self, desired_start_date):
         all_dates = self.getElements(self._left_windows_dates_xpath, locatorType="xpath")
@@ -248,6 +254,10 @@ class MovementAnalyticsTabPage(SeleniumDriver):
         self.elementClick(self._click_add_btn_xpath, locatorType="xpath")
         self.hold_wait()
 
+
+    _click_search_btn_xpath = "//div[@class='mov-input']//span[contains(text(),'Search')]"
+
+    def click_search(self):
         self.elementClick(self._click_search_btn_xpath, locatorType="xpath")
         self.hold_wait()
         self.hold_wait()

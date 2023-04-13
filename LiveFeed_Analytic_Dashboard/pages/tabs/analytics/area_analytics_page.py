@@ -1,3 +1,5 @@
+import time
+
 from base.selenium_driver import SeleniumDriver
 
 import utilities.custom_logger as cl
@@ -20,7 +22,7 @@ class AreaAnalyticsTabPage(SeleniumDriver):
         self.elementClick(self._select_area_analytic_tab, locatorType="xpath")
         self.hold_wait()
 
-    _select_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), ' 4')]"
+    _select_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), '4')]"
 
     def select_floor(self):
         self.elementClick(self._select_floor, locatorType="xpath")
@@ -28,11 +30,20 @@ class AreaAnalyticsTabPage(SeleniumDriver):
     _select_venue = "//mat-select[@placeholder='Venue']"
     _select_venue_it = "//span[@class='mat-option-text'][normalize-space()='ICA_2021']"
 
-    def enter_venue_name(self):
+    # def enter_venue_name(self):
+    #     self.hold_wait()
+    #     self.elementClick(self._select_venue, locatorType="xpath")
+    #     self.hold_wait()
+    #     self.elementClick(self._select_venue_it, locatorType="xpath")
+    #     self.click_out()
+    #     self.hold_wait()
+
+    def enter_venue_name(self, v_n):
         self.hold_wait()
         self.elementClick(self._select_venue, locatorType="xpath")
         self.hold_wait()
-        self.elementClick(self._select_venue_it, locatorType="xpath")
+        self.sendKeys(v_n, self._select_venue, locatorType="xpath")
+        # self.elementClick(self._select_venue_it, locatorType="xpath")
         self.click_out()
         self.hold_wait()
 
@@ -62,6 +73,8 @@ class AreaAnalyticsTabPage(SeleniumDriver):
 
 
     _time_zone = "//input[@data-placeholder='Timezone']"
+    _select_element = "//span[@class='mat-option-text']"
+
 
     def select_timezone(self, country_name):
         self.hold_wait()
@@ -69,7 +82,9 @@ class AreaAnalyticsTabPage(SeleniumDriver):
         self.hold_wait()
         self.sendKeys(country_name, self._time_zone, locatorType="xpath")
         self.hold_wait()
-        self.click_out()
+        # self.click_out()
+        self.elementClick(self._select_element, locatorType="xpath")
+
 
     _search_ = "//span[contains(text(),'Search')]"
 
@@ -96,10 +111,37 @@ class AreaAnalyticsTabPage(SeleniumDriver):
             print(self.log.info("______________________________________"))
         self.screen_shot(file="test_3_5_1_populate_area_analytic")
 
-    _reset_zoom_btn = "//*[name()='text' and contains(@class,'reset-zoom')]"
-    def verify_data_shown(self):
-        btn_element = self.getElement(self._reset_zoom_btn, locatorType="xpath")
-        btn_text = btn_element.text
-        print(btn_text)
-        return btn_text
 
+    _specific_data_xpath_1 = "//div[@aria-label='LFA_Test_3.1.2-A2E']"
+
+    def select_specific_data(self):
+        self.scroll_to_element(self._specific_data_xpath_1, locatorType="xpath")
+        time.sleep(1)
+        self.elementClick(self._specific_data_xpath_1, locatorType="xpath")
+        time.sleep(1)
+        # self.screen_shot(file="test_3_5_1_populate_area_analytic")
+        # self.pytest_screenshot()
+
+
+
+
+    _number_of_events = "//span[contains(text(),' events')] "
+    _no_data = "//span[contains(text(),'No data')]"
+    def verify_events_available(self):
+        get_element = self.getElement(self._number_of_events, locatorType="xpath")
+        get_element_txt = get_element.text
+        print(get_element_txt)
+        split_str = get_element_txt.split()[0]
+        print(split_str)
+        return int(split_str)
+        # no_data_element = self.getElement(self._no_data, locatorType="xpath")
+        # txt = no_data_element.text
+        # print(txt)
+        # return txt
+
+
+    _frame_appear_xpath = "//div[@id='timeline']"
+    def is_frame_appear(self):
+        frame = self.isElementPresent(self._frame_appear_xpath, locatorType="xpath")
+        if frame:
+            return True

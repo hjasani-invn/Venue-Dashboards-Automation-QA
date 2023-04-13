@@ -24,7 +24,6 @@ class PlaybackTabPage(SeleniumDriver):
     # _select_floor = "//label[@class='map-selected-floor']//input[@type='radio']"
     _select_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), '4')]"
 
-
     def select_floor(self):
         self.elementClick(self._select_floor, locatorType="xpath")
 
@@ -70,6 +69,7 @@ class PlaybackTabPage(SeleniumDriver):
     _end_time = "//input[@data-placeholder='End time']"
 
     _start_date_error = "//mat-error[contains(text(),'Start date should be greater than ')]"
+
     def choose_date_and_time(self, s_date, s_time, e_date, e_time):
         # self.select_floor()
 
@@ -94,6 +94,7 @@ class PlaybackTabPage(SeleniumDriver):
         #     return starting_with
 
     _time_zone = "//input[@data-placeholder='Timezone']"
+    _select_element = "//span[@class='mat-option-text']"
 
     # _time_zone_name = "//span[normalize-space()='Africa/Dar_es_Salaam']"
 
@@ -104,7 +105,8 @@ class PlaybackTabPage(SeleniumDriver):
         self.hold_wait()
         self.sendKeys(country_name, self._time_zone, locatorType="xpath")
         self.hold_wait()
-        self.click_out()
+        # self.click_out()
+        self.elementClick(self._select_element, locatorType="xpath")
 
     # _draw_type = "//span[contains(text(),'Dot')]"
     # _draw_type_dot = "//mat-option[@role='option'][1]"
@@ -113,7 +115,19 @@ class PlaybackTabPage(SeleniumDriver):
     _draw_type_Dot = "//span[@class='mat-option-text'][normalize-space()='Dot']"
     _draw_type_Trail = "//span[@class='mat-option-text'][normalize-space()='Trail']"
 
-    def select_draw_style(self):
+    def select_draw_style_dot(self):
+        self.elementClick(self._draw_type, locatorType="xpath")
+        self.hold_wait()
+        self.elementClick(self._draw_type_Dot, locatorType="xpath")  # change this xpath as per requirements
+        self.hold_wait()
+
+    def select_draw_style_line(self):
+        self.elementClick(self._draw_type, locatorType="xpath")
+        self.hold_wait()
+        self.elementClick(self._draw_type_Line, locatorType="xpath")  # change this xpath as per requirements
+        self.hold_wait()
+
+    def select_draw_style_trail(self):
         self.elementClick(self._draw_type, locatorType="xpath")
         self.hold_wait()
         self.elementClick(self._draw_type_Trail, locatorType="xpath")  # change this xpath as per requirements
@@ -131,7 +145,9 @@ class PlaybackTabPage(SeleniumDriver):
         get_search_btn_stats = get_search_btn_attribute.get_attribute("disabled")
         print(get_search_btn_stats)
 
-        if get_search_btn_stats != 'true':
+        # if get_search_btn_stats != 'true':
+        # if get_search_btn_stats == 'true':
+        if get_search_btn_stats is None:
             self.elementClick(self._search_, locatorType="xpath")
             self.hold_wait()
         return get_search_btn_stats
@@ -139,8 +155,6 @@ class PlaybackTabPage(SeleniumDriver):
     # def click_search(self):
     #     self.elementClick(self._search_, locatorType="xpath")
     #     self.hold_wait()
-
-
 
     # _select_all_users = "//label[@for='mat-checkbox-5-input']//div[@class='mat-checkbox-inner-container']"
     # _select_all_users = "//div[@class='map-all-tree-users-select']//div[@class='mat-checkbox-inner-container']"
@@ -152,8 +166,13 @@ class PlaybackTabPage(SeleniumDriver):
         self.elementClick(self._select_all_users, locatorType="xpath")
         self.hold_wait()
 
+    _specific_data_xpath_1 = "//div[@aria-label='LFA_Test_3.1.2-A2E']"
+
+    def select_specific_data(self):
+        self.elementClick(self._specific_data_xpath_1, locatorType="xpath")
 
     _play_arrow = "//mat-icon[normalize-space()='play_arrow']"
+
     def play_btn(self):
         # self.isElementPresent(self._play_arrow, locatorType="xpath")
         self.hold_wait()
@@ -162,10 +181,7 @@ class PlaybackTabPage(SeleniumDriver):
             self.hold_wait()
         except:
             print("sdd")
-        self.screen_shot(file="test_3_3_1_filter_sessions_by_time_playback")
-
-
-
+        # self.screen_shot(file="test_3_3_1_filter_sessions_by_time_playback")
 
     _select_venue_for_show_zone = "//mat-select[@placeholder='Venue']"
     _select_venue_it_for_show_zone = "//span[@class='mat-option-text'][normalize-space()='TDK_HQ_Nihonbashi']"
@@ -178,11 +194,11 @@ class PlaybackTabPage(SeleniumDriver):
         self.click_out()
         self.hold_wait()
 
-
     _sel_flr = "//label[@class='map-selected-floor']//span[contains(text(), '')]"
     # _set_floor = "//label[@class='map-selected-floor']//span[contains(text(), ' 26')]"
     _set_floor = "//div[@class='leaflet-control-layers-base']/label//div//span[contains(text(), '28F')]"
     _toggle_show_zone = "//div[@class='mat-slide-toggle-bar']"
+
     def show_zones(self):
         self.select_analytic_playback_tab()
         self.enter_venue_name_for_show_zone()
@@ -193,5 +209,5 @@ class PlaybackTabPage(SeleniumDriver):
         get_floor_number_element = self.getElement(self._set_floor, locatorType="xpath")
         get_floor_number_txt = get_floor_number_element.text
         print(get_floor_number_txt)
-        self.screen_shot(file="test_3_3_2_show_zones")
+        # self.screen_shot(file="test_3_3_2_show_zones")
         return get_floor_number_txt

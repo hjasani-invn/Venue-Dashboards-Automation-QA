@@ -9,10 +9,14 @@ Example:
     wdf.getWebDriverInstance()
 """
 import traceback
+from pathlib import Path
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+
 
 class WebDriverFactory():
 
@@ -42,6 +46,15 @@ class WebDriverFactory():
         Returns:
             'WebDriver Instance'
         """
+        download_path = str(Path.home() / "C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
+        chrome_options = Options()
+        chrome_options.add_experimental_option("prefs", {
+            "download.default_directory": download_path,
+            "download.prompt_for_download": False,
+            "download.directory_upgrade": True,
+            "safebrowsing.enabled": True
+        })
+
         baseURL = "http://dashboard-test.venuepositioning.com/auth/login"
         if self.browser == "iexplorer":
             # Set ie driver
@@ -50,7 +63,7 @@ class WebDriverFactory():
             # driver = webdriver.Firefox()
             driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         elif self.browser == "chrome":
-            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
             # Set chrome driver
             # driver = webdriver.Chrome(
             #       "C:\\Users\\hjasani\\PycharmProjects\\work\\Venue_LiveFeed_Analytic_Dashboard\\drivers\\chrome_32_107\\chromedriver.exe")

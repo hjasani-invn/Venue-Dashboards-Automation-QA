@@ -1,6 +1,8 @@
 import os
 import time
+from idlelib import browser
 
+from selenium import webdriver
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from traceback import print_stack
@@ -9,6 +11,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 import utilities.custom_logger as cl
 import logging
+import allure
+from pytest_html_reporter import attach
+
 
 
 class SeleniumDriver():
@@ -248,3 +253,13 @@ class SeleniumDriver():
             print("Screenshot saved to directory --> :: " + destination_file)
         except NotADirectoryError:
             print("Not a directory issue")
+
+    def refresh_page(self):
+        self.driver.refresh()
+
+    def pytest_screenshot(self):
+        # data = self.driver.get_screenshot_as_png()
+        # attach(data=data)
+        attach(data=self.driver.get_screenshot_as_png())
+
+

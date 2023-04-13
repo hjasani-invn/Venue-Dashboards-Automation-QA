@@ -1,10 +1,13 @@
 import os
+import sys
+import time
 from pathlib import Path
 
 from base.selenium_driver import SeleniumDriver
 
 import utilities.custom_logger as cl
 import logging
+import zipfile
 
 
 class DownloadsTabPage(SeleniumDriver):
@@ -62,6 +65,7 @@ class DownloadsTabPage(SeleniumDriver):
     _click = "//li[@role='option']"
 
     def select_venue(self, venue_name):
+        self.backspace_clear(self._select_venue, locatorType="xpath")
         self.elementClick(self._select_venue, locatorType="xpath")
         self.sendKeys(venue_name, self._input_text, locatorType="xpath")
         self.elementClick(self._click, locatorType="xpath")
@@ -224,7 +228,8 @@ class DownloadsTabPage(SeleniumDriver):
         # 13 February 2023
         # desired_end_year = 2023
         # desired_end_month = "February"
-        if (desired_end_year == right_window_year_value) and (desired_end_month == right_window_month_value or desired_end_month == left_window_month_value):
+        if (desired_end_year == right_window_year_value) and (
+                desired_end_month == right_window_month_value or desired_end_month == left_window_month_value):
             # all_dates = self.getElements(self._right_windows_dates_xpath, locatorType="xpath")
             # if user needs to select date from same month, then below code is working, calling select_end_date func is not enough.
             if desired_end_month == right_window_month_value:
@@ -312,7 +317,6 @@ class DownloadsTabPage(SeleniumDriver):
         except:
             print("Data Not Found")
 
-
     # _download_button = "//span[normalize-space()='Download selected']"
     def download_btn(self):
         self.elementClick(self._download_button, locatorType="xpath")
@@ -323,7 +327,6 @@ class DownloadsTabPage(SeleniumDriver):
     # def file_downloads_verify(self):
     #     download_link = self.elementClick(self._checkbox_for_download, locatorType="xpath")
     #     filename =
-
 
     def verify_file(self):
         filename = 'datasets.zip'
@@ -349,7 +352,6 @@ class DownloadsTabPage(SeleniumDriver):
         else:
             print("The file does not exist.")
 
-
     # _snackbar_xpath = "//span[contains(text(),'No data')]"
     _is_download_checkbox_visible = "(//label[@class='mat-checkbox-layout'])[1]"
 
@@ -358,3 +360,92 @@ class DownloadsTabPage(SeleniumDriver):
         print(download_checkbox_element)
         # if download_checkbox_element == True:
         return download_checkbox_element
+
+    def compare_zips(self, zip1, zip2):
+
+        # file_1 = "C:\\Users\\hjasani\\Downloads\\datasets_1.zip"
+        #
+        # file_2 = "C:\\Users\\hjasani\\Downloads\\datasets_2.zip"
+
+        # Open the first zip file
+        zip1 = zipfile.ZipFile(zip1, 'r')
+        #
+        # # Open the second zip file
+        zip2 = zipfile.ZipFile(zip2, 'r')
+        time.sleep(10)
+        print(zip1)
+        print(zip2)
+
+        # Get the list of file names in each zip file
+        zip1_files = zip1.namelist()
+        print(zip1_files)
+        zip2_files = zip2.namelist()
+        print(zip2_files)
+
+        # Compare the two lists of file names
+        if zip1_files == zip2_files:
+            zip1.close()
+            zip2.close()
+            print('The two zip files contain the same files')
+            time.sleep(10)
+            return True
+        else:
+            zip1.close()
+            zip2.close()
+            print('The two zip files do not contain the same files')
+            time.sleep(10)
+            return False
+
+        # Close the zip files
+        # zip1.close()
+        # zip2.close()
+        # time.sleep(10)
+
+    def delete_downloaded_file_new(self, zip1, zip2):
+        dir_del = "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\"
+        # file_list = os.listdir(dir_del)
+        file_list = [zip1, zip2]
+
+        # # Loop through the list and delete each file
+        # for filename in file_list:
+        #     # file_path = os.path.join(dir_del, filename)
+        #     file_path_1 = zip1
+        #     file_path_2 = zip2
+        #     try:
+        #         os.remove(file_path_1)
+        #         os.remove(file_path_2)
+        #     except Exception as e:
+        #         print(f"Error deleting file: {file_path_1} and/or {file_path_2} - {e}")
+
+        file_path_1 = zip1
+        file_path_2 = zip2
+        try:
+            os.remove(file_path_1)
+            os.remove(file_path_2)
+        except Exception as e:
+            print(f"Error deleting file: {file_path_1} and/or {file_path_2} - {e}")
+
+        time.sleep(2)
+
+    def delete_all_downloaded(self):
+        # dir_del = "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\"
+        # file_list = os.listdir(dir_del)
+        #
+        # # Loop through the list and delete each file
+        # for filename in file_list:
+        #     file_path = os.path.join(dir_del, filename)
+        #     try:
+        #         os.remove(file_path)
+        #     except Exception as e:
+        #         print(f"Error deleting file: {file_path} - {e}")
+
+        ROOT = sys.path[1]
+        print(ROOT)
+        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        print(downloaded_dir)
+        for f in os.listdir(downloaded_dir):
+            print(f)
+            file_name = os.path.join(downloaded_dir, f)
+            if os.path.exists(file_name):
+                os.remove(file_name)
+            print(f"{f} is deleted successfully.")
