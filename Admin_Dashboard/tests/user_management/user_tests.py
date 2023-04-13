@@ -37,36 +37,36 @@ class UserTests(unittest.TestCase):
     def test_3_2_1_1_add_user_english(self):
         self.userpage.add_user_information("new_englishTest", "new_Test", "new_Test", "new_tdka",
                                            "new_english01@tdk.com")
+        self.seleniumdriverpage.screen_shot("test_3_2_1_1_add_user_english")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
-        self.seleniumdriverpage.screen_shot("test_3_2_1_1_add_user_english")
 
 
     @pytest.mark.order(7)
     def test_3_2_1_2_add_user_japanese(self):
         self.userpage.add_user_information("new_JapaneseUser001", "new_日本語", "new_名前", "new_password123",
                                            "new_日本語.名前@tdk.com")
+        self.seleniumdriverpage.screen_shot("test_3_2_1_2_add_user_japanese")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
-        self.seleniumdriverpage.screen_shot("test_3_2_1_2_add_user_japanese")
 
 
     @pytest.mark.order(8)
     def test_3_2_1_3_add_user_korean(self):
         self.userpage.add_user_information("new_KoreanUser011", "new_한국", "new_이름", "new_password123",
                                            "new_한국.이름@tdk.com")
+        self.seleniumdriverpage.screen_shot("test_3_2_1_3_add_user_korean")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
-        self.seleniumdriverpage.screen_shot("test_3_2_1_3_add_user_korean")
 
 
     @pytest.mark.order(9)
     def test_3_2_1_4_add_user_chinese(self):
         self.userpage.add_user_information("new_ChineseUser001", "new_中文", "new_名", "new_password123",
                                            "new_中文.名@tdk.com")
+        self.seleniumdriverpage.screen_shot("test_3_2_1_4_add_user_chinese")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
-        self.seleniumdriverpage.screen_shot("test_3_2_1_4_add_user_chinese")
 
 
     @pytest.mark.order(10)
