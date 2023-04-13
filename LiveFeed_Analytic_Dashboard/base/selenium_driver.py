@@ -11,7 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 import utilities.custom_logger as cl
 import logging
-import allure
 from pytest_html_reporter import attach
 
 
