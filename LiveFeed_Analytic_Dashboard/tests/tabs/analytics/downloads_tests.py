@@ -133,11 +133,11 @@ class DownloadsTabTests(unittest.TestCase):
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
         time.sleep(3)
-        ROOT = sys.path[1]
-        print(ROOT)
-        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
-        os.rename(downloaded_dir + "\\datasets.zip",
-                  downloaded_dir + "\\datasets_assets_playback_1.zip")
+        # ROOT = sys.path[1]
+        # print(ROOT)
+        # downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        # os.rename(downloaded_dir + "\\datasets.zip",
+        #           downloaded_dir + "\\datasets_assets_playback_1.zip")
 
         # os.rename(from_file_name, to_file_name)
         # os.rename(
