@@ -450,23 +450,3 @@ class DownloadsTabPage(SeleniumDriver):
             if os.path.exists(file_name):
                 os.remove(file_name)
             print(f"{f} is deleted successfully.")
-
-
-
-
-    def rename_files(self, zip1, zip2):
-        ROOT = sys.path[1]
-        print(ROOT)
-        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
-        print(downloaded_dir)
-        os.rename()
-
-
-    def move_files(self):
-        time.sleep(3)
-        ROOT = sys.path[1]
-        # print(ROOT)
-        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
-        time.sleep(1)
-        shutil.move("C:\\tmp_downloaded_files\\", downloaded_dir)
-        time.sleep(1)

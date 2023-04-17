@@ -56,6 +56,31 @@ from pathlib import Path
 # print(CONFIG_PATH)
 
 
-ROOT = sys.path[1]
-downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
-shutil.move("C:\\tmp_downloaded_files\\", downloaded_dir)
+# ROOT = sys.path[1]
+# print(ROOT)
+#
+# downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+# print(downloaded_dir)
+# shutil.move("C:\\tmp_downloaded_files\\", downloaded_dir)
+
+
+# current_dir = os.getcwd()
+# print('Current directory:', current_dir)
+#
+# # get the directory of the script
+# script_dir = os.path.dirname(os.path.abspath(__file__))
+# print('Script directory:', script_dir)
+
+
+import os
+
+# absolute path to the other directory
+other_path = 'C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\'
+
+# get the current working directory
+current_dir = os.getcwd()
+
+# get the relative path between the current directory and the other directory
+relative_path = os.path.relpath(other_path, current_dir)
+
+print('Relative path:', relative_path)

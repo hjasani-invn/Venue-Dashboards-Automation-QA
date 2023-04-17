@@ -1,8 +1,10 @@
 import os
 import shutil
+import subprocess
 import sys
 import time
 
+import py
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -133,16 +135,11 @@ class DownloadsTabTests(unittest.TestCase):
         assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
-        self.downloadstabpage.move_files()
-
-
-        # os.rename(downloaded_dir + "\\datasets.zip",
-        #           downloaded_dir + "\\datasets_assets_playback_1.zip")
-
+        # subprocess.run(['python', '.\\help\\renaming.py'])
         # os.rename(from_file_name, to_file_name)
-        # os.rename(
-        #     "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\datasets.zip",
-        #     "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\datasets_assets_playback_1.zip")
+        os.rename(
+            "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\datasets.zip",
+            "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\datasets_assets_playback_1.zip")
         # self.downloadstabpage.verify_file()
         # self.downloadstabpage.delete_downloaded_file()
         self.seleniumdriver.screen_shot(file="test_3_8_1_4_data_download_assets_playback")

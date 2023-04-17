@@ -48,13 +48,18 @@ class WebDriverFactory():
         Returns:
             'WebDriver Instance'
         """
-        # download_path = str(Path.home() / "C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
-        download_path = str(Path.home() / "C:\\tmp_downloaded_files\\")
+        download_path = str(Path.home() / "C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
+        # ROOT = sys.path[1]
+        # downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        # print(f"-----------------{downloaded_dir}----------")
+        # download_path = downloaded_dir
+        # print(f"-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x--{download_path}----------")
+        # download_path = "..\Downloaded_Files"
         chrome_options = Options()
         chrome_options.add_experimental_option("prefs", {
             "download.default_directory": download_path,
             "download.prompt_for_download": False,
-            "download.directory_upgrade": False,
+            "download.directory_upgrade": True,
             "safebrowsing.enabled": True
         })
 
@@ -67,11 +72,6 @@ class WebDriverFactory():
             driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         elif self.browser == "chrome":
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-            # Set chrome driver
-            # driver = webdriver.Chrome(
-            #       "C:\\Users\\hjasani\\PycharmProjects\\work\\Venue_LiveFeed_Analytic_Dashboard\\drivers\\chrome_32_107\\chromedriver.exe")
-                # "C:\\Users\\hjasani\\PycharmProjects\\Personal_Projects\\Python_Selenium\\SeleniumSessions\\chromedriver_win32_107\\chromedriver.exe")
-            # driver = webdriver.Chrome()
         else:
             driver = webdriver.Firefox()
         # Setting Driver Implicit Time out for An Element
