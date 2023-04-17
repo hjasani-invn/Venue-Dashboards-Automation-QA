@@ -1,4 +1,5 @@
 import os
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -459,3 +460,13 @@ class DownloadsTabPage(SeleniumDriver):
         downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
         print(downloaded_dir)
         os.rename()
+
+
+    def move_files(self):
+        time.sleep(3)
+        ROOT = sys.path[1]
+        # print(ROOT)
+        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        time.sleep(1)
+        shutil.move("C:\\tmp_downloaded_files\\", downloaded_dir)
+        time.sleep(1)

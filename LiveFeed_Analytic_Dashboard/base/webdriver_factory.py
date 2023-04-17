@@ -49,13 +49,12 @@ class WebDriverFactory():
             'WebDriver Instance'
         """
         # download_path = str(Path.home() / "C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
-        ROOT = sys.path[1]
-        download_path = os.path.join(ROOT, "Downloaded_Files")
+        download_path = str(Path.home() / "C:\\tmp_downloaded_files\\")
         chrome_options = Options()
         chrome_options.add_experimental_option("prefs", {
             "download.default_directory": download_path,
             "download.prompt_for_download": False,
-            "download.directory_upgrade": True,
+            "download.directory_upgrade": False,
             "safebrowsing.enabled": True
         })
 

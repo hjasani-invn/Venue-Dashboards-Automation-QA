@@ -1,4 +1,5 @@
 import os
+import shutil
 import sys
 import time
 
@@ -122,20 +123,19 @@ class DownloadsTabTests(unittest.TestCase):
         #                                                    desired_start_date='3')
         # self.downloadstabpage.select_end_year_month_date(desired_end_year=2023, desired_end_month="January",
         #                                                  desired_end_date='20')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
-        self.downloadstabpage.select_start_year_month_date(desired_start_year=2022, desired_start_month="August",
+        self.downloadstabpage.select_start_year_month_date(desired_start_year=2023, desired_start_month="March",
                                                            desired_start_date='1')
-        self.downloadstabpage.select_end_year_month_date(desired_end_year=2022, desired_end_month="December",
-                                                         desired_end_date='31')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
+        self.downloadstabpage.select_end_year_month_date(desired_end_year=2023, desired_end_month="April",
+                                                         desired_end_date='16')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
         self.downloadstabpage.click_out()
         # self.seleniumdriver.pytest_screenshot()
         r_1 = self.downloadstabpage.verify_data_shown()
         assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
-        time.sleep(3)
-        # ROOT = sys.path[1]
-        # print(ROOT)
-        # downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        self.downloadstabpage.move_files()
+
+
         # os.rename(downloaded_dir + "\\datasets.zip",
         #           downloaded_dir + "\\datasets_assets_playback_1.zip")
 
