@@ -132,11 +132,12 @@ class DownloadsTabTests(unittest.TestCase):
         assert r_1 == True
         self.downloadstabpage.select_all_files()
         self.downloadstabpage.download_btn()
-        # ROOT = sys.path[1]
-        # print(ROOT)
-        # downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
-        os.renames("..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\datasets.zip",
-                   "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\datasets_assets_playback_1.zip")
+        time.sleep(3)
+        ROOT = sys.path[1]
+        print(ROOT)
+        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        os.rename(downloaded_dir + "\\datasets.zip",
+                  downloaded_dir + "\\datasets_assets_playback_1.zip")
 
         # os.rename(from_file_name, to_file_name)
         # os.rename(
