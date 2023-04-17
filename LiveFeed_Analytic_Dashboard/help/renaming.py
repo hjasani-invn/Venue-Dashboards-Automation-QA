@@ -1,5 +1,6 @@
 import os
 import sys
+from pathlib import Path
 
 # zip1 = ""
 # zip2 = ""
@@ -17,7 +18,11 @@ import sys
 
 
 ROOT = sys.path[1]
-print(ROOT)
-downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
-os.rename(downloaded_dir + "\\datasets.zip",
-          downloaded_dir + "\\datasets_assets_playback_1.zip")
+# print(ROOT)
+# downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+# os.rename(downloaded_dir + "\\datasets.zip",
+#           downloaded_dir + "\\datasets_assets_playback_1.zip")
+
+# download_path = str(Path.home() / "..\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
+download_path = os.path.join(ROOT, "Downloaded_Files")
+print(download_path)
