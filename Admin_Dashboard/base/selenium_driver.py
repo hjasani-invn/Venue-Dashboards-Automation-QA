@@ -266,6 +266,9 @@ class SeleniumDriver():
     #     except NotADirectoryError:
     #         print("Not a directory issue")
 
+    def refresh_page(self):
+        self.driver.refresh()
+
 
     def screen_shot(self, file=""):
         #file_name = time.strftime("%Y_%m_%d-%I_%M_%S_%p") + ".png"

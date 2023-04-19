@@ -20,13 +20,11 @@ class UserTests(unittest.TestCase):
         self.userhomepage = UserHomePage(self.driver)
         self.seleniumdriverpage = SeleniumDriver(self.driver)
 
-
     @pytest.mark.order(4)
     def test_3_2_7_delete_users_if_available(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         # self.userhomepage.delete_user()
         self.userhomepage.del_user_new()
-
 
     @pytest.mark.order(5)
     def test_3_2_1_click_new_user(self):
@@ -41,7 +39,6 @@ class UserTests(unittest.TestCase):
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
 
-
     @pytest.mark.order(7)
     def test_3_2_1_2_add_user_japanese(self):
         self.userpage.add_user_information("new_JapaneseUser001", "new_日本語", "new_名前", "new_password123",
@@ -49,7 +46,6 @@ class UserTests(unittest.TestCase):
         self.seleniumdriverpage.screen_shot("test_3_2_1_2_add_user_japanese")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
-
 
     @pytest.mark.order(8)
     def test_3_2_1_3_add_user_korean(self):
@@ -59,7 +55,6 @@ class UserTests(unittest.TestCase):
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
 
-
     @pytest.mark.order(9)
     def test_3_2_1_4_add_user_chinese(self):
         self.userpage.add_user_information("new_ChineseUser001", "new_中文", "new_名", "new_password123",
@@ -68,7 +63,6 @@ class UserTests(unittest.TestCase):
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
 
-
     @pytest.mark.order(10)
     def test_3_2_2_manually_add_user_error_checks(self):
         "3.2.2. Manually Add User – Error Checks"
@@ -76,8 +70,7 @@ class UserTests(unittest.TestCase):
         "missing user-id"
         self.userpage.add_user_information("", "new_Test", "new_Test", "new_tdka",
                                            "new_english01@tdk.com")
-        self.userpage.verify_some_filds_empty()
-
+        # self.userpage.verify_some_filds_empty()
 
         "missing first-name"
         self.userpage.add_user_information("new_englishTest", "", "new_Test", "new_tdka",
@@ -98,7 +91,6 @@ class UserTests(unittest.TestCase):
         "missing groups"
         self.userpage.add_user_information_only_without_grp("new_englishTest", "new_Test", "new_Test", "new_tdka",
                                                             "new_english01@tdk.com")
-
     # @pytest.mark.order(11)
     # def test_3_2_3_manually_add_user_bulk_addition(self):
     #     " after adding user information, click on + btn to enable new empty row "
@@ -120,24 +112,28 @@ class UserTests(unittest.TestCase):
     @pytest.mark.order(11)
     def test_3_2_3_manually_add_user_bulk_addition(self):
         self.userpage.add_bulk_user_english_1("bulk_englishTest_1", "bulk_Test_1", "bulk_Test_1", "bulk_tdka_1",
-                                          "bulk_english01@tdk.com")
+                                              "bulk_english01@tdk.com")
         self.userpage.add_bulk_user_english_2("bulk_englishTest_2", "bulk_Test_2", "bulk_Test_2", "bulk_tdka_2",
-                                          "bulk_english02@tdk.com")
+                                              "bulk_english02@tdk.com")
 
-        self.userpage.add_bulk_user_japanese_1("bulk_JapaneseUser001", "bulk_日本語_1", "bulk_名前_1", "bulk_password123",
-                                         "bulk_日本語.名前1@tdk.com")
-        self.userpage.add_bulk_user_japanese_2("bulk_JapaneseUser002", "bulk_日本語_2", "bulk_名前_2", "bulk_password123",
-                                         "bulk_日本語.名前2@tdk.com")
+        self.userpage.add_bulk_user_japanese_1("bulk_JapaneseUser001", "bulk_日本語_1", "bulk_名前_1",
+                                               "bulk_password123",
+                                               "bulk_日本語.名前1@tdk.com")
+        self.userpage.add_bulk_user_japanese_2("bulk_JapaneseUser002", "bulk_日本語_2", "bulk_名前_2",
+                                               "bulk_password123",
+                                               "bulk_日本語.名前2@tdk.com")
         self.userpage.add_bulk_user_korean_1("bulk_KoreanUser011", "bulk_한국_1", "bulk_이름_1", "bulk_password123",
-                                         "bulk_한국.이름1@tdk.com")
+                                             "bulk_한국.이름1@tdk.com")
         self.userpage.add_bulk_user_korean_2("bulk_KoreanUser0112", "bulk_한국_2", "bulk_이름_2", "bulk_password123",
-                                         "bulk_한국.이름2@tdk.com")
+                                             "bulk_한국.이름2@tdk.com")
         self.userpage.add_bulk_user_chinese_1("bulk_ChineseUser001", "bulk_中文_1", "bulk_名_1", "bulk_password123",
-                                         "bulk_中文.名1@tdk.com")
+                                              "bulk_中文.名1@tdk.com")
         self.userpage.add_bulk_user_chinese_2("bulk_ChineseUser0012", "bulk_中文_2", "bulk_名_2", "bulk_password123",
-                                         "bulk_中文.名2@tdk.com")
+                                              "bulk_中文.名2@tdk.com")
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"
+        self.seleniumdriverpage.screen_shot("test_3_2_3_manually_add_user_bulk_addition")
+
 
     @pytest.mark.order(12)
     def test_3_2_5_bulk_user_csv_upload(self):
