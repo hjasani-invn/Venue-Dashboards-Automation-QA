@@ -8,11 +8,13 @@ Example:
     wdf = WebDriverFactory(browser)
     wdf.getWebDriverInstance()
 """
+import os
 import traceback
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 
 class WebDriverFactory():
@@ -43,6 +45,16 @@ class WebDriverFactory():
         Returns:
             'WebDriver Instance'
         """
+
+        download_path = os.path.join(os.getcwd(), "Downloaded_Files")
+        chrome_options = Options()
+        chrome_options.add_experimental_option("prefs", {
+            "download.default_directory": download_path,
+            "download.prompt_for_download": False,
+            "download.directory_upgrade": True,
+            "safebrowsing.enabled": True
+        })
+
         #baseURL = "http://northstar-stage.us-east-1.elasticbeanstalk.com"
         baseURL = "http://admin-test.venuepositioning.com"
         if self.browser == "iexplorer":
@@ -52,7 +64,7 @@ class WebDriverFactory():
             # driver = webdriver.Firefox()
             driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         elif self.browser == "chrome":
-            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
             # op = webdriver.ChromeOptions()
             # p = {'download.default_directory': 'C:\\Users\\hjasani\\Downloads'}
             # op.add_experimental_option('prefs', p)

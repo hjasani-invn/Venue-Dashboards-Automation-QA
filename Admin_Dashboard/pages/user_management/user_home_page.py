@@ -18,7 +18,6 @@ class UserHomePage(SeleniumDriver):
         self.driver = driver
         self.seleniumdriver = SeleniumDriver(self.driver)
 
-
     # locators
     _download_bulk_csv = "//button[normalize-space()='Download csv']"
 
@@ -40,10 +39,26 @@ class UserHomePage(SeleniumDriver):
         self.waitForElement(locator=self._download_bulk_csv, locatorType="xpath")
         self.seleniumdriver.screen_shot(file="test_3_2_4_bulk_user_csv_download")
 
+    # def verify_download(self):
+    #     # specify the directory path where the files are located
+    #     filepath = os.path.join(str(Path.home() / "Downloads"))
+    #     print(f"filepath-{filepath}")
+    #
+    #     # specify the starting words of the file name you want to select
+    #     starts_with = "users_"
+    #
+    #     # list all files in the directory
+    #     files = os.listdir(filepath)
+    #
+    #     # iterate over the files and select the ones that start with the specified words
+    #     selected_files = [file for file in files if file.startswith(starts_with)]
+    #
+    #     # print the selected files
+    #     print(selected_files)
 
     def verify_download(self):
         # specify the directory path where the files are located
-        filepath = os.path.join(str(Path.home() / "Downloads"))
+        filepath = os.path.join(os.getcwd(), "Downloaded_Files")
         print(f"filepath-{filepath}")
 
         # specify the starting words of the file name you want to select
@@ -57,6 +72,19 @@ class UserHomePage(SeleniumDriver):
 
         # print the selected files
         print(selected_files)
+
+    def delete_file(self):
+        downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+        print(downloaded_dir)
+        for f in os.listdir(downloaded_dir):
+            print(f)
+            file_name = os.path.join(downloaded_dir, f)
+            try:
+                if os.path.exists(file_name):
+                    os.remove(file_name)
+                print(f"{f} is deleted successfully.")
+            except:
+                print(f"File {f} not found")
 
     def filter_grp(self, grp_name):
         self.sendKeys(grp_name, self._groups_field, locatorType="xpath")
@@ -81,10 +109,8 @@ class UserHomePage(SeleniumDriver):
 
     _cancel_btn_xpath = "//button[normalize-space()='Cancel']"
 
-
     def cancel(self):
         self.elementClick(self._cancel_btn_xpath, locatorType="xpath")
-
 
     def edit_user(self, first_name_new):
         # if user found then only
@@ -100,7 +126,6 @@ class UserHomePage(SeleniumDriver):
 
     def click_out(self):
         self.elementClick(self._click_out, locatorType="xpath")
-
 
     _select_groups_dropdown = "//ns-filter-select[@label='Groups']"
     _unselect_n_groups = "//span[@class='mat-option-text' and contains(text(), 'Automation_Test_Group')]"

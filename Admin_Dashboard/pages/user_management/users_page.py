@@ -507,7 +507,7 @@ class UserPage(SeleniumDriver):
 
             ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
             print(ROOT_DIR)
-            CONFIG_PATH = os.path.join(ROOT_DIR, 'users_template_test.csv')
+            CONFIG_PATH = os.path.join(ROOT_DIR, 'users_template.csv')
             print(CONFIG_PATH)
             pyautogui.typewrite(CONFIG_PATH, interval=0.10)
 

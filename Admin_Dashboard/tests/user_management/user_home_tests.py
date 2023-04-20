@@ -20,6 +20,7 @@ class UserHomeTests(unittest.TestCase):
     def test_3_2_4_bulk_user_csv_download(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.userhomepage.download_bulk_csv_btn()
+        self.userhomepage.delete_file()
         # self.userhomepage.verify_download()
 
     @pytest.mark.order(14)

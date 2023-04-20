@@ -50,3 +50,4 @@ class GroupsTests(unittest.TestCase):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.grouppage.download_grp_csv()
         result_1 = self.grouppage.verify_grp_csv_download()
+        self.grouppage.delete_file()

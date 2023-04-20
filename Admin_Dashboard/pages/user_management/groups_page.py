@@ -150,6 +150,22 @@ class GroupsPage(SeleniumDriver):
         # print the selected files
         print(selected_files)
 
+
+    def delete_file(self):
+        downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+        print(downloaded_dir)
+        for f in os.listdir(downloaded_dir):
+            print(f)
+            file_name = os.path.join(downloaded_dir, f)
+            try:
+                if os.path.exists(file_name):
+                    os.remove(file_name)
+                print(f"{f} is deleted successfully.")
+            except:
+                print(f"File {f} not found")
+
+
+
     def clear_field(self):
         search_box = self.getElement(locator=self._find_grp, locatorType="xpath")
         search_box.clear()
