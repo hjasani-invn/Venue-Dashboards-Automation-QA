@@ -48,7 +48,8 @@ class WebDriverFactory():
         Returns:
             'WebDriver Instance'
         """
-        download_path = str(Path.home() / "C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
+        # download_path = str(Path.home() / "C:\\Users\\hjasani\\OneDrive - tdkgroup\\Desktop\\work_automation\\LiveFeed_Analytic_Dashboard\\Downloaded_Files\\")
+        download_path = os.path.join(os.getcwd(), "Downloaded_Files")
         # ROOT = sys.path[1]
         # downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
         # print(f"-----------------{downloaded_dir}----------")

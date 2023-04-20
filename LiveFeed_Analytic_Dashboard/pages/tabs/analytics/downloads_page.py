@@ -442,7 +442,8 @@ class DownloadsTabPage(SeleniumDriver):
 
         ROOT = sys.path[1]
         print(ROOT)
-        downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        # downloaded_dir = os.path.join(ROOT, "Downloaded_Files")
+        downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
         print(downloaded_dir)
         for f in os.listdir(downloaded_dir):
             print(f)
