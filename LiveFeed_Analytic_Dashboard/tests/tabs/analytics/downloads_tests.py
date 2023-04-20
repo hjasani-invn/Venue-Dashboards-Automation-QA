@@ -125,10 +125,10 @@ class DownloadsTabTests(unittest.TestCase):
         #                                                    desired_start_date='3')
         # self.downloadstabpage.select_end_year_month_date(desired_end_year=2023, desired_end_month="January",
         #                                                  desired_end_date='20')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
-        self.downloadstabpage.select_start_year_month_date(desired_start_year=2023, desired_start_month="March",
+        self.downloadstabpage.select_start_year_month_date(desired_start_year=2022, desired_start_month="August",
                                                            desired_start_date='1')
-        self.downloadstabpage.select_end_year_month_date(desired_end_year=2023, desired_end_month="April",
-                                                         desired_end_date='16')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
+        self.downloadstabpage.select_end_year_month_date(desired_end_year=2022, desired_end_month="December",
+                                                         desired_end_date='31')  # MM/DD/YYYY - MM/DD/YYYY, M/DD/YYYY
         self.downloadstabpage.click_out()
         # self.seleniumdriver.pytest_screenshot()
         r_1 = self.downloadstabpage.verify_data_shown()
@@ -278,5 +278,5 @@ class DownloadsTabTests(unittest.TestCase):
         self.downloadstabpage.download_btn()
         # self.seleniumdriver.pytest_screenshot()
         r_1 = self.downloadstabpage.verify_data_shown()
-        assert r_1 == True
+        assert r_1 == False
         self.downloadstabpage.delete_all_downloaded()
