@@ -141,6 +141,7 @@ class UserTests(unittest.TestCase):
         # self.userpage.sendcsv(csv_file="C:/Users/hjasani/PycharmProjects/work/Admin_Dashboard/pages/user_management/users_template-1.csv")
         # self.userpage.upload_csv()
         # self.userpage.sendcsv(os.getcwd()+"/users_template_final.csv")
+        self.seleniumdriverpage.screen_shot("test_3_2_5_bulk_user_csv_upload")
         self.userpage.send_data()
         result_1 = self.userpage.verify_user_created()
         assert result_1 == "Users successfully created"

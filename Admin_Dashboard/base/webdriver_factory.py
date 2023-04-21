@@ -51,8 +51,8 @@ class WebDriverFactory():
         chrome_options.add_experimental_option("prefs", {
             "download.default_directory": download_path,
             "download.prompt_for_download": False,
-            "download.directory_upgrade": True,
-            "safebrowsing.enabled": True
+            "download.directory_upgrade": True
+            # "safebrowsing.enabled": True
         })
 
         #baseURL = "http://northstar-stage.us-east-1.elasticbeanstalk.com"

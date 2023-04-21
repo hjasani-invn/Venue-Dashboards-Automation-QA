@@ -49,16 +49,18 @@ class GuidesPage(SeleniumDriver):
     def double_click(self):
         # self.elementClick(self._double_click_to_download_guide, locatorType="xpath")
         get_all_guide_elements = self.getElements(self._double_click_to_download_guide, locatorType="xpath")
-        for each_guide in get_all_guide_elements:
-            self.double_clicks(self._double_click_to_download_guide, locatorType="xpath")
-            print(each_guide)
+        for each_guide_element in get_all_guide_elements:
+            # self.double_clicks(self._double_click_to_download_guide, locatorType="xpath")
+            self.double_click_element(each_guide_element)
+            print(each_guide_element)
 
     def double_click_pdf_file_thubmnail(self):
         self.elementClick(self._click_guides, locatorType="xpath")
         self.toggle_btn()
         self.hold_wait()
         self.double_click()
-        self.hold_wait()
-        self.hold_wait()
+        # self.hold_wait()
+        # self.hold_wait()
+        time.sleep(0.25)
 
 

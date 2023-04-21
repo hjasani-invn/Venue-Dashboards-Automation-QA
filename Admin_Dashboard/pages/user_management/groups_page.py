@@ -1,3 +1,4 @@
+import csv
 import time
 from pathlib import Path
 
@@ -8,6 +9,7 @@ from base.selenium_driver import SeleniumDriver
 import utilities.custom_logger as cl
 import logging
 import os.path
+import pandas as pd
 
 
 class GroupsPage(SeleniumDriver):
@@ -150,6 +152,26 @@ class GroupsPage(SeleniumDriver):
         # print the selected files
         print(selected_files)
 
+    # def file_data_empty(self):
+    #     time.sleep(4)
+    #     downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    #     print(downloaded_dir)
+    #     for f in os.listdir(downloaded_dir):
+    #         print(f"this is f: {f}")
+    #         file_name = os.path.join(downloaded_dir, f)
+    #         print(f"this is file_name: {file_name}")
+    #         df = pd.read_csv(file_name, skiprows=[0])
+    #         return df.empty
+            # with open(file_name, 'r') as file:
+            #     csv_reader = csv.reader(file)
+            #     header = next(csv_reader)
+            #     for row in csv_reader:
+            #         if row:
+            #             print("file has no data")
+            #             return row
+            #         else:
+            #             print("file has data")
+            #             return row
 
     def delete_file(self):
         downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")

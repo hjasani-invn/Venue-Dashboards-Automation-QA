@@ -1,10 +1,46 @@
+import os
+
 import pytest
 from base.webdriver_factory import WebDriverFactory
 
 
-@pytest.fixture()
+# @pytest.fixture()
+# def setUp():
+#     print("\nRunning method level setUp")
+#     yield
+#     print("\nRunning method level tearDown")
+
+@pytest.fixture(scope='session')
 def setUp():
+
     print("\nRunning method level setUp")
+
+    "Delete ScreenShots"
+    downloaded_dir = os.path.join(os.getcwd(), "screenshots")
+    print(downloaded_dir)
+    for f in os.listdir(downloaded_dir):
+        print(f)
+        file_name = os.path.join(downloaded_dir, f)
+        try:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+            print(f"{f} is deleted successfully.")
+        except:
+            print(f"File {f} not found")
+
+    "Delete Downloaded Files"
+    downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    print(downloaded_dir)
+    for f in os.listdir(downloaded_dir):
+        print(f)
+        file_name = os.path.join(downloaded_dir, f)
+        try:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+            print(f"{f} is deleted successfully.")
+        except:
+            print(f"File {f} not found")
+
     yield
     print("\nRunning method level tearDown")
 
@@ -35,13 +71,16 @@ def oneTimeSetUp(request, browser):
     driver.quit()
     print("\nRunning one time tearDown")
 
+
 def pytest_addoption(parser):
     parser.addoption("--browser")
     parser.addoption("--osType", help="Type of operating system")
 
+
 @pytest.fixture(scope="session")
 def browser(request):
     return request.config.getoption("--browser")
+
 
 @pytest.fixture(scope="session")
 def osType(request):

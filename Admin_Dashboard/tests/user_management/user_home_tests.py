@@ -14,19 +14,22 @@ class UserHomeTests(unittest.TestCase):
     def classSetup(self, oneTimeSetUp):
         self.userhomepage = UserHomePage(self.driver)
         self.loginpage = LoginPage(self.driver)
+
         self.seleniumdriver = SeleniumDriver(self.driver)
 
     @pytest.mark.order(13)
     def test_3_2_4_bulk_user_csv_download(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         self.userhomepage.download_bulk_csv_btn()
-        self.userhomepage.delete_file()
+        self.seleniumdriver.screen_shot("test_3_2_4_bulk_user_csv_download")
+        # self.userhomepage.delete_file()
         # self.userhomepage.verify_download()
 
     @pytest.mark.order(14)
     def test_3_2_6_edit_user(self):
         self.userhomepage.filter_grp("Automation_Test_Group")
         self.userhomepage.edit_user(first_name_new="Demo_1")
+        self.seleniumdriver.screen_shot("test_3_2_6_edit_user")
         # result_1 = self.userhomepage.verify_rename()
         # assert result_1 == "Demo_1"
 
@@ -34,11 +37,14 @@ class UserHomeTests(unittest.TestCase):
     def test_3_2_6_1_edit_user_unselect_grp(self):
         self.userhomepage.filter_grp("Automation_Test_Group")
         self.userhomepage.edit_user_remove_grp_name()
+        self.seleniumdriver.screen_shot("test_3_2_6_1_edit_user_unselect_grp")
+
 
     @pytest.mark.order(16)
     def test_3_2_6_2_edit_user_select_multiple_grp(self):
         # self.userhomepage.filter_grp("Automation_Test_Group")
         self.userhomepage.select_multiple_grps()
+        self.seleniumdriver.screen_shot("test_3_2_6_2_edit_user_select_multiple_grp")
 
     # this test case we are executing first of every iteration to make environment clean
     @pytest.mark.order(17)
@@ -49,3 +55,8 @@ class UserHomeTests(unittest.TestCase):
         # # result_1 = self.userhomepage.del_user_new()
         # assert result_1 == "deleted!"
         self.seleniumdriver.screen_shot(file="test_3_2_7_delete_user")
+
+    @pytest.mark.skip("This test section needs to perform manually")
+    def test_3_2_7_1_verify_permissions(self):
+        self.seleniumdriver.screen_shot("test_3_2_7_1_verify_permissions")
+        pass

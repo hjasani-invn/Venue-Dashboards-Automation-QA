@@ -87,6 +87,14 @@ class SeleniumDriver():
                 "Cannot double click on the element with locator: " + locator + " locatorType: " + locatorType)
             # print_stack()
 
+    def double_click_element(self, element):
+        # create an ActionChains object
+        action_chains = ActionChains(self.driver)
+
+        # perform a double click on the element
+        action_chains.double_click(element).perform()
+
+
     def sendKeys(self, data, locator, locatorType="id"):
         try:
             element = self.getElement(locator, locatorType)
