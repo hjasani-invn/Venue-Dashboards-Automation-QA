@@ -10,36 +10,37 @@ from base.webdriver_factory import WebDriverFactory
 #     yield
 #     print("\nRunning method level tearDown")
 
-@pytest.fixture(scope='session')
+# @pytest.fixture(scope='session')
+@pytest.fixture()
 def setUp():
 
     print("\nRunning method level setUp")
 
-    "Delete ScreenShots"
-    downloaded_dir = os.path.join(os.getcwd(), "screenshots")
-    print(downloaded_dir)
-    for f in os.listdir(downloaded_dir):
-        print(f)
-        file_name = os.path.join(downloaded_dir, f)
-        try:
-            if os.path.exists(file_name):
-                os.remove(file_name)
-            print(f"{f} is deleted successfully.")
-        except:
-            print(f"File {f} not found")
-
-    "Delete Downloaded Files"
-    downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
-    print(downloaded_dir)
-    for f in os.listdir(downloaded_dir):
-        print(f)
-        file_name = os.path.join(downloaded_dir, f)
-        try:
-            if os.path.exists(file_name):
-                os.remove(file_name)
-            print(f"{f} is deleted successfully.")
-        except:
-            print(f"File {f} not found")
+    # "Delete ScreenShots"
+    # downloaded_dir = os.path.join(os.getcwd(), "screenshots")
+    # print(downloaded_dir)
+    # for f in os.listdir(downloaded_dir):
+    #     print(f)
+    #     file_name = os.path.join(downloaded_dir, f)
+    #     try:
+    #         if os.path.exists(file_name):
+    #             os.remove(file_name)
+    #         print(f"{f} is deleted successfully.")
+    #     except:
+    #         print(f"File {f} not found")
+    #
+    # "Delete Downloaded Files"
+    # downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    # print(downloaded_dir)
+    # for f in os.listdir(downloaded_dir):
+    #     print(f)
+    #     file_name = os.path.join(downloaded_dir, f)
+    #     try:
+    #         if os.path.exists(file_name):
+    #             os.remove(file_name)
+    #         print(f"{f} is deleted successfully.")
+    #     except:
+    #         print(f"File {f} not found")
 
     yield
     print("\nRunning method level tearDown")
