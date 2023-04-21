@@ -22,4 +22,5 @@ class GuideListTests(unittest.TestCase):
     @pytest.mark.order(24)
     def test_3_4_3_1_open_guides_in_toggle_view_mode(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
+        print("open guides from toggle view mode - that is double clicks")
         self.guidepage.double_click_pdf_file_thubmnail()
