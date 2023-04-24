@@ -2,6 +2,7 @@ import time
 
 import pytest
 
+from base.selenium_driver import SeleniumDriver
 from pages.fingerprint_controls.FPBL_survey_page import FPBLSurveyPage
 from pages.home.login_page import LoginPage
 import unittest
@@ -13,6 +14,7 @@ class FPBLSurveyTests(unittest.TestCase):
     def classSetup(self, oneTimeSetUp):
         self.loginpage = LoginPage(self.driver)
         self.ffblsurveypage = FPBLSurveyPage(self.driver)
+        self.seleniumdriver = SeleniumDriver(self.driver)
 
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
 
@@ -36,10 +38,12 @@ class FPBLSurveyTests(unittest.TestCase):
 
         self.ffblsurveypage.click_fingerprint_btn()
         self.ffblsurveypage.select_fpbl_survey(processing_mode="Survey") # Survey, Beacon Recommendation
+        self.seleniumdriver.screen_shot(file="test_3_2_1_FPBL_survey_before_click_verify_timestamp")
         self.ffblsurveypage.click_reprocess()
         r_1 = self.ffblsurveypage.verify_fingerprint_timestamp()
         assert r_1 == True
         time.sleep(10)
+        self.seleniumdriver.screen_shot(file="test_3_2_1_FPBL_survey_after_click_verify_timestamp")
 
         time.sleep(1)
         self.loginpage.sign_out()
@@ -52,7 +56,7 @@ class FPBLSurveyTests(unittest.TestCase):
         # self.ffblsurveypage.enter_venue()
         # self.ffblsurveypage.select_floor()
 
-        "select 'Default max beacons config' checkbox"
+        """select 'Default max beacon config' checkbox"""
         self.ffblsurveypage.click_fingerprint_btn()
         self.ffblsurveypage.select_fpbl_survey(processing_mode="Beacon Recommendation") # Survey, Beacon Recommendation
         # self.ffblsurveypage.click_reprocess()
@@ -63,10 +67,12 @@ class FPBLSurveyTests(unittest.TestCase):
         "select specific number of beacons"
         self.ffblsurveypage.checkbox(number_of_beacons_on_4th_floor=5, number_of_beacons_on_1st_floor=2)
         time.sleep(10)
+        self.seleniumdriver.screen_shot(file="test_3_2_2_FPBL_beacon_before_click_verify_timestamp")
 
         self.ffblsurveypage.click_reprocess()
         self.ffblsurveypage.verify_fingerprint_timestamp()
         # assert r_1 == True
+        self.seleniumdriver.screen_shot(file="test_3_2_2_FPBL_beacon_after_click_verify_timestamp")
 
         time.sleep(1)
         self.loginpage.sign_out()

@@ -2,6 +2,7 @@ import time
 
 import pytest
 
+from base.selenium_driver import SeleniumDriver
 from pages.access_points.move_entries_page import MoveEntriesPage
 from pages.home.login_page import LoginPage
 import unittest
@@ -14,6 +15,7 @@ class MoveEntriesTests(unittest.TestCase):
     def classSetup(self, oneTimeSetUp):
         self.loginpage = LoginPage(self.driver)
         self.move_entries_page = MoveEntriesPage(self.driver)
+        self.seleniumdriver = SeleniumDriver(self.driver)
 
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
 
@@ -25,22 +27,22 @@ class MoveEntriesTests(unittest.TestCase):
     @pytest.mark.skip
     # @pytest.mark.run(20)
     def test_3_6_2_1_without_arrow_source_to_white_move_mac(self):
-        "drag and drop functionality not working: test case skip/commented"
+        """drag and drop functionality not working: test case skip/commented"""
         self.move_entries_page.without_arrow_source_to_white()
-
 
     @pytest.mark.skip
     # @pytest.mark.run(21)
     def test_3_6_2_2_without_arrow_source_to_ignore_move_mac(self):
-        "drag and drop functionality not working: test case skip/commented"
+        """drag and drop functionality not working: test case skip/commented"""
         self.move_entries_page.without_arrow_source_to_ignore()
-
 
     @pytest.mark.run(22)
     def test_3_6_2_3_arrow_source_to_white_move_mac(self):
         self.move_entries_page.click_access_point_btn()
         self.move_entries_page.click_wifi_btn()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_3_arrow_source_to_white_move_mac_before")
         self.move_entries_page.move_mac_from_source_to_white()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_3_arrow_source_to_white_move_mac_after")
         self.move_entries_page.cancel_btn()
         time.sleep(1)
         self.loginpage.sign_out()
@@ -50,7 +52,9 @@ class MoveEntriesTests(unittest.TestCase):
     def test_3_6_2_4_all_mac_move_to_source(self):
         self.move_entries_page.click_access_point_btn()
         self.move_entries_page.click_wifi_btn()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_4_all_mac_move_to_source_before")
         r_1 = self.move_entries_page.all_mac_move_to_source()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_4_all_mac_move_to_source_after")
         assert r_1 == (False, False)
         self.move_entries_page.cancel_btn()
         time.sleep(1)
@@ -61,7 +65,9 @@ class MoveEntriesTests(unittest.TestCase):
     def test_3_6_2_5_arrow_source_to_white_move_mac(self):
         self.move_entries_page.click_access_point_btn()
         self.move_entries_page.click_wifi_btn()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_5_arrow_source_to_white_move_mac_before")
         self.move_entries_page.move_mac_from_source_to_white()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_5_arrow_source_to_white_move_mac_after")
         self.move_entries_page.cancel_btn()
         time.sleep(1)
         self.loginpage.sign_out()
@@ -71,7 +77,9 @@ class MoveEntriesTests(unittest.TestCase):
     def test_3_6_2_6_arrow_source_to_ignore_move_mac(self):
         self.move_entries_page.click_access_point_btn()
         self.move_entries_page.click_wifi_btn()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_6_arrow_source_to_ignore_move_mac_before")
         self.move_entries_page.move_mac_from_source_to_ignore()
+        self.seleniumdriver.screen_shot(file="test_3_6_2_6_arrow_source_to_ignore_move_mac_after")
         self.move_entries_page.cancel_btn()
         time.sleep(1)
         self.loginpage.sign_out()

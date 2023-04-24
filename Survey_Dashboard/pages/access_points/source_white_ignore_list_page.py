@@ -1,7 +1,7 @@
 import os
 import time
 import pyautogui
-
+pyautogui.FAILSAFE = False
 
 from selenium.webdriver.common.by import By
 from base.selenium_driver import SeleniumDriver
