@@ -215,7 +215,6 @@ class SeleniumDriver():
     #     action.drag_and_drop_by_offset(element, 100, 200)
     #     action.perform()
 
-
     # def click_and_drag(self):
     #     action = ActionChains(self.driver)
     #     time.sleep(4)
@@ -247,7 +246,8 @@ class SeleniumDriver():
             self.log.info("Drag and Drop Element Found with locator: " + locator + " and locatorType: " + locatorType)
         except:
             # print("Element not found with locator: " + locator + " and locatorType: " + locatorType)
-            self.log.info("Drag and Drop Element not found with locator: " + locator + " and locatorType: " + locatorType)
+            self.log.info(
+                "Drag and Drop Element not found with locator: " + locator + " and locatorType: " + locatorType)
 
         action = ActionChains(self.driver)
         time.sleep(2)
@@ -268,7 +268,18 @@ class SeleniumDriver():
             action.drag_and_drop(source1, target1).perform()
             time.sleep(2)
         except:
-            self.log.info("Drag and Drop Element not found with locator: " + locator + " and locatorType: " + locatorType)
+            self.log.info(
+                "Drag and Drop Element not found with locator: " + locator + " and locatorType: " + locatorType)
         return source1, target1
 
-
+    def screen_shot(self, file=""):
+        # file_name = time.strftime("%Y_%m_%d-%I_%M_%S_%p") + ".png"
+        file_name = file + "_" + time.strftime(
+            "%Y_%m_%d-%I_%M_%S_%p") + ".png"  # file_name = test_3_4_1_populate_heatmap_2023_02_13-10_38_05_AM.png
+        screenshot_directory = ".\\screenshots\\"
+        destination_file = screenshot_directory + file_name
+        try:
+            self.driver.save_screenshot(destination_file)
+            print("Screenshot saved to directory --> :: " + destination_file)
+        except NotADirectoryError:
+            print("Not a directory issue")

@@ -1,11 +1,27 @@
+import os
+
 import pytest
 from selenium import webdriver
 from base.webdriver_factory import WebDriverFactory
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def setUp():
     print("Running method level setUp")
+
+    "Delete ScreenShots"
+    downloaded_dir = os.path.join(os.getcwd(), "screenshots")
+    print(downloaded_dir)
+    for f in os.listdir(downloaded_dir):
+        print(f)
+        file_name = os.path.join(downloaded_dir, f)
+        try:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+            print(f"{f} is deleted successfully.")
+        except:
+            print(f"File {f} not found")
+
     yield
     print("Running method level tearDown")
 

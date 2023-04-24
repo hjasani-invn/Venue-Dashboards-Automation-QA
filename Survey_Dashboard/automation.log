@@ -22197,3 +22197,631 @@
 03/31/2023 04:34:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
 03/31/2023 04:34:23 PM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
 03/31/2023 04:34:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:31:06 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:31:10 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:31:10 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:31:10 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 10:31:21 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 10:31:21 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:31:21 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 10:31:21 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 10:31:21 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:31:23 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'AuthenticationError Invalid UserId or Password')] and locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:31:27 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:31:31 AM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Authentication Failed!!')] and locatorType: xpath
+04/24/2023 10:31:31 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:31:31 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Forgot Password')] and locatorType: xpath
+04/24/2023 10:31:31 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Forgot Password')] locatorType: xpath
+04/24/2023 10:31:32 AM - SeleniumDriver - INFO: Element Found with locator: //h1[contains(text(),'Enter User Id / Email to continue')] and locatorType: xpath
+04/24/2023 10:31:32 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:31:49 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:31:53 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:31:53 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:31:53 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 10:32:04 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 10:32:04 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:32:04 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 10:32:04 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 10:32:04 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:32:06 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:32:10 AM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'AuthenticationError Invalid UserId or Password')] and locatorType: xpath
+04/24/2023 10:32:10 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:32:10 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:32:11 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:32:15 AM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Authentication Failed!!')] and locatorType: xpath
+04/24/2023 10:32:15 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:32:15 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Forgot Password')] and locatorType: xpath
+04/24/2023 10:32:15 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Forgot Password')] locatorType: xpath
+04/24/2023 10:32:17 AM - SeleniumDriver - INFO: Element Found with locator: //h1[contains(text(),'Enter User Id / Email to continue')] and locatorType: xpath
+04/24/2023 10:32:17 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:39:10 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:39:10 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:39:15 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:39:15 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:39:20 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:39:20 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:39:25 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:39:25 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:39:30 AM - SeleniumDriver - INFO: Element not found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:39:30 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:39:39 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:39:39 AM - SeleniumDriver - INFO: Element not found-------
+04/24/2023 10:39:44 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:39:44 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:39:50 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:39:50 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:39:55 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:39:55 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:40:00 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:40:00 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:40:05 AM - SeleniumDriver - INFO: Element not found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:40:05 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:40:14 AM - SeleniumDriver - INFO: Element not found with locator: //div[contains(text(),'AuthenticationError Invalid UserId or Password')] and locatorType: xpath
+04/24/2023 10:40:14 AM - SeleniumDriver - INFO: Element not found-------
+04/24/2023 10:40:19 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:40:19 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:40:24 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:40:24 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:40:29 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:40:29 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:40:34 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:40:34 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:40:39 AM - SeleniumDriver - INFO: Element not found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:40:39 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:41:00 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:41:00 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:41:05 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:41:05 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:41:10 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:41:10 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:41:15 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:41:15 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:41:20 AM - SeleniumDriver - INFO: Element not found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:41:20 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:41:30 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:41:30 AM - SeleniumDriver - INFO: Element not found-------
+04/24/2023 10:41:35 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:41:35 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:41:40 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:41:40 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:41:45 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:41:45 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:41:50 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:41:50 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:41:55 AM - SeleniumDriver - INFO: Element not found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:41:55 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:42:04 AM - SeleniumDriver - INFO: Element not found with locator: //div[contains(text(),'AuthenticationError Invalid UserId or Password')] and locatorType: xpath
+04/24/2023 10:42:04 AM - SeleniumDriver - INFO: Element not found-------
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Element not found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Element not found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Element not found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:42:07 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:42:40 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:42:45 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:42:45 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:42:45 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 10:42:56 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 10:42:56 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:42:56 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 10:42:56 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 10:42:56 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:42:58 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'AuthenticationError Invalid UserId or Password')] and locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:43:02 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:43:07 AM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Authentication Failed!!')] and locatorType: xpath
+04/24/2023 10:43:07 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:43:07 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Forgot Password')] and locatorType: xpath
+04/24/2023 10:43:07 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Forgot Password')] locatorType: xpath
+04/24/2023 10:43:07 AM - SeleniumDriver - INFO: Element Found with locator: //h1[contains(text(),'Enter User Id / Email to continue')] and locatorType: xpath
+04/24/2023 10:43:07 AM - SeleniumDriver - INFO: Element Found---------
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:47:12 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:47:17 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] and locatorType: xpath
+04/24/2023 10:47:17 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] locatorType: xpath
+04/24/2023 10:47:17 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] and locatorType: xpath
+04/24/2023 10:47:17 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] locatorType: xpath
+04/24/2023 10:47:17 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 10:47:17 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 10:47:22 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:47:22 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:47:22 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='CES'] and locatorType: xpath
+04/24/2023 10:47:22 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='CES'] locatorType: xpath
+04/24/2023 10:47:24 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:47:24 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:47:26 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:47:26 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:47:28 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:47:28 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:47:30 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:47:30 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:47:32 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:47:32 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:47:34 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:47:34 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:47:34 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 10:47:34 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 10:47:39 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:47:39 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:47:44 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:47:44 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:47:44 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA_2021'] and locatorType: xpath
+04/24/2023 10:47:44 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA_2021'] locatorType: xpath
+04/24/2023 10:47:46 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:47:46 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:47:48 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:47:48 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:47:50 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:47:50 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:47:52 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:47:53 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:47:55 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:47:55 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:47:57 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:47:57 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:47:57 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 10:47:57 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 10:48:02 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:48:02 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:48:07 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:48:07 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:48:07 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='TDK_HQ_Nihonbashi'] and locatorType: xpath
+04/24/2023 10:48:07 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='TDK_HQ_Nihonbashi'] locatorType: xpath
+04/24/2023 10:48:09 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:48:09 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:48:11 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:48:11 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:48:13 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:48:13 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:48:16 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:48:16 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:48:18 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:48:18 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:48:20 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:48:20 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:48:20 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 10:48:31 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 10:48:31 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 10:48:31 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 10:48:31 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 10:48:31 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 10:58:59 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 10:59:03 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] and locatorType: xpath
+04/24/2023 10:59:03 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] locatorType: xpath
+04/24/2023 10:59:03 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] and locatorType: xpath
+04/24/2023 10:59:04 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] locatorType: xpath
+04/24/2023 10:59:04 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 10:59:04 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 10:59:09 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:59:09 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:59:09 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='CES'] and locatorType: xpath
+04/24/2023 10:59:09 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='CES'] locatorType: xpath
+04/24/2023 10:59:11 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:11 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:13 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:13 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:15 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:15 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:17 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:59:17 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:59:19 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:59:19 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:59:21 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:59:21 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:59:21 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 10:59:21 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 10:59:26 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:59:26 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:59:31 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:59:31 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:59:31 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA_2021'] and locatorType: xpath
+04/24/2023 10:59:31 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA_2021'] locatorType: xpath
+04/24/2023 10:59:33 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:33 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:35 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:35 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:37 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:38 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:40 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:59:40 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:59:42 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:59:42 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:59:44 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 10:59:44 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 10:59:44 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 10:59:44 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 10:59:49 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:59:49 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:59:54 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 10:59:54 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 10:59:54 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='TDK_HQ_Nihonbashi'] and locatorType: xpath
+04/24/2023 10:59:54 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='TDK_HQ_Nihonbashi'] locatorType: xpath
+04/24/2023 10:59:56 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:56 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 10:59:58 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 10:59:58 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:00:00 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:00:00 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:00:03 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:00:03 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:00:05 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:00:05 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:00:07 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:00:07 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:00:07 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 11:00:18 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 11:00:18 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 11:00:18 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 11:00:18 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 11:00:18 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 11:00:20 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 11:00:24 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:00:24 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] locatorType: xpath
+04/24/2023 11:00:24 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:00:24 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] locatorType: xpath
+04/24/2023 11:00:24 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:00:24 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:00:29 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:00:29 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:00:29 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA_2021'] and locatorType: xpath
+04/24/2023 11:00:29 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA_2021'] locatorType: xpath
+04/24/2023 11:00:33 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:00:33 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:00:33 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Google Satellite Maps')] and locatorType: xpath
+04/24/2023 11:00:34 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Google Satellite Maps')] locatorType: xpath
+04/24/2023 11:00:43 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:00:43 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:00:43 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Google Satellite Maps')] and locatorType: xpath
+04/24/2023 11:00:43 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Google Satellite Maps')] locatorType: xpath
+04/24/2023 11:00:52 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:00:52 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:00:52 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Open Street Maps')] and locatorType: xpath
+04/24/2023 11:00:52 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Open Street Maps')] locatorType: xpath
+04/24/2023 11:01:01 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:01:01 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:01:01 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'None')] and locatorType: xpath
+04/24/2023 11:01:01 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'None')] locatorType: xpath
+04/24/2023 11:01:01 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 11:01:12 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 11:01:12 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 11:01:12 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 11:01:12 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 11:01:13 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 11:01:15 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 11:01:19 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:01:19 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link group-title ng-star-inserted'] locatorType: xpath
+04/24/2023 11:01:19 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:01:19 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='al-sidebar-list-link ng-star-inserted'] locatorType: xpath
+04/24/2023 11:01:19 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:01:19 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:01:24 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:01:24 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:01:24 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA'] and locatorType: xpath
+04/24/2023 11:01:24 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA'] locatorType: xpath
+04/24/2023 11:01:28 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:01:28 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:01:28 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'None')] and locatorType: xpath
+04/24/2023 11:01:28 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'None')] locatorType: xpath
+04/24/2023 11:01:37 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:01:37 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:01:37 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'None')] and locatorType: xpath
+04/24/2023 11:01:37 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'None')] locatorType: xpath
+04/24/2023 11:01:39 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:01:39 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:01:41 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:01:41 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:01:43 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:01:43 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:01:46 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] and locatorType: xpath
+04/24/2023 11:01:46 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] locatorType: xpath
+04/24/2023 11:01:46 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Estimated Mag+Wi-Fi Position Accuracy')] and locatorType: xpath
+04/24/2023 11:01:46 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Estimated Mag+Wi-Fi Position Accuracy')] locatorType: xpath
+04/24/2023 11:01:53 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] and locatorType: xpath
+04/24/2023 11:01:53 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] locatorType: xpath
+04/24/2023 11:01:53 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Estimated Magnetic Position Accuracy')] and locatorType: xpath
+04/24/2023 11:01:53 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Estimated Magnetic Position Accuracy')] locatorType: xpath
+04/24/2023 11:02:00 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] and locatorType: xpath
+04/24/2023 11:02:00 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] locatorType: xpath
+04/24/2023 11:02:00 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Coverage')] and locatorType: xpath
+04/24/2023 11:02:01 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Coverage')] locatorType: xpath
+04/24/2023 11:02:03 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 11:02:14 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 11:02:14 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 11:02:14 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 11:02:14 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 11:02:14 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 11:02:16 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 11:02:20 AM - SeleniumDriver - INFO: Element Found with locator: //span[@class='ion-gear-a menu-icon ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:02:20 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[@class='ion-gear-a menu-icon ng-star-inserted'] locatorType: xpath
+04/24/2023 11:02:20 AM - SeleniumDriver - INFO: Element Found with locator: //a[@href='#/pages/admin/surveymapauthoringtool'] and locatorType: xpath
+04/24/2023 11:02:20 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@href='#/pages/admin/surveymapauthoringtool'] locatorType: xpath
+04/24/2023 11:02:20 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:02:20 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:02:25 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:02:25 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:02:25 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='CES'] and locatorType: xpath
+04/24/2023 11:02:26 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='CES'] locatorType: xpath
+04/24/2023 11:02:28 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:02:28 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:02:30 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:02:30 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:02:32 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:02:32 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:02:34 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:02:34 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:02:36 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:02:36 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:02:38 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:02:38 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:02:38 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:02:38 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:02:43 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:02:43 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:02:48 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:02:48 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:02:48 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA_2021'] and locatorType: xpath
+04/24/2023 11:02:48 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA_2021'] locatorType: xpath
+04/24/2023 11:02:50 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:02:50 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:02:52 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:02:52 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:02:54 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:02:55 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:02:57 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:02:57 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:02:59 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:02:59 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:03:01 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:03:01 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:03:01 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:03:01 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:03:06 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:03:06 AM - SeleniumDriver - INFO: data cannot be wiped with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:03:11 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:03:11 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:03:11 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='TDK_HQ_Nihonbashi'] and locatorType: xpath
+04/24/2023 11:03:11 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='TDK_HQ_Nihonbashi'] locatorType: xpath
+04/24/2023 11:03:13 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:03:13 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:03:15 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:03:15 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:03:17 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:03:17 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:03:19 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:03:19 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:03:21 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:03:21 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:03:23 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-out'] and locatorType: xpath
+04/24/2023 11:03:23 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-out'] locatorType: xpath
+04/24/2023 11:03:24 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 11:03:35 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 11:03:35 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 11:03:35 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 11:03:35 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 11:03:35 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 11:03:37 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 11:03:41 AM - SeleniumDriver - INFO: Element Found with locator: //span[@class='ion-gear-a menu-icon ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:03:41 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[@class='ion-gear-a menu-icon ng-star-inserted'] locatorType: xpath
+04/24/2023 11:03:41 AM - SeleniumDriver - INFO: Element Found with locator: //a[@href='#/pages/admin/surveymapauthoringtool'] and locatorType: xpath
+04/24/2023 11:03:41 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@href='#/pages/admin/surveymapauthoringtool'] locatorType: xpath
+04/24/2023 11:03:41 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:03:41 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:03:46 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:03:46 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:03:46 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA_2021'] and locatorType: xpath
+04/24/2023 11:03:47 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA_2021'] locatorType: xpath
+04/24/2023 11:03:51 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:03:51 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:03:51 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Google Satellite Maps')] and locatorType: xpath
+04/24/2023 11:03:51 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Google Satellite Maps')] locatorType: xpath
+04/24/2023 11:04:00 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:04:00 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:04:00 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Google Satellite Maps')] and locatorType: xpath
+04/24/2023 11:04:00 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Google Satellite Maps')] locatorType: xpath
+04/24/2023 11:04:09 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:04:09 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:04:09 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Open Street Maps')] and locatorType: xpath
+04/24/2023 11:04:09 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Open Street Maps')] locatorType: xpath
+04/24/2023 11:04:16 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:04:16 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:04:16 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'None')] and locatorType: xpath
+04/24/2023 11:04:21 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //span[contains(text(),'None')] locatorType: xpath
+04/24/2023 11:04:22 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 11:04:33 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 11:04:33 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 11:04:33 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 11:04:33 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 11:04:33 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: data clear with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Element Found with locator: //input[@type='email'] and locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@type='email'] locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: data clear with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Element Found with locator: //input[@id='inputPassword3'] and locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Sent data on element with locator: //input[@id='inputPassword3'] locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Element Found with locator: //button[contains(text(),'Sign in')] and locatorType: xpath
+04/24/2023 11:04:35 AM - SeleniumDriver - INFO: Clicked on element with locator: //button[contains(text(),'Sign in')] locatorType: xpath
+04/24/2023 11:04:39 AM - SeleniumDriver - INFO: Element Found with locator: //span[@class='ion-gear-a menu-icon ng-star-inserted'] and locatorType: xpath
+04/24/2023 11:04:39 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[@class='ion-gear-a menu-icon ng-star-inserted'] locatorType: xpath
+04/24/2023 11:04:39 AM - SeleniumDriver - INFO: Element Found with locator: //a[@href='#/pages/admin/surveymapauthoringtool'] and locatorType: xpath
+04/24/2023 11:04:39 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@href='#/pages/admin/surveymapauthoringtool'] locatorType: xpath
+04/24/2023 11:04:39 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='venue-select-wrapper'] and locatorType: xpath
+04/24/2023 11:04:39 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='venue-select-wrapper'] locatorType: xpath
+04/24/2023 11:04:44 AM - SeleniumDriver - INFO: Element not found with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] and locatorType: xpath
+04/24/2023 11:04:44 AM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@class='p-dropdown-filter p-inputtext p-component ng-tns-c43-2'] locatorType: xpath
+04/24/2023 11:04:44 AM - SeleniumDriver - INFO: Element Found with locator: //li[@aria-label='ICA'] and locatorType: xpath
+04/24/2023 11:04:44 AM - SeleniumDriver - INFO: Clicked on element with locator: //li[@aria-label='ICA'] locatorType: xpath
+04/24/2023 11:04:48 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:04:48 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:04:48 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'None')] and locatorType: xpath
+04/24/2023 11:04:48 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'None')] locatorType: xpath
+04/24/2023 11:04:57 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control'] and locatorType: xpath
+04/24/2023 11:04:57 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control'] locatorType: xpath
+04/24/2023 11:04:57 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'None')] and locatorType: xpath
+04/24/2023 11:04:58 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'None')] locatorType: xpath
+04/24/2023 11:05:00 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:05:00 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:05:02 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:05:02 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:05:04 AM - SeleniumDriver - INFO: Element Found with locator: //a[@class='leaflet-control-zoom-in'] and locatorType: xpath
+04/24/2023 11:05:04 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[@class='leaflet-control-zoom-in'] locatorType: xpath
+04/24/2023 11:05:06 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] and locatorType: xpath
+04/24/2023 11:05:06 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] locatorType: xpath
+04/24/2023 11:05:06 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Estimated Mag+Wi-Fi Position Accuracy')] and locatorType: xpath
+04/24/2023 11:05:06 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Estimated Mag+Wi-Fi Position Accuracy')] locatorType: xpath
+04/24/2023 11:05:14 AM - SeleniumDriver - INFO: Element not found with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] and locatorType: xpath
+04/24/2023 11:05:14 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] locatorType: xpath
+04/24/2023 11:05:14 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Estimated Magnetic Position Accuracy')] and locatorType: xpath
+04/24/2023 11:05:14 AM - SeleniumDriver - INFO: Clicked on element with locator: //span[contains(text(),'Estimated Magnetic Position Accuracy')] locatorType: xpath
+04/24/2023 11:05:18 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] and locatorType: xpath
+04/24/2023 11:05:18 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='leaflet-control-layers leaflet-control map-options-control'] locatorType: xpath
+04/24/2023 11:05:18 AM - SeleniumDriver - INFO: Element Found with locator: //span[contains(text(),'Coverage')] and locatorType: xpath
+04/24/2023 11:05:23 AM - SeleniumDriver - INFO: Cannot click on the element with locator: //span[contains(text(),'Coverage')] locatorType: xpath
+04/24/2023 11:05:26 AM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+04/24/2023 11:05:37 AM - SeleniumDriver - INFO: Element not appeared on the web page
+04/24/2023 11:05:37 AM - SeleniumDriver - INFO: Element Found with locator: //div[@class='user-profile'] and locatorType: xpath
+04/24/2023 11:05:37 AM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='user-profile'] locatorType: xpath
+04/24/2023 11:05:37 AM - SeleniumDriver - INFO: Element Found with locator: //a[contains(text(), 'Sign out')] and locatorType: xpath
+04/24/2023 11:05:37 AM - SeleniumDriver - INFO: Clicked on element with locator: //a[contains(text(), 'Sign out')] locatorType: xpath
