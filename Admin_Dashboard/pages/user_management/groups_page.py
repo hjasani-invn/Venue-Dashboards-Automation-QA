@@ -51,6 +51,7 @@ class GroupsPage(SeleniumDriver):
     _click_out = "//body"
 
     _save_grp = "//button[normalize-space()='Save']"
+    _cancel_btn = "//button[normalize-space()='Cancel']"
 
     # def all_grp(self, grp_name, grp_des, parent_name):
 
@@ -74,6 +75,7 @@ class GroupsPage(SeleniumDriver):
         self.hold_wait()
 
     _grp_create_snackbar_xpath = "//span[contains(text(),'Group created')]"
+
     def verify_grp_created(self):
         snackbar_element = self.getElement(self._grp_create_snackbar_xpath, locatorType="xpath")
         snackbar_text = snackbar_element.text
@@ -162,16 +164,16 @@ class GroupsPage(SeleniumDriver):
     #         print(f"this is file_name: {file_name}")
     #         df = pd.read_csv(file_name, skiprows=[0])
     #         return df.empty
-            # with open(file_name, 'r') as file:
-            #     csv_reader = csv.reader(file)
-            #     header = next(csv_reader)
-            #     for row in csv_reader:
-            #         if row:
-            #             print("file has no data")
-            #             return row
-            #         else:
-            #             print("file has data")
-            #             return row
+    # with open(file_name, 'r') as file:
+    #     csv_reader = csv.reader(file)
+    #     header = next(csv_reader)
+    #     for row in csv_reader:
+    #         if row:
+    #             print("file has no data")
+    #             return row
+    #         else:
+    #             print("file has data")
+    #             return row
 
     def delete_file(self):
         downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
@@ -185,8 +187,6 @@ class GroupsPage(SeleniumDriver):
                 print(f"{f} is deleted successfully.")
             except:
                 print(f"File {f} not found")
-
-
 
     def clear_field(self):
         search_box = self.getElement(locator=self._find_grp, locatorType="xpath")
@@ -207,8 +207,8 @@ class GroupsPage(SeleniumDriver):
         self.elementClick(self._click_delete_pop_up, locatorType="xpath")
         self.hold_wait()
 
-
     _grp_delete_snackbar_xpath = "//span[contains(text(),'Group deleted')]"
+
     def verify_grp_deleted(self):
         snackbar_element = self.getElement(self._grp_delete_snackbar_xpath, locatorType="xpath")
         snackbar_text = snackbar_element.text
@@ -222,16 +222,29 @@ class GroupsPage(SeleniumDriver):
         self.sendKeys(grp_name, self._find_grp, locatorType="xpath")
         self.hold_wait()
         self.elementClick(self._click_edit_grp, locatorType="xpath")
-        self.scroll_down()
+        # self.scroll_down()
         self.hold_wait()
         self.hold_wait()
-        self.elementClick(self._save_grp, locatorType="xpath")
+        self.uncheck()
+        self.hold_wait()
+        time.sleep(25)
+        get_save_btn_element = self.getElement(self._save_grp, locatorType="xpath")
+        is_disabled = get_save_btn_element.get_attribute('disabled')
+        if is_disabled:
+            print("---------cancel btn clicked-------")
+            self.elementClick(self._cancel_btn, locatorType="xpath")
+        else:
+            "save btn"
+            print("---------save btn clicked-------")
+            self.elementClick(self._save_grp, locatorType="xpath")
+        # self.elementClick(self._save_grp, locatorType="xpath")
         # self.hold_wait()
         # self.hold_wait()
         # self.hold_wait()
         time.sleep(1)
 
     _grp_update_snackbar_xpath = "//span[contains(text(),'Group updated')]"
+
     def verify_grp_updated(self):
         snackbar_element = self.getElement(self._grp_update_snackbar_xpath, locatorType="xpath")
         snackbar_text = snackbar_element.text
@@ -250,27 +263,56 @@ class GroupsPage(SeleniumDriver):
     _checkbox_coursa_venue_dashboard = "//span[@class='mat-checkbox-label']/div[@class='checkbox-label' and contains(text(), 'Coursa Venue Dashboard')]"
     _checkbox_positioning_analytics_dashboard = "//span[@class='mat-checkbox-label']/div[@class='checkbox-label' and contains(text(), 'Positioning/Analytics Dashboard')]"
 
-
-
-
     def checkboxes(self):
         self.scroll_to_element(self._checkbox_venue_list, locatorType="xpath")
         self.elementClick(self._checkbox_venue_list, locatorType="xpath")
+        time.sleep(5)
 
         self.scroll_to_element(self._checkbox_coursa_survey_app, locatorType="xpath")
         self.elementClick(self._checkbox_coursa_survey_app, locatorType="xpath")
+        time.sleep(5)
 
         self.scroll_to_element(self._checkbox_coursa_venue_app, locatorType="xpath")
         self.hold_wait()
         self.elementClick(self._checkbox_coursa_venue_app, locatorType="xpath")
+        time.sleep(5)
 
-        self.scroll_to_element(self._checkbox_coursa_venue_dashboard, locatorType="xpath")
-        self.hold_wait()
-        self.elementClick(self._checkbox_coursa_venue_dashboard, locatorType="xpath")
-        self.hold_wait()
+        # self.scroll_to_element(self._checkbox_coursa_venue_dashboard, locatorType="xpath")
+        # self.hold_wait()
+        # self.elementClick(self._checkbox_coursa_venue_dashboard, locatorType="xpath")
+        # self.hold_wait()
 
         self.scroll_to_element(self._checkbox_positioning_analytics_dashboard, locatorType="xpath")
         self.elementClick(self._checkbox_positioning_analytics_dashboard, locatorType="xpath")
         self.hold_wait()
+        time.sleep(5)
 
+    def uncheck(self):
+        self.scroll_to_element(self._checkbox_venue_list, locatorType="xpath")
+        self.elementClick(self._checkbox_venue_list, locatorType="xpath")
+        time.sleep(5)
 
+        self.scroll_to_element(self._checkbox_coursa_survey_app, locatorType="xpath")
+        # self.elementClick(self._checkbox_coursa_survey_app, locatorType="xpath")
+        # self.elementClick(self._checkbox_coursa_survey_app, locatorType="xpath")
+        self.double_clicks(self._checkbox_coursa_survey_app, locatorType="xpath")
+        time.sleep(5)
+
+        self.scroll_to_element(self._checkbox_coursa_venue_app, locatorType="xpath")
+        self.hold_wait()
+        # self.elementClick(self._checkbox_coursa_venue_app, locatorType="xpath")
+        # self.elementClick(self._checkbox_coursa_venue_app, locatorType="xpath")
+        self.double_clicks(self._checkbox_coursa_venue_app, locatorType="xpath")
+        time.sleep(5)
+
+        # self.scroll_to_element(self._checkbox_coursa_venue_dashboard, locatorType="xpath")
+        # self.hold_wait()
+        # self.elementClick(self._checkbox_coursa_venue_dashboard, locatorType="xpath")
+        # self.hold_wait()
+
+        self.scroll_to_element(self._checkbox_positioning_analytics_dashboard, locatorType="xpath")
+        # self.elementClick(self._checkbox_positioning_analytics_dashboard, locatorType="xpath")
+        # self.elementClick(self._checkbox_positioning_analytics_dashboard, locatorType="xpath")
+        self.double_clicks(self._checkbox_positioning_analytics_dashboard, locatorType="xpath")
+        self.hold_wait()
+        time.sleep(5)

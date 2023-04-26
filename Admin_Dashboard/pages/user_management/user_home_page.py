@@ -136,9 +136,9 @@ class UserHomePage(SeleniumDriver):
         self.edit_user_btn()
         self.hold_wait()
         self.elementClick(self._select_groups_dropdown, locatorType="xpath")
-        self.hold_wait()
+        time.sleep(2)
         self.elementClick(self._unselect_n_groups, locatorType="xpath")
-        self.hold_wait()
+        time.sleep(3)
         # self.click_out()
 
         error_available = self.isElementPresent(self._error_msg_xpath, locatorType="xpath")
