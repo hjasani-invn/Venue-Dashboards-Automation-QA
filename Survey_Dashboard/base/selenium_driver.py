@@ -236,7 +236,7 @@ class SeleniumDriver():
     #     action.drag_and_drop(src, trg).perform()
     #     time.sleep(2)
 
-    def drag_drop(self, locator, locatorType="xpath"):
+    def drag_drop(self, locator, locatorType="xpath", xoffset=None, yoffset=None):
         element = None
         try:
             locatorType = locatorType.lower()
@@ -251,7 +251,7 @@ class SeleniumDriver():
 
         action = ActionChains(self.driver)
         time.sleep(2)
-        action.drag_and_drop(element, element).perform()
+        action.move_to_element_with_offset(element, xoffset, yoffset).click().perform()
         time.sleep(2)
         return element
 
@@ -283,3 +283,19 @@ class SeleniumDriver():
             print("Screenshot saved to directory --> :: " + destination_file)
         except NotADirectoryError:
             print("Not a directory issue")
+
+
+    def offset_click(self, locator, locatorType="xpath", xoffset=None, yoffset=None):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("offset click Element Found with locator: " + locator + " and locatorType: " + locatorType)
+        except:
+            self.log.info(
+                "offset click Element not found with locator: " + locator + " and locatorType: " + locatorType)
+
+        action = ActionChains(self.driver)
+        action.move_to_element_with_offset(element, xoffset, yoffset).click().perform()
+        return element
