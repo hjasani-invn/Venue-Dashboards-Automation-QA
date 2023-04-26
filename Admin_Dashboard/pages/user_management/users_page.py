@@ -127,7 +127,8 @@ class UserPage(SeleniumDriver):
     _select_click_1 = "(//mat-select[@role='combobox'])[1]"
     # _select_customer_1 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_1 = "//span[normalize-space()='test']"
-    _select_customer_1 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_1 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_1 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_1 = "(//ns-filter-select[@label='Groups'])[1]"
     _check_checkbox_1 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -140,7 +141,8 @@ class UserPage(SeleniumDriver):
     _email_2 = "(//table[@aria-describedby='createNewUsersTable']//tbody//tr//th)[15]//input[@placeholder='Email']"
     _select_click_2 = "(//mat-select[@role='combobox'])[3]"
     # _select_customer_2 = "//span[normalize-space()='test']"
-    _select_customer_2 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_2 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_2 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_2 = "(//ns-filter-select[@label='Groups'])[2]"
     _check_checkbox_2 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -192,7 +194,8 @@ class UserPage(SeleniumDriver):
     _select_click_3 = "(//mat-select[@role='combobox'])[5]"
     # _select_customer_3 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_3 = "//span[normalize-space()='test']"
-    _select_customer_3 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_3 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_3 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_3 = "(//ns-filter-select[@label='Groups'])[3]"
     _check_checkbox_3 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -204,7 +207,8 @@ class UserPage(SeleniumDriver):
     _select_click_4 = "(//mat-select[@role='combobox'])[7]"
     # _select_customer_4 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_4 = "//span[normalize-space()='test']"
-    _select_customer_4 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_4 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_4 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_4 = "(//ns-filter-select[@label='Groups'])[4]"
     _check_checkbox_4 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -256,7 +260,8 @@ class UserPage(SeleniumDriver):
     _select_click_5 = "(//mat-select[@role='combobox'])[9]"
     # _select_customer_5 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_5 = "//span[normalize-space()='test']"
-    _select_customer_5 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_5 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_5 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_5 = "(//ns-filter-select[@label='Groups'])[5]"
     _check_checkbox_5 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -268,7 +273,8 @@ class UserPage(SeleniumDriver):
     _select_click_6 = "(//mat-select[@role='combobox'])[11]"
     # _select_customer_6 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_6 = "//span[normalize-space()='test']"
-    _select_customer_6 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_6 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_6 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_6 = "(//ns-filter-select[@label='Groups'])[6]"
     _check_checkbox_6 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -320,7 +326,8 @@ class UserPage(SeleniumDriver):
     _select_click_7 = "(//mat-select[@role='combobox'])[13]"
     # _select_customer_7 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_7 = "//span[normalize-space()='test']"
-    _select_customer_7 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_7 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_7 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_7 = "(//ns-filter-select[@label='Groups'])[7]"
     _check_checkbox_7 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
@@ -333,7 +340,8 @@ class UserPage(SeleniumDriver):
     _select_click_8 = "(//mat-select[@role='combobox'])[15]"
     # _select_customer_8 = "//span[@class='mat-option-text' and contains(text(), 'test')]"
     # _select_customer_8 = "//span[normalize-space()='test']"
-    _select_customer_8 = "//span[normalize-space()='Automation_Test_Customer']"
+    # _select_customer_8 = "//span[normalize-space()='Automation_Test_Customer']"
+    _select_customer_8 = "//span[@class='mat-option-text'][normalize-space()='Automation_Test_Customer']"
     _click_Groups_dropdown_8 = "(//ns-filter-select[@label='Groups'])[8]"
     _check_checkbox_8 = '//span[@class="mat-option-text" and contains(text(), "Automation_Test_Group")]'
 
