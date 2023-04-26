@@ -25,10 +25,11 @@ class DeleteBeaconTests(unittest.TestCase):
         self.deletebeaconpage.select_floor()
         self.deletebeaconpage.click_zoom_in()
 
-    @pytest.mark.run(1)
-    def test_3_7_3_1_delete_generated_beacons_during_this_test(self):
+    @pytest.mark.run(33)
+    def test_3_7_3_1_delete_generated_beacons_during_test(self):
         print("I'm beacon delete test")
         self.deletebeaconpage.select_none()
         self.deletebeaconpage.select_beacons_box()
         self.deletebeaconpage.delete_beacons()
-        # self.deletebeaconpage.save_all()
+        self.seleniumdriver.screen_shot(file="test_3_7_3_1_delete_generated_beacons_during_test")
+        self.deletebeaconpage.save_all()

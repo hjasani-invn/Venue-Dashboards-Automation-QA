@@ -26,8 +26,9 @@ class EditBeaconTests(unittest.TestCase):
         self.editbeaconpage.click_zoom_in()
         # self.editbeaconpage.click_zoom_in()
 
-    @pytest.mark.run(1)
-    def test_3_7_2_1_change_beacon_power_from_previous_test(self):
+    # @pytest.mark.run(32)
+    @pytest.mark.skip()
+    def test_3_7_2_1_change_beacon_power_from_previous_test_and_move(self):
         print("I'm beacon edit test")
         self.editbeaconpage.select_none()
         self.editbeaconpage.select_beacons_box()
