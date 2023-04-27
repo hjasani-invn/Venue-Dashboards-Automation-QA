@@ -14,9 +14,68 @@ from base.webdriver_factory import WebDriverFactory
 from pytest_html_reporter import attach
 from webdriver_manager.chrome import ChromeDriverManager
 
-@pytest.fixture()
+
+@pytest.fixture(scope='session')
 def setUp():
     print("Running method level setUp")
+    "Delete ScreenShots"
+    # sample_file_name_png = "sample.png"
+    # create folder if not available
+    folder_ss = os.path.join(os.getcwd(), "screenshots")
+    if not os.path.exists(os.path.join(os.getcwd(), "screenshots")):
+        os.mkdir(os.path.join(os.getcwd(), "screenshots"))
+        print(f"screenshots folder created successfully.")
+    else:
+        print(f"screenshots folder already exists.")
+
+    # screenshot_dir = os.path.join(os.getcwd(), "screenshots")
+
+    print(folder_ss)
+    # if len(os.listdir(screenshot_dir)) == 0:
+    #     with open(os.path.join(screenshot_dir, sample_file_name_png), 'w') as f:
+    #         f.write("This is a sample file.")
+    #         print(f"File '{sample_file_name_png}' created successfully.")
+    # else:
+    #     print(f"Folder '{screenshot_dir}' is not empty.")
+
+    for f in os.listdir(folder_ss):
+        print(f)
+        file_name = os.path.join(folder_ss, f)
+        try:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+            print(f"{f} is deleted successfully.")
+        except:
+            print(f"File {f} not found")
+
+    "Delete Downloaded Files"
+    # sample_file_name_zip = "sample.zip"
+    folder_downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    if not os.path.exists(os.path.join(os.getcwd(), "Downloaded_Files")):
+        os.mkdir(os.path.join(os.getcwd(), "Downloaded_Files"))
+        print(f"Downloaded_Files folder created successfully.")
+    else:
+        print(f"Downloaded_Files folder already exists.")
+
+    # downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    print(folder_downloaded_dir)
+
+    # if len(os.listdir(downloaded_dir)) == 0:
+    #     with open(os.path.join(downloaded_dir, sample_file_name_zip), 'w') as f:
+    #         f.write("This is a sample file.")
+    #         print(f"File '{sample_file_name_zip}' created successfully.")
+    # else:
+    #     print(f"Folder '{downloaded_dir}' is not empty.")
+
+    for f in os.listdir(folder_downloaded_dir):
+        print(f)
+        file_name = os.path.join(folder_downloaded_dir, f)
+        try:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+            print(f"{f} is deleted successfully.")
+        except:
+            print(f"File {f} not found")
 
     yield
     print("Running method level tearDown")

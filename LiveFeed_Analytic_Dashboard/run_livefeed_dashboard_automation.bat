@@ -3,4 +3,4 @@ REM  python -m pytest -v  .\tests\home\login_tests.py  .\tests\tabs\livefeed_tes
 
 REM python -m pytest -v .\tests\run_test_suite_1.py --browser chrome --html-report=./report/report_new_1.html --title='\Livefeed_Dashboard.html'
 
-python -m pytest -v .\tests\run_test_suite_1.py --browser chrome --html=.\reports\Livefeed_Dashboard_Report.html
+python -m pytest -v -s .\tests\run_test_suite_1.py --browser chrome --html=.\reports\Livefeed_Dashboard_Report.html
