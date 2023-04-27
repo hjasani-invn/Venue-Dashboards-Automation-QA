@@ -8,11 +8,11 @@ from tests.survey_viewer_editor.survey_viewer_editor_test import VenueDisplayTes
 from tests.access_points.source_white_ignore_list_tests import SourceWhiteIgnoreListTests
 from tests.access_points.move_entries_tests import MoveEntriesTests
 from tests.fingerprint_controls.FPBL_survey_tests import FPBLSurveyTests
-from route_drawing.route_drawing_tests import RouteDrawingTests
-from route_upload_download_modifications.route_upload_download_modifications_tests import RouteUploadDownloadTest
-from beacon_entry.adding_beacons_tests import AddBeaconTests
-from beacon_entry.editing_beacons_tests import EditBeaconTests
-from beacon_entry.deleting_beacons_tests import DeleteBeaconTests
+from tests.route_drawing.route_drawing_tests import RouteDrawingTests
+from tests.route_upload_download_modifications.route_upload_download_modifications_tests import RouteUploadDownloadTest
+from tests.beacon_entry.adding_beacons_tests import AddBeaconTests
+from tests.beacon_entry.editing_beacons_tests import EditBeaconTests
+from tests.beacon_entry.deleting_beacons_tests import DeleteBeaconTests
 
 tc1 = unittest.TestLoader().loadTestsFromTestCase(LoginTests)
 tc2 = unittest.TestLoader().loadTestsFromTestCase(VenueDisplayTest)
