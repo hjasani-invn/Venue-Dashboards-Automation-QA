@@ -138,6 +138,13 @@ class AddBeaconPage(SeleniumDriver):
         self.elementClick(self._save_btn, locatorType="xpath")
         time.sleep(2)
 
+
+    _cancel_beacon_pop_up = "//button[normalize-space()='Cancel']"
+
+    def cancel_beacon_pop_up(self):
+        self.elementClick(self._cancel_beacon_pop_up, locatorType="xpath")
+
+
     _survey_editor_space = "//div[@id='surveyEditorMap']"
 
     def place_beacon(self, xoffset, yoffset):

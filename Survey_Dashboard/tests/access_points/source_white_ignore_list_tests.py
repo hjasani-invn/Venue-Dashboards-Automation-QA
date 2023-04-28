@@ -28,6 +28,7 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
     def test_3_6_1_source_list_delete_macs(self):
         self.source_white_ignore_list_page.click_access_point_btn()
         self.source_white_ignore_list_page.click_wifi_btn()
+        self.source_white_ignore_list_page.check_source_macs_available()
         self.source_white_ignore_list_page.get_source_list_mac_addresses()
         self.seleniumdriver.screen_shot(file="test_3_6_1_source_list_delete_macs_shows_all_source_list_entries")
         self.source_white_ignore_list_page.delete_source_mac_addresses()
@@ -55,6 +56,8 @@ class SourceWhiteIgnoreListTests(unittest.TestCase):
     def test_3_6_3_white_ignore_list_delete_macs(self):
         self.source_white_ignore_list_page.click_access_point_btn()
         self.source_white_ignore_list_page.click_wifi_btn()
+        self.source_white_ignore_list_page.check_white_macs_available()
+        self.source_white_ignore_list_page.check_ignore_macs_available()
         self.seleniumdriver.screen_shot(file="test_3_6_3_white_ignore_list_delete_macs_get_all_white_ignore_macs")
         r_1 = self.source_white_ignore_list_page.delete_white_mac_addresses()
         assert r_1 is None

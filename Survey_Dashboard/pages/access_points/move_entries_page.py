@@ -15,7 +15,6 @@ import logging
 from screeninfo import get_monitors
 
 
-
 class MoveEntriesPage(SeleniumDriver):
 
     def __init__(self, driver):
@@ -88,10 +87,97 @@ class MoveEntriesPage(SeleniumDriver):
         print(txt)
         self.elementClick(self._click_wifi_in_header, locatorType="xpath")
 
-
     _click_cancel_button = "//span[contains(@class, 'p-dialog-header-close-icon')]"
+
     def cancel_btn(self):
         self.elementClick(self._click_cancel_button, locatorType="xpath")
+
+    _white_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//div/button[contains(text(),' Upload ')]"
+
+    def upload_white_list_csv(self):
+        time.sleep(2)
+        self.elementClick(self._white_list_upload_btn, locatorType="xpath")
+        time.sleep(1)
+
+        ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
+        print(ROOT_DIR)
+        time.sleep(1)
+        CONFIG_PATH = os.path.join(ROOT_DIR, 'ICA_MultiFloor_WL_2023-02-22T19_46_13.724Z.csv')
+        print(CONFIG_PATH)
+        time.sleep(1)
+        pyautogui.typewrite(CONFIG_PATH, interval=0.10)
+        time.sleep(1)
+        pyautogui.press('return')
+
+    _source_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//div/button[contains(text(),' Upload ')]"
+
+    def upload_source_list_csv(self):
+        time.sleep(2)
+        self.elementClick(self._source_list_upload_btn, locatorType="xpath")
+        time.sleep(1)
+
+        ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
+        print(ROOT_DIR)
+        time.sleep(1)
+        CONFIG_PATH = os.path.join(ROOT_DIR, 'ICA_MultiFloor_SL_2023-02-22T19_20_32.647Z.csv')
+        print(CONFIG_PATH)
+        time.sleep(1)
+        pyautogui.typewrite(CONFIG_PATH, interval=0.10)
+        time.sleep(1)
+        pyautogui.press('return')
+
+    _ignore_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//div/button[contains(text(),' Upload ')]"
+
+    def upload_ignore_list_csv(self):
+        time.sleep(2)
+        self.elementClick(self._ignore_list_upload_btn, locatorType="xpath")
+        time.sleep(1)
+
+        ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
+        print(ROOT_DIR)
+        time.sleep(1)
+        CONFIG_PATH = os.path.join(ROOT_DIR, 'ICA_MultiFloor_SL_2023-02-22T19_20_32.647Z.csv')
+        print(CONFIG_PATH)
+        time.sleep(1)
+        pyautogui.typewrite(CONFIG_PATH, interval=0.10)
+        time.sleep(1)
+        pyautogui.press('return')
+
+    _white_pick_list = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//li"
+
+    def check_white_macs_available(self):
+        print("check white macs are available, if not available upload csv")
+        white_li_tags = self.getElements(self._white_pick_list, locatorType="xpath")
+        num_white_li_tags = len(white_li_tags)
+        print(f"Number of white 'li' tags: {num_white_li_tags}")
+        if num_white_li_tags == 0:
+            self.upload_white_list_csv()
+        else:
+            print("MACS are available, test runs next step")
+
+    _source_pick_list = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
+
+    def check_source_macs_available(self):
+        print("check source macs are available, if not available upload csv")
+        source_li_tags = self.getElements(self._source_pick_list, locatorType="xpath")
+        num_source_li_tags = len(source_li_tags)
+        print(f"Number of 'li' tags: {num_source_li_tags}")
+        if num_source_li_tags == 0:
+            self.upload_source_list_csv()
+        else:
+            print("MACS are available, test runs next step")
+
+    _ignore_pick_list = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//li"
+
+    def check_ignore_macs_available(self):
+        print("check ignore macs are available, if not available upload csv")
+        ignore_li_tags = self.getElements(self._ignore_pick_list, locatorType="xpath")
+        num_ignore_li_tags = len(ignore_li_tags)
+        print(f"Number of 'li' tags: {num_ignore_li_tags}")
+        if num_ignore_li_tags == 0:
+            self.upload_ignore_list_csv()
+        else:
+            print("MACS are available, test runs next step")
 
 
     _source_list_mac_xpath_1 = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
@@ -103,6 +189,7 @@ class MoveEntriesPage(SeleniumDriver):
 
     _source_mac_1 = "//div[contains(text(),'34:A8:4E:E6:51:12')]"
     _white_destination = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul"
+
     def without_arrow_source_to_white(self):
         # sl_elements = self.getElements(self._source_list_mac_xpath_1, locatorType="xpath")
         # # for i in sl_elements:
@@ -147,9 +234,6 @@ class MoveEntriesPage(SeleniumDriver):
         #     self.drag_drop(s_1_list_element, target1)
         #     time.sleep(1)
 
-
-
-
         # src = self.getElement(self._source_list_mac_xpath_1, locatorType="xpath")
         # trg = self.getElement(self._white_list_space, locatorType="xpath")
         # time.sleep(3)
@@ -174,7 +258,6 @@ class MoveEntriesPage(SeleniumDriver):
         except:
             print("-------------NOT WORKING-------------")
 
-
         # print("drag and drop functionality")
         # target1 = self.getElement(self._white_destination, locatorType="xpath")
         # time.sleep(1)
@@ -185,6 +268,7 @@ class MoveEntriesPage(SeleniumDriver):
         # time.sleep(7)
 
     _ignore_destination = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul"
+
     def without_arrow_source_to_ignore(self):
         print("drag and drop functionality")
         target1 = self.getElement(self._ignore_destination, locatorType="xpath")
@@ -194,7 +278,6 @@ class MoveEntriesPage(SeleniumDriver):
         # time.sleep(2)
         action.drag_and_drop(source1, target1).perform()
         # time.sleep(7)
-
 
     _from_source_to_white = "(//div[@class='pick-list-buttons'])[1]//i[@class='fa fa-angle-left']"
     _source_list_mac_xpath = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
@@ -230,7 +313,6 @@ class MoveEntriesPage(SeleniumDriver):
             self.elementClick(self._from_source_to_white, locatorType="xpath")
             time.sleep(3)
             count -= 1
-
 
     _from_source_to_ignore = "(//div[@class='pick-list-buttons'])[2]//i[@class='fa fa-angle-right']"
 
@@ -269,8 +351,8 @@ class MoveEntriesPage(SeleniumDriver):
         #     return True
         return white_list_macs_moved, ignore_list_macs_moved
 
-
     _save_btn = "//button[normalize-space()='Save']"
+
     def click_save_btn(self):
         self.elementClick(self._save_btn, locatorType="xpath")
         time.sleep(3)

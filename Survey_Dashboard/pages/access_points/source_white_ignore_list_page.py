@@ -245,3 +245,61 @@ class SourceWhiteIgnoreListPage(SeleniumDriver):
         time.sleep(1)
 
         pyautogui.press('return')
+
+
+
+    _source_list_upload_btn = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//div/button[contains(text(),' Upload ')]"
+
+    def upload_source_list_csv(self):
+        time.sleep(2)
+        self.elementClick(self._source_list_upload_btn, locatorType="xpath")
+        time.sleep(1)
+
+        ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
+        print(ROOT_DIR)
+        time.sleep(1)
+        CONFIG_PATH = os.path.join(ROOT_DIR, 'ICA_MultiFloor_SL_2023-02-22T19_20_32.647Z.csv')
+        print(CONFIG_PATH)
+        time.sleep(1)
+        pyautogui.typewrite(CONFIG_PATH, interval=0.10)
+        time.sleep(1)
+        pyautogui.press('return')
+
+
+    _white_pick_list = "(//three-pick-list//div[@class='pick-list-wrapper'])[1]//ul//li"
+
+    def check_white_macs_available(self):
+        print("check white macs are available, if not available upload csv")
+        white_li_tags = self.getElements(self._white_pick_list, locatorType="xpath")
+        num_white_li_tags = len(white_li_tags)
+        print(f"Number of white 'li' tags: {num_white_li_tags}")
+        if num_white_li_tags == 0:
+            self.upload_white_list_csv()
+        else:
+            print("MACS are available, test runs next step")
+
+
+    _source_pick_list = "(//three-pick-list//div[@class='pick-list-wrapper'])[2]//ul//li"
+
+    def check_source_macs_available(self):
+        print("check source macs are available, if not available upload csv")
+        source_li_tags = self.getElements(self._source_pick_list, locatorType="xpath")
+        num_source_li_tags = len(source_li_tags)
+        print(f"Number of 'li' tags: {num_source_li_tags}")
+        if num_source_li_tags == 0:
+            self.upload_source_list_csv()
+        else:
+            print("MACS are available, test runs next step")
+
+
+    _ignore_pick_list = "(//three-pick-list//div[@class='pick-list-wrapper'])[3]//ul//li"
+
+    def check_ignore_macs_available(self):
+        print("check ignore macs are available, if not available upload csv")
+        ignore_li_tags = self.getElements(self._ignore_pick_list, locatorType="xpath")
+        num_ignore_li_tags = len(ignore_li_tags)
+        print(f"Number of 'li' tags: {num_ignore_li_tags}")
+        if num_ignore_li_tags == 0:
+            self.upload_ignore_list_csv()
+        else:
+            print("MACS are available, test runs next step")

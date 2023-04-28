@@ -45,6 +45,7 @@ class AddBeaconTests(unittest.TestCase):
         beacon_status = self.addbeaconpage.beacon_status()
         assert beacon_status == True
         self.addbeaconpage.click_beacon_controller()
+        self.addbeaconpage.cancel_beacon_pop_up()
         self.seleniumdriver.screen_shot(file="test_3_7_1_2_click_beacon_icon")
         time.sleep(1)
         self.loginpage.sign_out()
