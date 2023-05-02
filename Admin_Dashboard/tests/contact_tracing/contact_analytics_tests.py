@@ -16,7 +16,6 @@ class ContactAnalyticsTests(unittest.TestCase):
         self.loginpage = LoginPage(self.driver)
         self.seleniumdriver = SeleniumDriver(self.driver)
 
-
     @pytest.mark.order(27)
     def test_3_5_1_1_contact_tracing_queries(self):
         self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
@@ -30,7 +29,6 @@ class ContactAnalyticsTests(unittest.TestCase):
         result_1 = self.contactanalyticspage.verify_time_range_no_morethan_2_months_message()
         assert result_1 == "Timerange can not be more than 2 months"
         self.seleniumdriver.screen_shot(file="test_3_5_1_1_contact_tracing_queries")
-
 
     @pytest.mark.order(28)
     def test_3_5_1_2_contact_tracing_queries(self):
@@ -46,7 +44,6 @@ class ContactAnalyticsTests(unittest.TestCase):
         assert result_1 == "Time Range is Incorrect!"
         self.seleniumdriver.screen_shot(file="test_3_5_1_2_contact_tracing_queries")
 
-
     @pytest.mark.order(29)
     def test_3_5_1_3_contact_tracing_queries(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
@@ -61,7 +58,6 @@ class ContactAnalyticsTests(unittest.TestCase):
         assert result_1 == "Max distance can not be greater than 20mtrs."
         self.seleniumdriver.screen_shot(file="test_3_5_1_3_contact_tracing_queries")
 
-
     @pytest.mark.order(30)
     def test_3_5_1_4_contact_tracing_queries(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
@@ -75,7 +71,6 @@ class ContactAnalyticsTests(unittest.TestCase):
         result_1 = self.contactanalyticspage.verify_max_distance_message_if_words()
         assert result_1 == "Please enter max distance."
         self.seleniumdriver.screen_shot(file="test_3_5_1_4_contact_tracing_queries")
-
 
     # @pytest.mark.dependency()
     # @pytest.mark.order(31)
@@ -117,3 +112,33 @@ class ContactAnalyticsTests(unittest.TestCase):
     #     # self.loginpage.login("TestUser001", "TP1M4St3R_p4ssw0rd")
     #     self.contactanalyticspage.update_query_name("renaming query")
     #     # self.contactanalyticspage.is_popup(query_name="renamed")
+
+    @pytest.mark.order(32)
+    def test_3_5_1_6_contact_tracing_floor_order_check_1(self):
+        self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
+        print("\nchecking floor orders")
+        self.contactanalyticspage.open_contact_analytics_tab()
+        self.contactanalyticspage.enter_venue(v_n='ICA_2022')
+        asrt = self.contactanalyticspage.click_search_icon()
+        # self.contactanalyticspage.click_search_icon()
+        assert asrt == True
+
+
+    @pytest.mark.order(33)
+    def test_3_5_1_6_contact_tracing_floor_order_check_2(self):
+        # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
+        print("\nchecking floor orders")
+        self.contactanalyticspage.open_contact_analytics_tab()
+        self.contactanalyticspage.enter_venue(v_n='TDK_HQ_Nihonbashi')
+        asrt = self.contactanalyticspage.click_search_icon()
+        assert asrt == True
+
+
+    @pytest.mark.order(34)
+    def test_3_5_1_6_contact_tracing_floor_order_check_3(self):
+        # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
+        print("\nchecking floor orders")
+        self.contactanalyticspage.open_contact_analytics_tab()
+        self.contactanalyticspage.enter_venue(v_n='ICA Calgary')
+        asrt = self.contactanalyticspage.click_search_icon()
+        assert asrt == True

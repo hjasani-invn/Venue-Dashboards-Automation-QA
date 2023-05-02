@@ -18,11 +18,18 @@ def setUp():
     
 
     "Delete ScreenShots"
-    downloaded_dir = os.path.join(os.getcwd(), "screenshots")
-    print(downloaded_dir)
-    for f in os.listdir(downloaded_dir):
+    # create folder if not available
+    folder_ss = os.path.join(os.getcwd(), "screenshots")
+    if not os.path.exists(os.path.join(os.getcwd(), "screenshots")):
+        os.mkdir(os.path.join(os.getcwd(), "screenshots"))
+        print(f"screenshots folder created successfully.")
+    else:
+        print(f"screenshots folder already exists.")
+    # downloaded_dir = os.path.join(os.getcwd(), "screenshots")
+    print(folder_ss)
+    for f in os.listdir(folder_ss):
         print(f)
-        file_name = os.path.join(downloaded_dir, f)
+        file_name = os.path.join(folder_ss, f)
         try:
             if os.path.exists(file_name):
                 os.remove(file_name)
@@ -31,11 +38,17 @@ def setUp():
             print(f"File {f} not found")
 
     "Delete Downloaded Files"
-    downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
-    print(downloaded_dir)
-    for f in os.listdir(downloaded_dir):
+    folder_downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    if not os.path.exists(os.path.join(os.getcwd(), "Downloaded_Files")):
+        os.mkdir(os.path.join(os.getcwd(), "Downloaded_Files"))
+        print(f"Downloaded_Files folder created successfully.")
+    else:
+        print(f"Downloaded_Files folder already exists.")
+    # downloaded_dir = os.path.join(os.getcwd(), "Downloaded_Files")
+    print(folder_downloaded_dir)
+    for f in os.listdir(folder_downloaded_dir):
         print(f)
-        file_name = os.path.join(downloaded_dir, f)
+        file_name = os.path.join(folder_downloaded_dir, f)
         try:
             if os.path.exists(file_name):
                 os.remove(file_name)
