@@ -115,7 +115,7 @@ class ContactAnalyticsTests(unittest.TestCase):
 
     @pytest.mark.order(32)
     def test_3_5_1_6_contact_tracing_floor_order_check_1(self):
-        self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
+        # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         print("\nchecking floor orders")
         self.contactanalyticspage.open_contact_analytics_tab()
         self.contactanalyticspage.enter_venue(v_n='ICA_2022')
