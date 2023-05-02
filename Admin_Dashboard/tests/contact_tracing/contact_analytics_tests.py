@@ -114,7 +114,7 @@ class ContactAnalyticsTests(unittest.TestCase):
     #     # self.contactanalyticspage.is_popup(query_name="renamed")
 
     @pytest.mark.order(32)
-    def test_3_5_1_6_contact_tracing_floor_order_check_1(self):
+    def test_3_5_1_6_1_contact_tracing_floor_order_check_1(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         print("\nchecking floor orders")
         self.contactanalyticspage.open_contact_analytics_tab()
@@ -125,7 +125,7 @@ class ContactAnalyticsTests(unittest.TestCase):
 
 
     @pytest.mark.order(33)
-    def test_3_5_1_6_contact_tracing_floor_order_check_2(self):
+    def test_3_5_1_6_2_contact_tracing_floor_order_check_2(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         print("\nchecking floor orders")
         self.contactanalyticspage.open_contact_analytics_tab()
@@ -135,7 +135,7 @@ class ContactAnalyticsTests(unittest.TestCase):
 
 
     @pytest.mark.order(34)
-    def test_3_5_1_6_contact_tracing_floor_order_check_3(self):
+    def test_3_5_1_6_3_contact_tracing_floor_order_check_3(self):
         # self.loginpage.login("AutomationTestUser001", "TP1M4St3R_p4ssw0rd")
         print("\nchecking floor orders")
         self.contactanalyticspage.open_contact_analytics_tab()

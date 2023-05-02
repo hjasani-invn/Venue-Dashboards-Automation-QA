@@ -335,7 +335,7 @@ class ContactAnalyticsPage(SeleniumDriver):
                 break
             # If the search icon elements are not found, click the paginator and wait for 1 second
             self.elementClick(self._paginator, locatorType="xpath")
-            time.sleep(1)
+            time.sleep(2)
 
         # Print a message when the search icon is found
         if search_icon_elements:
@@ -346,9 +346,9 @@ class ContactAnalyticsPage(SeleniumDriver):
         # one = random.choice(number_of_searches_icons_elements).click()
         one = random.choice(search_icon_elements).click()
         # print(f"this is one: {one}")
-        time.sleep(50)
+        time.sleep(80)
         self.scroll_to_element(self._select_heatmap, locatorType="xpath")
-        time.sleep(1)
+        time.sleep(3)
         self.elementClick(self._select_heatmap, locatorType="xpath")
         time.sleep(5)
         scroll_to_vertical_floors = self.scroll_to_element(self._span_txt, locatorType="xpath")
